@@ -86,16 +86,16 @@
 
 
 
-<meta name="description" content="qiubugu,秋布谷,skytostop">
+<meta name="description" content="秋布谷,秋天也要播种。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="秋布谷">
 <meta property="og:url" content="http://yoursite.com/archives/2019/03/index.html">
 <meta property="og:site_name" content="秋布谷">
-<meta property="og:description" content="qiubugu,秋布谷,skytostop">
+<meta property="og:description" content="秋布谷,秋天也要播种。">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="秋布谷">
-<meta name="twitter:description" content="qiubugu,秋布谷,skytostop">
+<meta name="twitter:description" content="秋布谷,秋天也要播种。">
 
 
 
@@ -387,7 +387,7 @@
               <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="Frank Zhou">
             
               <p class="site-author-name" itemprop="name">Frank Zhou</p>
-              <p class="site-description motion-element" itemprop="description">qiubugu,秋布谷,skytostop</p>
+              <p class="site-description motion-element" itemprop="description">秋布谷,秋天也要播种。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -638,6 +638,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'L1RnXW8ECNEpGSfWHizVgLA4-gzGzoHsz',
+        appKey: '86wCFHVuDdIlNCYC0uKNTWU0',
+        placeholder: '我的看法是',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

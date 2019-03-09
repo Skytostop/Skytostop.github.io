@@ -344,6 +344,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/12/18/20151218 Hexo博客搭建经历/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2015/12/18/20151218 Hexo博客搭建经历/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -511,6 +521,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -541,7 +554,7 @@
               <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="Frank Zhou">
             
               <p class="site-author-name" itemprop="name">Frank Zhou</p>
-              <p class="site-description motion-element" itemprop="description">qiubugu,秋布谷,skytostop</p>
+              <p class="site-description motion-element" itemprop="description">秋布谷,秋天也要播种。</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -796,6 +809,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'L1RnXW8ECNEpGSfWHizVgLA4-gzGzoHsz',
+        appKey: '86wCFHVuDdIlNCYC0uKNTWU0',
+        placeholder: '我的看法是',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
