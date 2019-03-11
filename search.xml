@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mac/iOS下全局代理依然无法上Telegram？教你一招！]]></title>
+    <url>%2F2019%2F03%2F12%2F20190311%20Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81%2F</url>
+    <content type="text"><![CDATA[Mac/iOS 下全局代理依然无法上 Telegram ？教你一招！ 有很多同学通过各种方法总算可以科学上网了，但是却发现依然无法登陆 Telegram 客户端，尝试解决方案如下： 1.Mac下无法联网问题先用 ShadowsocksX-NG 查看 Socks5 端口号 然后登录客户端时会出现如下图错误提示 最后打开 Use Proxy，选择 Socks5 并设置如下图保存即可。 2. iOS 下客户端无法联网的问题经过测试 Wingy 即使在全局状态下也无法登陆，解决办法就是换小火箭 shadowrocket，目前正常使用，另外之前国内号码好像收不到验证码，但是最近我试了下国内也可以，不过我还是打算把淘宝买的 GV 号用来作为主账号登陆，就是不知道能用多久哈。 好了，今天的分享就到这里，谢赏各位。]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo 博客如何绑定域名]]></title>
     <url>%2F2019%2F03%2F10%2F20190310%20Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%2F</url>
     <content type="text"><![CDATA[许多操作可能随着 Github 更新而略有变化，我自己是小白，所以只能照网上依葫芦画瓢，但是也遇到了很多坑。记录一下，备自己之后查看。 我是在 Godaddy 上买的域名，但是在国内解析速度比较慢，且有时候会被屏蔽。 第 1 步修改域名 DNS 地址用国内的 DNSPod 代替 Godaddy 解析，登陆 DNSPOD 官网帮助中心，查看问题「 Godaddy 注册商域名修改 DNS 地址」，按照步骤先去登陆 Godaddy 官网点击右上角头像进入「我的产品」，选择 DNS 管理 点击更改默认的域名服务器，输入 DNSPod 的 2 个 DNS 短地址（对应 6 台服务器），然后点击保存即可，这样解析服务就转给了 DNSPOD。 f1g1ns1.dnspod.net f1g1ns2.dnspod.net 第 2 步添加 DNSPod 的解析这一步真的比较坑，原因是我按照网上一些「ping username.github.io」获得的 IP 地址，或者添加的是 Github 官方的主机 IP 设置都会遇到问题。 失败案例一：向你的 DNS 配置中添加 3 条记录,用你自己的 Github 用户名替换 username @ A 192.30.252.153@ A 192.30.252.154www CNAME username.github.io. 这个设置后，尤其是强制走 https 的时候，Chrome 会提示不是安全的隐私链接，打开也很卡。还有网上各种 ping 自己博客 IP 的，但是我自己测试这个IP是变化的，官方文档显示大概有4个，直接说说我是怎么弄的，其实也不复杂。 · 185.199.108.153· 185.199.109.153· 185.199.110.153· 185.199.111.153 自己成功方法：同样添加3条记录 @ A 185.199.108.153@ A 185.199.109.153www CNAME Skytostop.github.io 再添加 A 记录就要收费了，所以有条件把上面4个 IP 都加进去是不是会更好，可以添加上面 2 个或者下面 2 个都可以，这个方法我是在 Youtube 上看来的，这样整个域名解析就设置好了。 第3步设定 CNAME 文件接下来还需在 Github 创建 CNAME 文件绑定自己的域名，同时在 Settings 里面找到 Custom domain 勾选 Enforce HTTPS 即可，这样全网会走https路线，博客地址栏左边会有一把小锁，安心又很酷。 由于执行「 hexo g -d 」命令后，本地文件会覆盖仓库里的 CNAME 文件，所以要复制一份刚刚创建的 CNAME 文件放置在站点配置目录下的 source 文件夹。 重新上传，大功告成，去浏览器地址栏输入你的域名访问吧！ 后记：完成这些折腾，对于一个完全不懂代码的文科生小白其实也不容易，域名这一块还好，整个 Hexo 的搭建还是遇到了许多问题，还好有 Google 都有解答，基本解决。]]></content>
