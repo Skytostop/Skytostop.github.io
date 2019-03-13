@@ -28,6 +28,17 @@
     <content type="text"><![CDATA[2019年3月8日，第二次重新搭建Hexo博客！ Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
+    <title><![CDATA[一加2安装TWRP刷 LineageOS 15.1 安装谷歌框架并进行 Root 教程记录]]></title>
+    <url>%2F2019%2F01%2F19%2F20190119%20%E4%B8%80%E5%8A%A02%E5%AE%89%E8%A3%85TWRP%E5%88%B7-LineageOS-15-1-%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C-Root-%E6%95%99%E7%A8%8B%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[最近把自己的一加 2 又倒腾了下，虽然基本不用，但是还是想把它变成一个正常的手机，废话不多说，直接进正题。 第1步安装 TWRP首先去下载官方 TWRP (\&lt;https://twrp.me/app/)，也可以从酷安市场下载。安装完成后，打开选择 TWRP FLASH 选择你的机型，选择最新的 img 下载安装，完成第一步 TWRP 最新版的安装工作。 第 2 步同时刷入 OS 和谷歌框架去官网下载 OS \https://download.lineageos.org/\ 选择对应的机型进行下载，然后重启手机同时按住音量减和电源键，进入Recovery，选择安装，找到下载好的 OS 安装包 ZIP，安装之前可以选择双清（选择清除——恢复出厂设置）一下。可同时刷入 Opengapps 文件\https://opengapps.org/\，找到对应机型平台的包，15.1 是 Android 8.1,一加 2 是骁龙 810 处理器属于 ARM64，我这里是用 nano 版本 关于各种版本（此处摘自少数派 Clyde(https://sspai.com/user/696946) 写的文章） stock ：最为贴近 Nexus 机型体验的 GApps 版本，包含了 Nexus 机型所预装的所有 Google 服务和 Google 应用。需要注意的是，这个版本会用 Chrome 、 Google Now Launcher 、 Google Keybord 等 Google 应用替换掉 CM 系 ROM 中那些基于 AOSP 代码的相关应用。 full ：与 stock 版所包含的内容相同，但不会替换 AOSP 应用。 mini ：包含了完整的 Google 服务框架和主流 Google 应用，去掉了 Google Docs 等文档处理应用 micro ：包含了完整的 Google 服务框架和少数 Google 应用，如 Gmail 、 Google Calender 、 Google Now Launcher 。 nano ：包含完整的 Google 服务框架但不包含多余的 Google 应用。 pico：包含了最基础的 Google 服务框架，体积最小，一些依赖完整 Google 框架的应用（如 Google Camera ）将无法运行。 第3步 Root先去下载 Root 包，选择自己机型对应的包即可，不知道的可以网上搜索一下。下载地址：\https://download.lineageos.org/extras\重启手机——按住音量减进入 TWRP——安装——选下载好的su包开刷，不需要执行清除操作。 第4步开启 Root 权限点击设置——系统——关于手机——版本号——多次点击版本号开启开发者选项打开开发者选项—— Root 授权——应用与 ADB 至此本教程记录结束。]]></content>
+      <categories>
+        <category>善用网络</category>
+      </categories>
+      <tags>
+        <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[隐藏技能——小米手机自带迅雷BT下载]]></title>
     <url>%2F2018%2F12%2F31%2F20181231%20%E9%9A%90%E8%97%8F%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E8%BF%85%E9%9B%B7BT%E4%B8%8B%E8%BD%BD%2F</url>
     <content type="text"><![CDATA[这是我偶然发现的一个功能，发现下载速度极快，基本能够跑满带宽，甚至可以满速下载一些和谐的资源。不知道能够撑多久，目前整个大环境都非常严，单纯的下载软件从早期的网络蚂蚁、网际快车、到后来的电驴、QQ 旋风等都相继倒下，目前 PC 端也仅有迅雷在苦苦支撑，然而限速还有一些和谐资源下载的阉割都让下载变动越来越难，也因为现在下载的需求没有那么大了。 手机型号：红米 Note 4X MIUI版本：MIUI 10.1 | 稳定版内存和存储：4G + 64G处理器：HelioX20 测试下载链接 笑傲江湖2.东方不败.双音轨magnet:?xt=urn:btih:710EE5CA6DBA590CF418E5BB876EF48E453F919D 上面选择的这部电影就是在 PC 端下载没有速度，下载到5%就不动了，于是换到手机下载竟然可以用。 速度贼快 不过经过实际测试，换同样MUUI版本且相同型号的手机，仅仅是处理器换成了高通骁龙 625 就打不开 BT 文件下载了，网上搜索也发现小米论坛等地也都说打不开 BT 文件了，不知道这篇文章出来（不知道有没有人分享过），这种下载方法还能支撑多久。 结语从酷盘、快盘、微盘、360 、115 等等各大网盘也都相继倒下，再到百度网盘云8秒教育和各种限速封杀，下载之路注定艰难，不过如果服务商能早日形成和国外一样丰富的在线视频，同时能够提高大家的版权意识，倒也不是一件坏事。 明天就是 2019 年啦，祝大家新年快乐噢！]]></content>
@@ -46,7 +57,7 @@
         <category>善用网络</category>
       </categories>
       <tags>
-        <tag>android,手机</tag>
+        <tag>android</tag>
       </tags>
   </entry>
   <entry>
