@@ -1,140 +1,389 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Mac/iOS下全局代理依然无法上Telegram？教你一招！]]></title>
-    <url>%2F2019%2F03%2F12%2F20190311%20Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81%2F</url>
-    <content type="text"><![CDATA[Mac/iOS 下全局代理依然无法上 Telegram ？教你一招！ 有很多同学通过各种方法总算可以科学上网了，但是却发现依然无法登陆 Telegram 客户端，尝试解决方案如下： 1.Mac下无法联网问题先用 ShadowsocksX-NG 查看 Socks5 端口号 然后登录客户端时会出现如下图错误提示 最后打开 Use Proxy，选择 Socks5 并设置如下图保存即可。 2. iOS 下客户端无法联网的问题经过测试 Wingy 即使在全局状态下也无法登陆，解决办法就是换小火箭 shadowrocket，目前正常使用，另外之前国内号码好像收不到验证码，但是最近我试了下国内也可以，不过我还是打算把淘宝买的 GV 号用来作为主账号登陆，就是不知道能用多久哈。 好了，今天的分享就到这里，谢赏各位。]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>知乎上那些技能篇的回答</title>
+      <link href="/2019/03/14/20190314%20%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E6%8A%80%E8%83%BD%E7%AF%87%E7%9A%84%E5%9B%9E%E7%AD%94/"/>
+      <url>/2019/03/14/20190314%20%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E6%8A%80%E8%83%BD%E7%AF%87%E7%9A%84%E5%9B%9E%E7%AD%94/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>1.<a href="https://www.zhihu.com/question/21696230" target="_blank" rel="noopener">你是明白了哪几个基本原理之后而厨艺大增的？</a></p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>善用网络</category>
+          
+          <category> 技能 </category>
+          
       </categories>
-      <tags>
-        <tag>software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo 博客如何绑定域名]]></title>
-    <url>%2F2019%2F03%2F10%2F20190310%20Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[许多操作可能随着 Github 更新而略有变化，我自己是小白，所以只能照网上依葫芦画瓢，但是也遇到了很多坑。记录一下，备自己之后查看。 我是在 Godaddy 上买的域名，但是在国内解析速度比较慢，且有时候会被屏蔽。 第 1 步修改域名 DNS 地址用国内的 DNSPod 代替 Godaddy 解析，登陆 DNSPOD 官网帮助中心，查看问题「 Godaddy 注册商域名修改 DNS 地址」，按照步骤先去登陆 Godaddy 官网点击右上角头像进入「我的产品」，选择 DNS 管理 点击更改默认的域名服务器，输入 DNSPod 的 2 个 DNS 短地址（对应 6 台服务器），然后点击保存即可，这样解析服务就转给了 DNSPOD。 f1g1ns1.dnspod.net f1g1ns2.dnspod.net 第 2 步添加 DNSPod 的解析这一步真的比较坑，原因是我按照网上一些「ping username.github.io」获得的 IP 地址，或者添加的是 Github 官方的主机 IP 设置都会遇到问题。 失败案例一：向你的 DNS 配置中添加 3 条记录,用你自己的 Github 用户名替换 username @ A 192.30.252.153@ A 192.30.252.154www CNAME username.github.io. 这个设置后，尤其是强制走 https 的时候，Chrome 会提示不是安全的隐私链接，打开也很卡。还有网上各种 ping 自己博客 IP 的，但是我自己测试这个IP是变化的，官方文档显示大概有4个，直接说说我是怎么弄的，其实也不复杂。 · 185.199.108.153· 185.199.109.153· 185.199.110.153· 185.199.111.153 自己成功方法：同样添加3条记录 @ A 185.199.108.153@ A 185.199.109.153www CNAME Skytostop.github.io 再添加 A 记录就要收费了，所以有条件把上面4个 IP 都加进去是不是会更好，可以添加上面 2 个或者下面 2 个都可以，这个方法我是在 Youtube 上看来的，这样整个域名解析就设置好了。 第3步设定 CNAME 文件接下来还需在 Github 创建 CNAME 文件绑定自己的域名，同时在 Settings 里面找到 Custom domain 勾选 Enforce HTTPS 即可，这样全网会走https路线，博客地址栏左边会有一把小锁，安心又很酷。 由于执行「 hexo g -d 」命令后，本地文件会覆盖仓库里的 CNAME 文件，所以要复制一份刚刚创建的 CNAME 文件放置在站点配置目录下的 source 文件夹。 重新上传，大功告成，去浏览器地址栏输入你的域名访问吧！ 后记：完成这些折腾，对于一个完全不懂代码的文科生小白其实也不容易，域名这一块还好，整个 Hexo 的搭建还是遇到了许多问题，还好有 Google 都有解答，基本解决。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>知乎上那些催人奋进的回答</title>
+      <link href="/2019/03/14/20190314%20%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E5%82%AC%E4%BA%BA%E5%A5%8B%E8%BF%9B%E7%9A%84%E5%9B%9E%E7%AD%94/"/>
+      <url>/2019/03/14/20190314%20%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E5%82%AC%E4%BA%BA%E5%A5%8B%E8%BF%9B%E7%9A%84%E5%9B%9E%E7%AD%94/</url>
+      
+        <content type="html"><![CDATA[<p>随手收集一些知乎上的提问，堕落的时候就来看看，给自己灌些鸡汤，很有必要。别人的意见只是参考，更重要的是你自己的思考。尽信书，则不如无书。</p><blockquote><p>1.<a href="https://www.zhihu.com/question/43377108/answer/574887910" target="_blank" rel="noopener">只是每天坚持跑步真的可以改变一个人吗？</a><br>2.<a href="https://www.zhihu.com/question/279387872" target="_blank" rel="noopener">30 岁左右的人，来谈谈你犯了哪些错误？</a><br>3.<a href="https://www.zhihu.com/question/265675232/answer/314959320" target="_blank" rel="noopener">30 岁前实现财务自由的人，都做对了哪些事？</a><br>4.<a href="https://www.zhihu.com/question/304102027/answer/544432127" target="_blank" rel="noopener">人生在世有哪些观念是越早建立越好的？</a></p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>hexo</category>
+          
+          <category> unique psyche </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F03%2F08%2F20190308%20hello-world%2F</url>
-    <content type="text"><![CDATA[2019年3月8日，第二次重新搭建Hexo博客！ Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[一加2安装TWRP刷 LineageOS 15.1 安装谷歌框架并进行 Root 教程记录]]></title>
-    <url>%2F2019%2F01%2F19%2F20190119%20%E4%B8%80%E5%8A%A02%E5%AE%89%E8%A3%85TWRP%E5%88%B7-LineageOS-15-1-%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C-Root-%E6%95%99%E7%A8%8B%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[最近把自己的一加 2 又倒腾了下，虽然基本不用，但是还是想把它变成一个正常的手机，废话不多说，直接进正题。 第1步安装 TWRP首先去下载官方 TWRP (\&lt;https://twrp.me/app/)，也可以从酷安市场下载。安装完成后，打开选择 TWRP FLASH 选择你的机型，选择最新的 img 下载安装，完成第一步 TWRP 最新版的安装工作。 第 2 步同时刷入 OS 和谷歌框架去官网下载 OS \https://download.lineageos.org/\ 选择对应的机型进行下载，然后重启手机同时按住音量减和电源键，进入Recovery，选择安装，找到下载好的 OS 安装包 ZIP，安装之前可以选择双清（选择清除——恢复出厂设置）一下。可同时刷入 Opengapps 文件\https://opengapps.org/\，找到对应机型平台的包，15.1 是 Android 8.1,一加 2 是骁龙 810 处理器属于 ARM64，我这里是用 nano 版本 关于各种版本（此处摘自少数派 Clyde(https://sspai.com/user/696946) 写的文章） stock ：最为贴近 Nexus 机型体验的 GApps 版本，包含了 Nexus 机型所预装的所有 Google 服务和 Google 应用。需要注意的是，这个版本会用 Chrome 、 Google Now Launcher 、 Google Keybord 等 Google 应用替换掉 CM 系 ROM 中那些基于 AOSP 代码的相关应用。 full ：与 stock 版所包含的内容相同，但不会替换 AOSP 应用。 mini ：包含了完整的 Google 服务框架和主流 Google 应用，去掉了 Google Docs 等文档处理应用 micro ：包含了完整的 Google 服务框架和少数 Google 应用，如 Gmail 、 Google Calender 、 Google Now Launcher 。 nano ：包含完整的 Google 服务框架但不包含多余的 Google 应用。 pico：包含了最基础的 Google 服务框架，体积最小，一些依赖完整 Google 框架的应用（如 Google Camera ）将无法运行。 第3步 Root先去下载 Root 包，选择自己机型对应的包即可，不知道的可以网上搜索一下。下载地址：\https://download.lineageos.org/extras\重启手机——按住音量减进入 TWRP——安装——选下载好的su包开刷，不需要执行清除操作。 第4步开启 Root 权限点击设置——系统——关于手机——版本号——多次点击版本号开启开发者选项打开开发者选项—— Root 授权——应用与 ADB 至此本教程记录结束。]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>「You&#39;ve got to find what you love」,Jobs says</title>
+      <link href="/2019/03/14/20190314%20You&#39;ve%20got%20to%20find%20what%20you%20love,%20Jobs%20says/"/>
+      <url>/2019/03/14/20190314%20You&#39;ve%20got%20to%20find%20what%20you%20love,%20Jobs%20says/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>This is a prepared text of the Commencement address delivered by Steve Jobs, CEO of Apple Computer and of Pixar Animation Studios, on June 12, 2005.</p></blockquote><p>I am honored to be with you today at your commencement from one of the finest universities in the world. I never graduated from college. Truth be told, this is the closest I’ve ever gotten to a college graduation. Today I want to tell you three stories from my life. That’s it. No big deal. Just three stories.<a id="more"></a></p><p>The first story is about connecting the dots.</p><p>I dropped out of Reed College after the first 6 months, but then stayed around as a drop-in for another 18 months or so before I really quit. So why did I drop out?</p><p>It started before I was born. My biological mother was a young, unwed college graduate student, and she decided to put me up for adoption. She felt very strongly that I should be adopted by college graduates, so everything was all set for me to be adopted at birth by a lawyer and his wife. Except that when I popped out they decided at the last minute that they really wanted a girl. So my parents, who were on a waiting list, got a call in the middle of the night asking: “We have an unexpected baby boy; do you want him?” They said: “Of course.” My biological mother later found out that my mother had never graduated from college and that my father had never graduated from high school. She refused to sign the final adoption papers. She only relented a few months later when my parents promised that I would someday go to college.</p><p>And 17 years later I did go to college. But I naively chose a college that was almost as expensive as Stanford, and all of my working-class parents’ savings were being spent on my college tuition. After six months, I couldn’t see the value in it. I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out. And here I was spending all of the money my parents had saved their entire life. So I decided to drop out and trust that it would all work out OK. It was pretty scary at the time, but looking back it was one of the best decisions I ever made. The minute I dropped out I could stop taking the required classes that didn’t interest me, and begin dropping in on the ones that looked interesting.</p><p>It wasn’t all romantic. I didn’t have a dorm room, so I slept on the floor in friends’ rooms, I returned Coke bottles for the 5¢ deposits to buy food with, and I would walk the 7 miles across town every Sunday night to get one good meal a week at the Hare Krishna temple. I loved it. And much of what I stumbled into by following my curiosity and intuition turned out to be priceless later on. Let me give you one example:</p><p>Reed College at that time offered perhaps the best calligraphy instruction in the country. Throughout the campus every poster, every label on every drawer, was beautifully hand calligraphed. Because I had dropped out and didn’t have to take the normal classes, I decided to take a calligraphy class to learn how to do this. I learned about serif and sans serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great. It was beautiful, historical, artistically subtle in a way that science can’t capture, and I found it fascinating.</p><p>None of this had even a hope of any practical application in my life. But 10 years later, when we were designing the first Macintosh computer, it all came back to me. And we designed it all into the Mac. It was the first computer with beautiful typography. If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts. And since Windows just copied the Mac, it’s likely that no personal computer would have them. If I had never dropped out, I would have never dropped in on this calligraphy class, and personal computers might not have the wonderful typography that they do. Of course it was impossible to connect the dots looking forward when I was in college. But it was very, very clear looking backward 10 years later.</p><p>Again, you can’t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future. You have to trust in something — your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.</p><p>My second story is about love and loss.</p><p>I was lucky — I found what I loved to do early in life. Woz and I started Apple in my parents’ garage when I was 20. We worked hard, and in 10 years Apple had grown from just the two of us in a garage into a $2 billion company with over 4,000 employees. We had just released our finest creation — the Macintosh — a year earlier, and I had just turned 30. And then I got fired. How can you get fired from a company you started? Well, as Apple grew we hired someone who I thought was very talented to run the company with me, and for the first year or so things went well. But then our visions of the future began to diverge and eventually we had a falling out. When we did, our Board of Directors sided with him. So at 30 I was out. And very publicly out. What had been the focus of my entire adult life was gone, and it was devastating.</p><p>I really didn’t know what to do for a few months. I felt that I had let the previous generation of entrepreneurs down — that I had dropped the baton as it was being passed to me. I met with David Packard and Bob Noyce and tried to apologize for screwing up so badly. I was a very public failure, and I even thought about running away from the valley. But something slowly began to dawn on me — I still loved what I did. The turn of events at Apple had not changed that one bit. I had been rejected, but I was still in love. And so I decided to start over.</p><p>I didn’t see it then, but it turned out that getting fired from Apple was the best thing that could have ever happened to me. The heaviness of being successful was replaced by the lightness of being a beginner again, less sure about everything. It freed me to enter one of the most creative periods of my life.</p><p>During the next five years, I started a company named NeXT, another company named Pixar, and fell in love with an amazing woman who would become my wife. Pixar went on to create the world’s first computer animated feature film, Toy Story, and is now the most successful animation studio in the world. In a remarkable turn of events, Apple bought NeXT, I returned to Apple, and the technology we developed at NeXT is at the heart of Apple’s current renaissance. And Laurene and I have a wonderful family together.</p><p>I’m pretty sure none of this would have happened if I hadn’t been fired from Apple. It was awful tasting medicine, but I guess the patient needed it. Sometimes life hits you in the head with a brick. Don’t lose faith. I’m convinced that the only thing that kept me going was that I loved what I did. You’ve got to find what you love. And that is as true for your work as it is for your lovers. Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it. And, like any great relationship, it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.</p><p>My third story is about death.</p><p>When I was 17, I read a quote that went something like: “If you live each day as if it was your last, someday you’ll most certainly be right.” It made an impression on me, and since then, for the past 33 years, I have looked in the mirror every morning and asked myself: “If today were the last day of my life, would I want to do what I am about to do today?” And whenever the answer has been “No” for too many days in a row, I know I need to change something.</p><p>Remembering that I’ll be dead soon is the most important tool I’ve ever encountered to help me make the big choices in life. Because almost everything — all external expectations, all pride, all fear of embarrassment or failure — these things just fall away in the face of death, leaving only what is truly important. Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.</p><p>About a year ago I was diagnosed with cancer. I had a scan at 7:30 in the morning, and it clearly showed a tumor on my pancreas. I didn’t even know what a pancreas was. The doctors told me this was almost certainly a type of cancer that is incurable, and that I should expect to live no longer than three to six months. My doctor advised me to go home and get my affairs in order, which is doctor’s code for prepare to die. It means to try to tell your kids everything you thought you’d have the next 10 years to tell them in just a few months. It means to make sure everything is buttoned up so that it will be as easy as possible for your family. It means to say your goodbyes.</p><p>I lived with that diagnosis all day. Later that evening I had a biopsy, where they stuck an endoscope down my throat, through my stomach and into my intestines, put a needle into my pancreas and got a few cells from the tumor. I was sedated, but my wife, who was there, told me that when they viewed the cells under a microscope the doctors started crying because it turned out to be a very rare form of pancreatic cancer that is curable with surgery. I had the surgery and I’m fine now.</p><p>This was the closest I’ve been to facing death, and I hope it’s the closest I get for a few more decades. Having lived through it, I can now say this to you with a bit more certainty than when death was a useful but purely intellectual concept:</p><p>No one wants to die. Even people who want to go to heaven don’t want to die to get there. And yet death is the destination we all share. No one has ever escaped it. And that is as it should be, because Death is very likely the single best invention of Life. It is Life’s change agent. It clears out the old to make way for the new. Right now the new is you, but someday not too long from now, you will gradually become the old and be cleared away. Sorry to be so dramatic, but it is quite true.</p><p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</p><p>When I was young, there was an amazing publication called The Whole Earth Catalog, which was one of the bibles of my generation. It was created by a fellow named Stewart Brand not far from here in Menlo Park, and he brought it to life with his poetic touch. This was in the late 1960s, before personal computers and desktop publishing, so it was all made with typewriters, scissors and Polaroid cameras. It was sort of like Google in paperback form, 35 years before Google came along: It was idealistic, and overflowing with neat tools and great notions.</p><p>Stewart and his team put out several issues of The Whole Earth Catalog, and then when it had run its course, they put out a final issue. It was the mid-1970s, and I was your age. On the back cover of their final issue was a photograph of an early morning country road, the kind you might find yourself hitchhiking on if you were so adventurous. Beneath it were the words: “Stay Hungry. Stay Foolish.” It was their farewell message as they signed off. Stay Hungry. Stay Foolish. And I have always wished that for myself. And now, as you graduate to begin anew, I wish that for you.</p><p>Stay Hungry. Stay Foolish.</p><p>Thank you all very much.</p>]]></content>
+      
+      
       <categories>
-        <category>善用网络</category>
+          
+          <category> unique psyche </category>
+          
       </categories>
-      <tags>
-        <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[隐藏技能——小米手机自带迅雷BT下载]]></title>
-    <url>%2F2018%2F12%2F31%2F20181231%20%E9%9A%90%E8%97%8F%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E8%BF%85%E9%9B%B7BT%E4%B8%8B%E8%BD%BD%2F</url>
-    <content type="text"><![CDATA[这是我偶然发现的一个功能，发现下载速度极快，基本能够跑满带宽，甚至可以满速下载一些和谐的资源。不知道能够撑多久，目前整个大环境都非常严，单纯的下载软件从早期的网络蚂蚁、网际快车、到后来的电驴、QQ 旋风等都相继倒下，目前 PC 端也仅有迅雷在苦苦支撑，然而限速还有一些和谐资源下载的阉割都让下载变动越来越难，也因为现在下载的需求没有那么大了。 手机型号：红米 Note 4X MIUI版本：MIUI 10.1 | 稳定版内存和存储：4G + 64G处理器：HelioX20 测试下载链接 笑傲江湖2.东方不败.双音轨magnet:?xt=urn:btih:710EE5CA6DBA590CF418E5BB876EF48E453F919D 上面选择的这部电影就是在 PC 端下载没有速度，下载到5%就不动了，于是换到手机下载竟然可以用。 速度贼快 不过经过实际测试，换同样MUUI版本且相同型号的手机，仅仅是处理器换成了高通骁龙 625 就打不开 BT 文件下载了，网上搜索也发现小米论坛等地也都说打不开 BT 文件了，不知道这篇文章出来（不知道有没有人分享过），这种下载方法还能支撑多久。 结语从酷盘、快盘、微盘、360 、115 等等各大网盘也都相继倒下，再到百度网盘云8秒教育和各种限速封杀，下载之路注定艰难，不过如果服务商能早日形成和国外一样丰富的在线视频，同时能够提高大家的版权意识，倒也不是一件坏事。 明天就是 2019 年啦，祝大家新年快乐噢！]]></content>
+      
+      
+        <tags>
+            
+            <tag> life </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac/iOS下全局代理依然无法上Telegram？教你一招！</title>
+      <link href="/2019/03/12/20190311%20Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81/"/>
+      <url>/2019/03/12/20190311%20Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[<p> Mac/iOS 下全局代理依然无法上 Telegram ？教你一招！</p><p>有很多同学通过各种方法总算可以科学上网了，但是却发现依然无法登陆 Telegram 客户端，尝试解决方案如下：<br><a id="more"></a></p><h3 id="1-Mac下无法联网问题"><a href="#1-Mac下无法联网问题" class="headerlink" title="1.Mac下无法联网问题"></a>1.Mac下无法联网问题</h3><p>先用 ShadowsocksX-NG 查看 Socks5 端口号<br><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0zbr1hu7ij20dc0b8aay.jpg" alt> 然后登录客户端时会出现如下图错误提示<br><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0zbst3ujyj20i00godie.jpg" alt> 最后打开 Use Proxy，选择 Socks5 并设置如下图保存即可。</p><p><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0zbv83n34j20880aqweq.jpg" alt></p><h3 id="2-iOS-下客户端无法联网的问题"><a href="#2-iOS-下客户端无法联网的问题" class="headerlink" title="2. iOS 下客户端无法联网的问题"></a>2. iOS 下客户端无法联网的问题</h3><p>经过测试 Wingy 即使在全局状态下也无法登陆，解决办法就是换小火箭 shadowrocket，目前正常使用，另外之前国内号码好像收不到验证码，但是最近我试了下国内也可以，不过我还是打算把淘宝买的 GV 号用来作为主账号登陆，就是不知道能用多久哈。</p><p>好了，今天的分享就到这里，谢赏各位。</p>]]></content>
+      
+      
       <categories>
-        <category>善用网络</category>
+          
+          <category> 善用网络 </category>
+          
       </categories>
-      <tags>
-        <tag>software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[一加2手机救活记]]></title>
-    <url>%2F2016%2F11%2F26%2F20161126%20%E4%B8%80%E5%8A%A02%E6%89%8B%E6%9C%BA%E6%95%91%E6%B4%BB%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[一加3T国行版本月29号就发布了，有意向购买替换掉我现在的加2，因为玩游戏总觉觉得有点卡卡的，平时使用还算流畅吧。昨天晚上无意去论坛看到了加2的HOS2.5公测版更新了，想想还是打算去刷最新的，但是官方建议双清，我之前有Root加上装的太多了App，所以备份了照片视频和短信通讯录神马的，就打算彻底刷机了，结果噩梦开始了。 我一开始使用自带的恢复出厂设置选择删除所有数据，结果发现没删掉，于是用之前刷入的Recovery来尝试操作，结果TWRP太强大，我把Wipe里所有选项都勾选了，然后我就看手机卡在开机那个界面，以为是正常界面，加上已经凌晨2点了就睡觉了，结果一觉醒来，纳尼？发现手机还在那个界面，此时才8点多，本来周末准备睡懒觉的，一下子没睡意了。仔细想了下，应该那个清除直接把系统都删除了，于是上线找客服，结果客服还没有上班，于是自己去论坛和百度找答案，一开始也没找到好的方法，然后客服上线了简单聊了几句，就说进入不了官方Recovery就送售后吧，但是坑爹的是一加只有武汉、深圳和北京三个售后点，而且过保刷机可能还要收50元，加上顺丰快递25元，于是我说我自己再看看，没想到看到一个帖子说有一种救砖的办法，就是手机连上电脑去设备管理里查看安装高通的下载驱动，我也照做了，然后真正的噩梦开始了，还有一个线刷的包和工具是放在百度云盘里的，我就下载发现1.5G的文件实在是龟速几十K，然后尝试用迅雷下载，又去百度在知乎看到一个知友提供Tempermonkey这个插件，的确可以解决用迅雷下载百度云大文件的方法，但是！但是！每次下到进度20左右就没速度了，于是我都想寄售后了，但一想太费事了，而且自己没有备用机。忽然，我又想到去淘宝去买迅雷会员，卖家一开始还发错账号了，后来又补发了白金会员，但是我发现还是我太年轻，一样没用，于是我换一种思路，看看有没有另外的人的分享，还好找到了另一个人的分享，还是百度云！这次我下载有速度了。稳定400+K已经满足了，就在我写这篇文字的时候已经快下完了，然后下到进度95.7%的时候说任务出错，尼玛这不是坑我吗！ 所以到现在，我还没解决这个问题，不知道怎么回事这个下载速度超级慢的，目前只能等百度云龟速看看了。 15:10 又去百度发现贴吧一个朋友提到【我倒是找到解决办法了，停了的时候复制迅雷未完成时的那两个文件（你去看文件名就知道了，未完成迅雷会分成两个文件），放到其他地方保存，然后删除任务，选上删除文件。然后重新开网盘下载，然后确定有两个文件生成了，就暂停迅雷。把原来的那两个未完成文件覆盖过去，再从新开始就可以了。我估计百度网盘的东西，如果不在一定时间内下完，就会下不了。转的，绝对可用，我下到97的东西终于动了】然而我的显示任务创建失败，真真是醉了，没想到卡在了下载这一步，打算再用IDM试试，然后只能等龟速百度云管家了，最后一丝的希望。 15:25 我强制修改没下好的rar文件结果解压报错，但是Msm8974DownloadTool.exe所在文件夹还是有了，所以手机连上Fastboot强制打开exe结果没找到连接，于是拔掉数据线关机重启重进Fast却莫名其妙地可以进入了TWRP了，这太令人兴奋了，然后手机也可以电脑连接了，我把官方2.5带双清的包放入Sdcard成功用TWRP刷入，至此应该解决了，很意外的结果，我猜还是那个意外的exe文件的作用，或者就是手机可以进TWRP了。 PS：前前后后折腾了好久，各种搜索尝试，不断发现问题和尝试，最终解决的时候还是有一种小小的成就感。回顾一下，知道了一些下载的方法算是意外的收获，最后完整的也没下载下来，线刷工具也没有完全正常，但是结局是好的，手机正常刷入新系统了。]]></content>
+      
+      
+        <tags>
+            
+            <tag> software </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 博客如何绑定域名</title>
+      <link href="/2019/03/10/20190310%20Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/"/>
+      <url>/2019/03/10/20190310%20Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/</url>
+      
+        <content type="html"><![CDATA[<p>许多操作可能随着 Github 更新而略有变化，我自己是小白，所以只能照网上依葫芦画瓢，但是也遇到了很多坑。记录一下，备自己之后查看。</p><p>我是在 Godaddy 上买的域名，但是在国内解析速度比较慢，且有时候会被屏蔽。</p><h3 id="第-1-步修改域名-DNS-地址"><a href="#第-1-步修改域名-DNS-地址" class="headerlink" title="第 1 步修改域名 DNS 地址"></a>第 1 步修改域名 DNS 地址<a id="more"></a></h3><p>用国内的 DNSPod 代替 Godaddy 解析，登陆 DNSPOD 官网帮助中心，查看问题「 Godaddy 注册商域名修改 DNS 地址」，按照步骤先去登陆 Godaddy 官网点击右上角头像进入「我的产品」，选择 DNS 管理</p><p><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0xo4hw3bdj211706wq3f.jpg" alt> 点击更改默认的域名服务器，输入 DNSPod 的 2 个 DNS 短地址（对应 6 台服务器），然后点击保存即可，这样解析服务就转给了 DNSPOD。</p><blockquote><p> f1g1ns1.dnspod.net<br> f1g1ns2.dnspod.net</p></blockquote><h3 id="第-2-步添加-DNSPod-的解析"><a href="#第-2-步添加-DNSPod-的解析" class="headerlink" title="第 2 步添加 DNSPod 的解析"></a>第 2 步添加 DNSPod 的解析</h3><p>这一步真的比较坑，原因是我按照网上一些「ping username.github.io」获得的 IP 地址，或者添加的是 Github 官方的主机 IP 设置都会遇到问题。</p><p>失败案例一：向你的 DNS 配置中添加 3 条记录,用你自己的 Github 用户名替换 username</p><blockquote><p>@             A                     192.30.252.153<br>@             A                     192.30.252.154<br>www      CNAME          username.github.io.</p></blockquote><p>这个设置后，尤其是强制走 https 的时候，Chrome 会提示不是安全的隐私链接，打开也很卡。还有网上各种 ping 自己博客 IP 的，但是我自己测试这个IP是变化的，官方文档显示大概有4个，直接说说我是怎么弄的，其实也不复杂。</p><blockquote><p>· 185.199.108.153<br>· 185.199.109.153<br>· 185.199.110.153<br>· 185.199.111.153</p></blockquote><p>自己成功方法：同样添加3条记录</p><blockquote><p>@             A                    185.199.108.153<br>@             A                    185.199.109.153<br>www       CNAME        Skytostop.github.io</p></blockquote><p>再添加 A 记录就要收费了，所以有条件把上面4个 IP 都加进去是不是会更好，可以添加上面 2 个或者下面 2 个都可以，这个方法我是在 Youtube 上看来的，这样整个域名解析就设置好了。</p><h3 id="第3步设定-CNAME-文件"><a href="#第3步设定-CNAME-文件" class="headerlink" title="第3步设定 CNAME 文件"></a>第3步设定 CNAME 文件</h3><p>接下来还需在 Github 创建 CNAME 文件绑定自己的域名，同时在 Settings 里面找到 Custom domain 勾选 Enforce HTTPS 即可，这样全网会走https路线，博客地址栏左边会有一把小锁，安心又很酷。</p><p>由于执行「  hexo g -d  」命令后，本地文件会覆盖仓库里的 CNAME 文件，所以要复制一份刚刚创建的 CNAME 文件放置在站点配置目录下的 source 文件夹。</p><p>重新上传，大功告成，去浏览器地址栏输入你的域名访问吧！</p><p>后记：完成这些折腾，对于一个完全不懂代码的文科生小白其实也不容易，域名这一块还好，整个 Hexo 的搭建还是遇到了许多问题，还好有 Google 都有解答，基本解决。</p>]]></content>
+      
+      
       <categories>
-        <category>善用网络</category>
+          
+          <category> hexo </category>
+          
       </categories>
-      <tags>
-        <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[两个月的思忖]]></title>
-    <url>%2F2016%2F09%2F16%2F20160916%20%E4%B8%A4%E4%B8%AA%E6%9C%88%E7%9A%84%E6%80%9D%E5%BF%96%2F</url>
-    <content type="text"><![CDATA[深夜窗外灯火璀璨，刚刚算安定下来，我却怎么也睡不着了。 从7月初毕业后回家一直到今天9月中旬了，期间发生了许多事，耽误了许久。当初4月份因为学校的毕业论文和驾照都没有搞定，加上自己可能对实习公司的工作不是特别喜欢就决定辞职回学校了。回到学校一直到7月初才解决所有杂事，然后眼看放假学校也不给住了就回家，时值酷暑，而且今年是特别的热，我人在江苏却又想到上海工作，就决定等天气稍微凉快点再找工作，结果天气持续高温，更加糟糕的事就在八月初我下定决心准备认真准备简历找工作的时候，一件意外的事情发生了。我骑车路过一个雨后的路边超车时发生侧滑，两个膝盖加手掌和一些其它关节初都有不同程度的受伤，尤其右膝盖最严重，所以就像老天和我开玩笑一样了，我一下子成为了一个“废人”，去诊所连续打了两个星期的吊瓶，每天消毒换药吃药，一身的青霉素味道。天天卧床休息前前后后持续了一个月，中途还有一次小的二次受伤略过不提，直到9月初我来上海前一天才自己把结的痂去掉，于是我从零出发，以一个应届生的身份来找工作，约了几家面试，具体细节就先不讲了，可能是之前的一些实习或者兼职经历有加分，加上自己沟通的顺畅些，也还算顺利的找到了工作，HR通知我中秋节后第一个工作日去上班，所以目前我还没有去上班报到。来上海的时候就会有一些心理准备，房价物价都比较高，刚来的时候住了两天布丁酒店，后来觉得贵就去住青旅，这里有个小插曲，公司当时说最快当天发Offer，但是我等了几天眼看放假了邮箱也没收到，于是放假前一天晚上我加了人事问了说已经发了，我仔细一检查被Gmail归档到垃圾邮件了，有点好气又好笑。工作差不多找好的时候，就是要找房子，找房子一点也不比找工作轻松，一个刚毕业的大学生本来就经济上不会富裕，还想找到好点性价比高的房子真是难啊，我之前打工实习兼职的一点积蓄也都花了不少，查看知乎、微信群、58和赶集网、Zuber、豆瓣等等眼睛都快看花了，后来实在不想折腾还拖着一个行李箱背着笔记本，就找了一家离公司附件地铁站有八站路的一个小区，对房子基本还是满意的，就是试了下空调好像不太制冷，此刻正开着在测试。 有些事绕不开也只能去面对，家里父母生病基本没有多少收入，在我来上海的前两天，弟弟被送到了城市去读书交了很多学费，外公不舒服去医院查却是确诊为肺癌晚期，我妈妈一下子就有点接受不了，我爸爸也不放心我妈一个人在家干脆辞了本来就杯水车薪的工作，说实话我替外公感到心痛，也看到妈妈有点心疼，因为我家和外婆家很近，所以除了本身的亲情血缘关系，日常相处的时间很多所以感情更深，外公辛苦了一辈子，晚年也没有清闲过，他就是劳累了一生。我来上海的前一天问候一个上海的朋友，她却因为父亲得了癌只能辞了上海的工作回老家，这让我感受到病魔的无情，感叹健康的重要性，也为我的朋友感到难过，她心中估计更有说不出的痛。 最后在整体回顾一下这两个月的生活，暑假在家除了每天稍微接触了英语，其他时间很多花在了游戏和电视剧上，吃饭睡觉熬夜懒虫，好像养了一身坏习惯，体重也一直上升，加上骑车摔伤天气炎热，整个人的状态都不好，现在想来整天也有点浑浑噩噩的，但是我心中有梦，而且我知道我必须前行，家里人都劝我就在小城市里找份工作，我却执意要到大城市闯荡一番。所以，无论前路何其漫漫，吾将上下求索。 &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 20160916 2:30于洞泾镇小区]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/03/08/20190308%20hello-world/"/>
+      <url>/2019/03/08/20190308%20hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>2019年3月8日，第二次重新搭建Hexo博客！</p><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post<a id="more"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一加2安装TWRP刷 LineageOS 15.1 安装谷歌框架并进行 Root 教程记录</title>
+      <link href="/2019/01/19/20190119%20%E4%B8%80%E5%8A%A02%E5%AE%89%E8%A3%85TWRP%E5%88%B7-LineageOS-15-1-%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C-Root-%E6%95%99%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
+      <url>/2019/01/19/20190119%20%E4%B8%80%E5%8A%A02%E5%AE%89%E8%A3%85TWRP%E5%88%B7-LineageOS-15-1-%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C-Root-%E6%95%99%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>最近把自己的一加 2 又倒腾了下，虽然基本不用，但是还是想把它变成一个正常的手机，废话不多说，直接进正题。</p><h3 id="第1步安装-TWRP"><a href="#第1步安装-TWRP" class="headerlink" title="第1步安装 TWRP"></a>第1步安装 TWRP</h3><p>首先去下载官方 TWRP (\&lt;<a href="https://twrp.me/app/)，也可以从酷安市场下载。" target="_blank" rel="noopener">https://twrp.me/app/)，也可以从酷安市场下载。</a><br>安装完成后，打开选择 TWRP FLASH 选择你的机型，选择最新的 img 下载安装，完成第一步 TWRP 最新版的安装工作。<a id="more"></a></p><h3 id="第-2-步同时刷入-OS-和谷歌框架"><a href="#第-2-步同时刷入-OS-和谷歌框架" class="headerlink" title="第 2 步同时刷入 OS 和谷歌框架"></a>第 2 步同时刷入 OS 和谷歌框架</h3><p>去官网下载 OS \<a href="https://download.lineageos.org/\" target="_blank" rel="noopener">https://download.lineageos.org/\</a> 选择对应的机型进行下载，然后重启手机同时按住音量减和电源键，进入Recovery，选择安装，找到下载好的 OS 安装包 ZIP，安装之前可以选择双清（选择清除——恢复出厂设置）一下。可同时刷入 Opengapps 文件\<a href="https://opengapps.org/\" target="_blank" rel="noopener">https://opengapps.org/\</a>，找到对应机型平台的包，15.1 是 Android 8.1,一加 2 是骁龙 810 处理器属于 ARM64，我这里是用 nano 版本</p><p>关于各种版本（此处摘自少数派 <a href>Clyde</a>(<a href="https://sspai.com/user/696946" target="_blank" rel="noopener">https://sspai.com/user/696946</a>) 写的文章）</p><blockquote><ul><li>stock ：最为贴近 Nexus 机型体验的 GApps 版本，包含了 Nexus 机型所预装的所有 Google 服务和 Google 应用。需要注意的是，这个版本会用 Chrome 、 Google Now Launcher 、 Google Keybord 等 Google 应用替换掉 CM 系 ROM 中那些基于 AOSP 代码的相关应用。</li><li>full ：与 stock 版所包含的内容相同，但不会替换 AOSP 应用。</li><li>mini ：包含了完整的 Google 服务框架和主流 Google 应用，去掉了 Google Docs 等文档处理应用</li><li>micro ：包含了完整的 Google 服务框架和少数 Google 应用，如 Gmail 、 Google Calender 、 Google Now Launcher 。</li><li>nano ：包含完整的 Google 服务框架但不包含多余的 Google 应用。</li><li>pico：包含了最基础的 Google 服务框架，体积最小，一些依赖完整 Google 框架的应用（如 Google Camera ）将无法运行。</li></ul></blockquote><h3 id="第3步-Root"><a href="#第3步-Root" class="headerlink" title="第3步 Root"></a>第3步 Root</h3><p>先去下载 Root 包，选择自己机型对应的包即可，不知道的可以网上搜索一下。<br>下载地址：\<a href="https://download.lineageos.org/extras\" target="_blank" rel="noopener">https://download.lineageos.org/extras\</a><br>重启手机——按住音量减进入 TWRP——安装——选下载好的su包开刷，不需要执行清除操作。</p><h3 id="第4步开启-Root-权限"><a href="#第4步开启-Root-权限" class="headerlink" title="第4步开启 Root 权限"></a>第4步开启 Root 权限</h3><p>点击设置——系统——关于手机——版本号——多次点击版本号开启开发者选项<br>打开开发者选项—— Root 授权——应用与 ADB</p><p>至此本教程记录结束。</p>]]></content>
+      
+      
       <categories>
-        <category>个人感受</category>
+          
+          <category> 善用网络 </category>
+          
       </categories>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[四年]]></title>
-    <url>%2F2016%2F07%2F05%2F20160705%20%E5%9B%9B%E5%B9%B4%2F</url>
-    <content type="text"><![CDATA[当你自己亲自感受到的时候，你才会发现时间真的过的好快。 2012年10月初，我来扬州读大学，这也是我第一次来扬州。我们这一届是学校在扬州的第一届学生，所以因为种种原因没有军训。后来说补训，结果也不了了之了。四年后也就是现在，我手里已经攥着学校给我的两张证书了。 四年间我不断地去尝试一些事物，不断地去找寻自己。除了完成在学校的学习任务外，我会去做些兼职，也真的去了几家公司实习。回过头来看，不得不说这些经历还是对我的成长有很大的帮助。让我提早见识了社会，也认识了一批朋友，真是一件值得高兴的事。至于其间发生过的一点曲折，再回首就都不值一提了。四年间努力找寻自我，四年后依旧没办法给自己一个准确的描述。但是这四年我成长了，我学会了去独立思考事物、去独立面对一些困难、妥善协调地解决问题。日新月异的社会让我感受到了这个时代的呼唤，它迫使我不断地去学习，而培养自己的学习力也成为了我的必修课。 因为回学校完成毕业设计加上驾校要继续考驾照，我把这些客观原因当成了自己懒惰的主观借口，期间上海的一家中元国际旅行社还邀请我去面试，我都推脱了。结果到最后，毕业时大家纷纷踏入新公司开始新征程，我却真的有点怅然若失的感觉，四月份我回学校的时候，我所在的实习公司就愿意先5.5K底薪签我，四月份就可以拿这份工资，我婉拒了。我非常感谢公司对我实习期间价值的认可，但因为自己的确要忙毕设和自己其他的一些小原因选择放弃。结果一直到毕业也没有再认真找，我这么说并不是后悔或者说内心非常焦虑，焦急可能有一点，但是自从实习了一次回来后我就发现机会永远都在，好的公司也一直都在缺人，关键是你准备好了吗？ 临近毕业总是免不了有一丝的伤感，我是都等别人伤感完了才反应过来，因为要拿驾照和处理一些其他小事，我和延期毕业的学生一起申请留下来又住到了今天，最后整栋楼就剩我和另外一个同学了。就连大一大二大三的学生放暑假了，我们都不太清楚，好像有点与世隔绝了。阿姨也是一催再催让我们早点回去，是啊，还留着干嘛呢？铁打的学校，流水的学生。一句玩笑话似乎也可以当真。我找了家里的老乡帮我把一些行李开车顺带回家，也送了一些东西给扬州朋友，请了一个学妹吃了顿离别饭，最后一晚去了我实习的老东家星巴克坐坐，我对扬州这座城市有一种特殊的感情，这里有我熟悉的很多地方，有很多熟悉的人，扬州的朋友也没有来得及细说道别，但我会想念你们的，希望你们也是，哈哈。 回顾四年，最后一年的最后这些时光我反而觉得有些荒废，但是并不后悔，因为有些东西你必须经历了才会有深刻的感受，我从来不是标榜的标准三好学生，所以我也会晚睡迟起，生活没有规律甚至疯狂打游戏，但是越到最后你就越会空虚，你跳出来看就会心疼自己。而当初那些奋斗的时光在任何时候回忆起来，都会有一种甜甜的幸福感。所以我希望能够接纳不完美的自己，但绝不放纵自己。 四年前就在想四年后我毕业了会是啥样，四年后发现好像也没啥样，所以想的再多，不如多去做点什么。今天才刚刚到家，好久没有写Blog了，所以又是随意写了写，就当作和自己的对话。想想之前苦恼的一些问题，比如论文、驾照、实习等等都一一解决了，也就会发现一切都会过去，关键在于自己。那么接下来的日子，我也不再有什么牵挂，也来不及再伤感，必须全力投入到社会这个大熔炉中去锻炼一番，认真地找到自己的工作，认真地对待自己的人生。 四年韶华，光阴寸长，精神其长。 &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 2016.07.05 凌晨]]></content>
+      
+      
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>隐藏技能——小米手机自带迅雷BT下载</title>
+      <link href="/2018/12/31/20181231%20%E9%9A%90%E8%97%8F%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E8%BF%85%E9%9B%B7BT%E4%B8%8B%E8%BD%BD/"/>
+      <url>/2018/12/31/20181231%20%E9%9A%90%E8%97%8F%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E8%BF%85%E9%9B%B7BT%E4%B8%8B%E8%BD%BD/</url>
+      
+        <content type="html"><![CDATA[<p>这是我偶然发现的一个功能，发现下载速度极快，基本能够跑满带宽，甚至可以满速下载一些和谐的资源。不知道能够撑多久，目前整个大环境都非常严，单纯的下载软件从早期的网络蚂蚁、网际快车、到后来的电驴、QQ 旋风等都相继倒下，目前 PC 端也仅有迅雷在苦苦支撑，然而限速还有一些和谐资源下载的阉割都让下载变动越来越难，也因为现在下载的需求没有那么大了。<br><a id="more"></a></p><h2 id="手机型号：红米-Note-4X"><a href="#手机型号：红米-Note-4X" class="headerlink" title="手机型号：红米 Note 4X"></a>手机型号：红米 Note 4X</h2><blockquote><p>MIUI版本：MIUI 10.1 | 稳定版<br>内存和存储：4G + 64G<br>处理器：HelioX20</p></blockquote><h2 id="测试下载链接"><a href="#测试下载链接" class="headerlink" title="测试下载链接"></a>测试下载链接</h2><blockquote><p>笑傲江湖2.东方不败.双音轨<br>magnet:?xt=urn:btih:710EE5CA6DBA590CF418E5BB876EF48E453F919D</p></blockquote><p>上面选择的这部电影就是在 PC 端下载没有速度，下载到5%就不动了，于是换到手机下载竟然可以用。</p><p><img src="https://i.loli.net/2018/12/31/5c29e875dd515.png" alt title="下载显示"></p><p>  速度贼快</p><p>不过经过实际测试，换同样MUUI版本且相同型号的手机，仅仅是处理器换成了高通骁龙 625 就打不开 BT 文件下载了，网上搜索也发现小米论坛等地也都说打不开 BT 文件了，不知道这篇文章出来（不知道有没有人分享过），这种下载方法还能支撑多久。</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>从酷盘、快盘、微盘、360 、115 等等各大网盘也都相继倒下，再到百度网盘云8秒教育和各种限速封杀，下载之路注定艰难，不过如果服务商能早日形成和国外一样丰富的在线视频，同时能够提高大家的版权意识，倒也不是一件坏事。</p><p>明天就是 2019 年啦，祝大家新年快乐噢！</p>]]></content>
+      
+      
       <categories>
-        <category>个人感受</category>
+          
+          <category> 善用网络 </category>
+          
       </categories>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[阶段]]></title>
-    <url>%2F2016%2F05%2F05%2F20160505%20%E9%98%B6%E6%AE%B5%2F</url>
-    <content type="text"><![CDATA[此刻我的内心是苦涩的。头脑也是有点愚钝的，生活更是亟需理清头绪。 我好像正处在一个尴尬的【阶段】，一切好像又回到了起点。虽然驾照科目三还没有考过，毕业论文也没有弄好，工作也仍要再找，但是自从上次上海实习回来后，我内心却不再像3个月前那样焦躁不安了。说一点不急也是骗人的，我在这段时间甚至很长一段时间都会跳出自身的范畴，以一个陌生的第三者视角来检视自己的所作所为。从上海实习回来后，我的生活是有点懒散的，回到宿舍晚睡迟起整天点外卖，除了吃睡就是打打手机游戏和看看视频综艺。所以有时我也惊讶自己突然也会变成这样，我清楚地知道这不是我真正想要的。我以前上初中和高中的时候都是全校前几个起床的，上了大学后记得备考四六级的时候每天早早起床一个人去湖边背单词听英语，坚持了一个学期早起，晚上也会去跑步锻炼。 话说回来自己现在也不算变得如何不堪，我既不是为了炫耀过去也不是想麻痹现在，我所想做的是就是冷眼旁观自己，看看自己或者说一个人的变化以及当中是否发生了什么。这有点恶趣味也有点实验的味道，我想自己多去经历，更加了解自己。所以我记录下自己这些外在变化，也记录下自己的心路历程，或许能为以后带来些回忆和思考。 有点哭笑不得，接近四个月前，我在Blog里写那时最主要的几个目标，此刻看来好像依旧可以那么写。内心一点不着急肯定也是不可能的，只是经过这次实习我发现只有找到自己真正喜爱的东西才能投入全部的激情。所以我不愿意将就，随便找一家企业去上班就是为了所谓的【找到工作】。 我是有多久没有更新博客了呢?我自己知道有无数次都想更新下博客，刚到上海的时候，后来去西安出差的时候，从上海回到扬州的时候，但是我都因为各种理由推脱了，变成了一个拖延症患者。说到底并没有那么多理由，都是自己最近变得懒散了有点好逸恶劳。我以前是不玩游戏的，综艺也很少看，一般般看看美剧和电影。是出来混总要还的吗？我相信这只不过是一个给自己的借口。有些东西一旦你沉迷一时你也没办法很快全身而退，所以我写下这些做些反思，也告诫自己凡事要分轻重缓急，关键时刻要拎得清楚。 因为太久没有更新，所以刚开始几乎不会更新Hexo了，毕竟自己当时也是根据网上教程学习的，连Markdown也忘了好多，所以今天我几乎没用，就是直白地敲字。写了这么多，我发现自己还是很容易沉迷一件事情，学习新东西接触新事物、甚至玩游戏。我的想法是做什么都要往最好的方向去走，不愿输给别人。 最后总结下自己最近的状态，总体不是特别好，最紧迫的事情是毕业论文要尽快搞定，工作要找到适合自己的，而生活上自己一直不是特别擅长，但是要学会去改变。我真的感觉现在自己愚蠢了，因为好久没读书了，只看微信公众号里的短文章是不够的，所以我真的要好好【读书】、好好【学习】。 坦承自己，面对未来。]]></content>
+      
+      
+        <tags>
+            
+            <tag> software </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一加2手机救活记</title>
+      <link href="/2016/11/26/20161126%20%E4%B8%80%E5%8A%A02%E6%89%8B%E6%9C%BA%E6%95%91%E6%B4%BB%E8%AE%B0/"/>
+      <url>/2016/11/26/20161126%20%E4%B8%80%E5%8A%A02%E6%89%8B%E6%9C%BA%E6%95%91%E6%B4%BB%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<p>一加3T国行版本月29号就发布了，有意向购买替换掉我现在的加2，因为玩游戏总觉觉得有点卡卡的，平时使用还算流畅吧。昨天晚上无意去论坛看到了加2的HOS2.5公测版更新了，想想还是打算去刷最新的，但是官方建议双清，我之前有Root加上装的太多了App，所以备份了照片视频和短信通讯录神马的，就打算彻底刷机了，结果噩梦开始了。<a id="more"></a></p><p>我一开始使用自带的恢复出厂设置选择删除所有数据，结果发现没删掉，于是用之前刷入的Recovery来尝试操作，结果TWRP太强大，我把Wipe里所有选项都勾选了，然后我就看手机卡在开机那个界面，以为是正常界面，加上已经凌晨2点了就睡觉了，结果一觉醒来，纳尼？发现手机还在那个界面，此时才8点多，本来周末准备睡懒觉的，一下子没睡意了。仔细想了下，应该那个清除直接把系统都删除了，于是上线找客服，结果客服还没有上班，于是自己去论坛和百度找答案，一开始也没找到好的方法，然后客服上线了简单聊了几句，就说进入不了官方Recovery就送售后吧，但是坑爹的是一加只有武汉、深圳和北京三个售后点，而且过保刷机可能还要收50元，加上顺丰快递25元，于是我说我自己再看看，没想到看到一个帖子说有一种救砖的办法，就是手机连上电脑去设备管理里查看安装高通的下载驱动，我也照做了，然后真正的噩梦开始了，还有一个线刷的包和工具是放在百度云盘里的，我就下载发现1.5G的文件实在是龟速几十K，然后尝试用迅雷下载，又去百度在知乎看到一个知友提供Tempermonkey这个插件，的确可以解决用迅雷下载百度云大文件的方法，但是！但是！每次下到进度20左右就没速度了，于是我都想寄售后了，但一想太费事了，而且自己没有备用机。忽然，我又想到去淘宝去买迅雷会员，卖家一开始还发错账号了，后来又补发了白金会员，但是我发现还是我太年轻，一样没用，于是我换一种思路，看看有没有另外的人的分享，还好找到了另一个人的分享，还是百度云！这次我下载有速度了。稳定400+K已经满足了，就在我写这篇文字的时候已经快下完了，然后下到进度95.7%的时候说任务出错，尼玛这不是坑我吗！</p><p>所以到现在，我还没解决这个问题，不知道怎么回事这个下载速度超级慢的，目前只能等百度云龟速看看了。</p><p>15:10 又去百度发现贴吧一个朋友提到【我倒是找到解决办法了，停了的时候复制迅雷未完成时的那两个文件（你去看文件名就知道了，未完成迅雷会分成两个文件），放到其他地方保存，然后删除任务，选上删除文件。然后重新开网盘下载，然后确定有两个文件生成了，就暂停迅雷。把原来的那两个未完成文件覆盖过去，再从新开始就可以了。我估计百度网盘的东西，如果不在一定时间内下完，就会下不了。转的，绝对可用，我下到97的东西终于动了】然而我的显示任务创建失败，真真是醉了，没想到卡在了下载这一步，打算再用IDM试试，然后只能等龟速百度云管家了，最后一丝的希望。</p><p>15:25  我强制修改没下好的rar文件结果解压报错，但是Msm8974DownloadTool.exe所在文件夹还是有了，所以手机连上Fastboot强制打开exe结果没找到连接，于是拔掉数据线关机重启重进Fast却莫名其妙地可以进入了TWRP了，这太令人兴奋了，然后手机也可以电脑连接了，我把官方2.5带双清的包放入Sdcard成功用TWRP刷入，至此应该解决了，很意外的结果，我猜还是那个意外的exe文件的作用，或者就是手机可以进TWRP了。</p><p>PS：前前后后折腾了好久，各种搜索尝试，不断发现问题和尝试，最终解决的时候还是有一种小小的成就感。回顾一下，知道了一些下载的方法算是意外的收获，最后完整的也没下载下来，线刷工具也没有完全正常，但是结局是好的，手机正常刷入新系统了。</p>]]></content>
+      
+      
       <categories>
-        <category>个人感受</category>
+          
+          <category> 善用网络 </category>
+          
       </categories>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[面试那些事儿]]></title>
-    <url>%2F2016%2F01%2F21%2F20160121%20%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF%2F</url>
-    <content type="text"><![CDATA[此时我正下班坐在实习的办公室里，想想从去年秋招开始的那些面试，弄这个标题貌似有很丰富的面试经验，其实并没有。 我其实很早就关注这一块信息，但是那时候秋招最早的是类似BAT的巨头，根本没有我这样小学校的机会，于是日子就这样过着。忽然有一天，我也开始着急了，我突然发现周边的同学也在找或者准备考研，而此时秋招已经快临近尾声了。我不断修改简历，通过各种途径去投递，但是我基本只投了一个地方：上海 很多人会问什么，在此，我就不过多解释了，只说一句：大家都有自己的选择。断断续续很多石沉大海的，还有一些不知道有没有结果，我已经等不及了。所以当上海58邮件通知我可以参加面试的时候，我毫不犹豫的从扬州出发去上海参加面试。先是群面，无领导小组讨论，单面～最后我发现招的是一个销售岗位，而且可能要有一半是电销的那种。我当时就表示不太喜欢，所以后来没有下文了。又过了两天赶集（两家合并了，但是在上海有不同业务也有不同办公地点）又给我打电话说是营销管培生，结果我去了之后发现其实差不多，都是这种销售，无果。在上海同学那住了几日，中途还有学校校招的企业卫岗牛奶招管培生的面试，我就去了趟南京，他们说报销上海到南京单程路费。去面试时是一个叫赵总的，是上海这边的负责人还在南京办公多，大家谈了一会儿，我对薪资不是特别满意，最重要的是工作方向也不是特别感兴趣的。赵总说了很多比较诚恳，最后说让我回去自己想想五内答复。就这样，这次面试从扬州出发经镇江到上海转南京又回镇江到扬州（为什么不从南京直接回扬州？我也忘了）。大家愈发着急了，又有一家公司上海宝尊电商邮件我12月8日面试管培生岗位，我一看专业相关，刚上市公司，阿里是其最大股东。于是我又从扬州第二次出发来上海，这次我没好意思再找同学。我到的时候，首先发现签到表上把我电话留错了。然后就是坐在会议室等，等的时候一圈人，旁边一个小的会议室正在面试。等到我们准备的时候发现加我只有三个人，其余我们这组的都没来。除了我，另外两个是女生，一个是华东理工大学的研究生，一个是河海大学的本科生。华东理工的那位女生目前在通用电气做实习生，我心想估计悬，今天自己来参与了。后来大家一起被带去另一座楼去面试，一开始自我介绍，没什么大家介绍了。然后自己抽一个纸条，谈一段自己的见解。我抽的是&gt;欲速则不达，见小利则大事不成。我就说了一通。然后旁边华东理工的说了自我介绍之后都忘了自己抽题这回事，有点紧张。面试官坐对面一排六个，随后一个所谓无领导，我们因为就三人就直接谈自己解决方案了。命题大概是公司有20万的资金，如何资助学校使用获得最大效益。这里我犯了致命的错误，我先是自愿选择第一个作答，然后是在一二三四五六七方案里只挑了一个，这样20万只用了三分之一。。。然后第二位女生说的时候，我才发现想补充又不好说了。随后下一轮，那位河海的被用英语介绍她参观谷歌办公室的感受，她说了一会儿有点说不下去了。面试官就让她用中文说了。她蛮活泼的，估计蛮受喜爱的。最后面试官并没有问我太多问题，所以我也没办法展现自己，虽然自己觉得有些问题回答还不错，只是简洁了些。就这样就回去等通知了，说三到五天会有结果通知，过不过都有邮件，结果我等了快两星期也没有任何通知，我周六打过去说已经电话通知并发放了Offer，我……这次面试我从扬州赶来也没时间穿什么职业装，一比略逊一筹。 直到前几天1月15日才有邮件通知被拒，而我早已在11日加入了一家新的公司，也就是我现在的公司。这个面试我就不细谈了，只说了大概，我是直接在网上视频面试就通过的，杨哥体谅我不便来上海。而当时我还在帮以前我的店经理堃的店里去支援，时间很紧支援了三天第四天就被临时通知考驾照科目二（这又是一段故事），第四天凌晨1月8日就赶往上海了，这天我生日。 现在我没有毕业，所以只能拿实习工资，希望能和公司一起发展吧。来上海之后的生活，有空再写。]]></content>
+      
+      
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>两个月的思忖</title>
+      <link href="/2016/09/16/20160916%20%E4%B8%A4%E4%B8%AA%E6%9C%88%E7%9A%84%E6%80%9D%E5%BF%96/"/>
+      <url>/2016/09/16/20160916%20%E4%B8%A4%E4%B8%AA%E6%9C%88%E7%9A%84%E6%80%9D%E5%BF%96/</url>
+      
+        <content type="html"><![CDATA[<p>深夜窗外灯火璀璨，刚刚算安定下来，我却怎么也睡不着了。</p><p>从7月初毕业后回家一直到今天9月中旬了，期间发生了许多事，耽误了许久。当初4月份因为学校的毕业论文和驾照都没有搞定，加上自己可能对实习公司的工作不是特别喜欢就决定辞职回学校了。回到学校一直到7月初才解决所有杂事，然后眼看放假学校也不给住了就回家，时值酷暑，而且今年是特别的热，我人在江苏却又想到上海工作，就决定等天气稍微凉快点再找工作，结果天气持续高温，更加糟糕的事就在八月初我下定决心准备认真准备简历找工作的时候，一件意外的事情发生了。<a id="more"></a>我骑车路过一个雨后的路边超车时发生侧滑，两个膝盖加手掌和一些其它关节初都有不同程度的受伤，尤其右膝盖最严重，所以就像老天和我开玩笑一样了，我一下子成为了一个“废人”，去诊所连续打了两个星期的吊瓶，每天消毒换药吃药，一身的青霉素味道。天天卧床休息前前后后持续了一个月，中途还有一次小的二次受伤略过不提，直到9月初我来上海前一天才自己把结的痂去掉，于是我从零出发，以一个应届生的身份来找工作，约了几家面试，具体细节就先不讲了，可能是之前的一些实习或者兼职经历有加分，加上自己沟通的顺畅些，也还算顺利的找到了工作，HR通知我中秋节后第一个工作日去上班，所以目前我还没有去上班报到。来上海的时候就会有一些心理准备，房价物价都比较高，刚来的时候住了两天布丁酒店，后来觉得贵就去住青旅，这里有个小插曲，公司当时说最快当天发Offer，但是我等了几天眼看放假了邮箱也没收到，于是放假前一天晚上我加了人事问了说已经发了，我仔细一检查被Gmail归档到垃圾邮件了，有点好气又好笑。工作差不多找好的时候，就是要找房子，找房子一点也不比找工作轻松，一个刚毕业的大学生本来就经济上不会富裕，还想找到好点性价比高的房子真是难啊，我之前打工实习兼职的一点积蓄也都花了不少，查看知乎、微信群、58和赶集网、Zuber、豆瓣等等眼睛都快看花了，后来实在不想折腾还拖着一个行李箱背着笔记本，就找了一家离公司附件地铁站有八站路的一个小区，对房子基本还是满意的，就是试了下空调好像不太制冷，此刻正开着在测试。</p><p>有些事绕不开也只能去面对，家里父母生病基本没有多少收入，在我来上海的前两天，弟弟被送到了城市去读书交了很多学费，外公不舒服去医院查却是确诊为肺癌晚期，我妈妈一下子就有点接受不了，我爸爸也不放心我妈一个人在家干脆辞了本来就杯水车薪的工作，说实话我替外公感到心痛，也看到妈妈有点心疼，因为我家和外婆家很近，所以除了本身的亲情血缘关系，日常相处的时间很多所以感情更深，外公辛苦了一辈子，晚年也没有清闲过，他就是劳累了一生。我来上海的前一天问候一个上海的朋友，她却因为父亲得了癌只能辞了上海的工作回老家，这让我感受到病魔的无情，感叹健康的重要性，也为我的朋友感到难过，她心中估计更有说不出的痛。</p><p>最后在整体回顾一下这两个月的生活，暑假在家除了每天稍微接触了英语，其他时间很多花在了游戏和电视剧上，吃饭睡觉熬夜懒虫，好像养了一身坏习惯，体重也一直上升，加上骑车摔伤天气炎热，整个人的状态都不好，现在想来整天也有点浑浑噩噩的，但是我心中有梦，而且我知道我必须前行，家里人都劝我就在小城市里找份工作，我却执意要到大城市闯荡一番。所以，无论前路何其漫漫，吾将上下求索。<br>    &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 20160916 2:30于洞泾镇小区</p>]]></content>
+      
+      
       <categories>
-        <category>个人感受</category>
+          
+          <category> 个人感受 </category>
+          
       </categories>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[2015小结]]></title>
-    <url>%2F2016%2F01%2F01%2F20160101%202015%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[此刻已经是新年凌晨一点，想想还是简单写下自己的年终小结。 既然没有提早准备，也就是想到哪里就写到哪里，也当是对自己的一次梳理和对话。每次新年到来的时候，大家都会感觉到时间过得是越来越快了。就像上大学一样，一开始的时候感觉漫漫大学生涯才开始，结果眨眼之间，却已是大四末了，时间真如白驹过隙。 我尝试翻开自己最近做的求职简历，努力构建起一些“确定”的事情来夯实自己的2015，却发现有点力不从心。首先我这一年感觉最大的遗憾就是书读得不多，心中总觉得有点闭塞了。王小波的《黄金时代》才看了一半多，纪念Jobs买的美国原版《乔布斯传》也还没有看，图书馆借的大师著作，本杰明·格雷厄姆的《聪明的投资者》借了一学期也没看，心中罗列下来总觉得愧疚。这里就真的希望自己2016年一定要多读书，人丑就要多读书嘛。记忆都是碎片化的，但我也尽量真实，想起来某件事我会自己求证一下是不是2015年发生的事，否则文章就不切题了。一时没有明晰的思路，还是从学习生活工作等等几个方面随便说说。 学习 学校这一块学习的话，我只能保证感兴趣的学得还不错，偏理科的学习的不咋的，但大学四年也没有挂过科，奖学金也拿过，本来可以拿两次的，大一体育没达标（当时新生也不知道评奖什么标准）。不过自学了利用Hexo快速大件自己的Blog部署在Github上，顺道简单学习了Markdown的基本使用方法。英语单词还在扇贝上看着，很多人问我效果怎么样，我真的不好说，因为我好像已经把当卡尽量当成一种习惯了，并不是太在意结果。但是潜移默化地会有影响，比如我现在很多单词就是可以根据发音就可以拼写。驾校要求的学时我已经打指纹时长打够了，现在就在等教练通知自己什么时候考科目二。其实，想学习的东西很多，爱好也好，生存技能也罢，我都希望2016能多些尝试，不断突破自己，敢于走出自己的舒适空间。 工作 虽然我还是学生，但是我觉得我这一块还是有很多可以讲的。因为早早就决定不考研，所以心思在工作上。我从2014.9.19入职上海统一星巴克咖啡有限公司，以门市兼职勤工俭学的方式入职，后来还换了一家店，一年多来我成长了很多。中途七八月份的时候还去宜信财富实习了一段时间。本来元旦上完就准备离职的，但是当时入职时的店经理请我帮忙去他现在店支援下，实在抽不出人手来。我也算是感谢当年他招我进店，一路走来大家相处得不错，所以愿意帮这个忙。只是这样，支援结束当天就要回到自己店里办离职，然后第二天可能就要去上海，两天之内完成找房子租和办理新的实习入职手续，是一家网络科技有限公司，应该是我喜欢的类型。一年多来我待过的企业，我都问心无愧，尽自己最大的努力为公司发展，都以正式员工要求自己，我觉得只有这样才能得到企业和同事的认同，才配得上自己的薪水和良知。2016马上要开始新的工作了，希望自己继续努力，快速学习和成长，当然，和公司一起奋斗。 生活 本来还想再分类爱情什么的，想想也属于生活。而我在这一年里，这一块就不谈了，不说的话，可能有故事可能没有或者就不愿意多说。这种比较私人的话题还是留给自己去想好了。目前一切以自己的发展为重，能力所到之处，光芒和魅力又怎可被掩盖。讲讲我体重好像波动一样，想胖就胖想瘦吃点苦也可以瘦。目前还是微胖了点，下一阶段目标是使自己显得更加精神，目标不能是空话描述。所以我会有具体的实施计划和配套方案。其余的话，人际关系这一块，老师同学同事，还是门卫宿管路人我都能完美Ｈold住。这一年我真正学习并开始了海淘，在美国Amzon上买一些靠谱的东西让自己过得更舒心。 写到这，有点疲倦了，我也不想写这种有点模块化刻板文章。但是一时也想不到怎么写。每次写东西最后好像都在灌鸡汤自己，但是我现在至少不排斥自己这样。 2016已然来临，新年伊始就有很多事等着去处理抉择。自己再也不是小孩子了，很多事就要自己去做决定，而一旦做了决定就要敢于承担后果。 最后再写两句总结下，2015总体上对自己还是可以打及格分以上的，但是真的只是开始，仍需继续努力。2016年对我来说，真的将是一次拼搏的一年，在新的世界里，又有多说未知在等待着我呢？ 无惧未知，一路不退。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>四年</title>
+      <link href="/2016/07/05/20160705%20%E5%9B%9B%E5%B9%B4/"/>
+      <url>/2016/07/05/20160705%20%E5%9B%9B%E5%B9%B4/</url>
+      
+        <content type="html"><![CDATA[<p>当你自己亲自感受到的时候，你才会发现时间真的过的好快。</p><p>2012年10月初，我来扬州读大学，这也是我第一次来扬州。我们这一届是学校在扬州的第一届学生，所以因为种种原因没有军训。后来说补训，结果也不了了之了。四年后也就是现在，我手里已经攥着学校给我的两张证书了。<a id="more"></a></p><p>四年间我不断地去尝试一些事物，不断地去找寻自己。除了完成在学校的学习任务外，我会去做些兼职，也真的去了几家公司实习。回过头来看，不得不说这些经历还是对我的成长有很大的帮助。让我提早见识了社会，也认识了一批朋友，真是一件值得高兴的事。至于其间发生过的一点曲折，再回首就都不值一提了。四年间努力找寻自我，四年后依旧没办法给自己一个准确的描述。但是这四年我成长了，我学会了去独立思考事物、去独立面对一些困难、妥善协调地解决问题。日新月异的社会让我感受到了这个时代的呼唤，它迫使我不断地去学习，而培养自己的学习力也成为了我的必修课。</p><p>因为回学校完成毕业设计加上驾校要继续考驾照，我把这些客观原因当成了自己懒惰的主观借口，期间上海的一家中元国际旅行社还邀请我去面试，我都推脱了。结果到最后，毕业时大家纷纷踏入新公司开始新征程，我却真的有点怅然若失的感觉，四月份我回学校的时候，我所在的实习公司就愿意先5.5K底薪签我，四月份就可以拿这份工资，我婉拒了。我非常感谢公司对我实习期间价值的认可，但因为自己的确要忙毕设和自己其他的一些小原因选择放弃。结果一直到毕业也没有再认真找，我这么说并不是后悔或者说内心非常焦虑，焦急可能有一点，但是自从实习了一次回来后我就发现机会永远都在，好的公司也一直都在缺人，关键是你准备好了吗？</p><p>临近毕业总是免不了有一丝的伤感，我是都等别人伤感完了才反应过来，因为要拿驾照和处理一些其他小事，我和延期毕业的学生一起申请留下来又住到了今天，最后整栋楼就剩我和另外一个同学了。就连大一大二大三的学生放暑假了，我们都不太清楚，好像有点与世隔绝了。阿姨也是一催再催让我们早点回去，是啊，还留着干嘛呢？铁打的学校，流水的学生。一句玩笑话似乎也可以当真。我找了家里的老乡帮我把一些行李开车顺带回家，也送了一些东西给扬州朋友，请了一个学妹吃了顿离别饭，最后一晚去了我实习的老东家星巴克坐坐，我对扬州这座城市有一种特殊的感情，这里有我熟悉的很多地方，有很多熟悉的人，扬州的朋友也没有来得及细说道别，但我会想念你们的，希望你们也是，哈哈。</p><p>回顾四年，最后一年的最后这些时光我反而觉得有些荒废，但是并不后悔，因为有些东西你必须经历了才会有深刻的感受，我从来不是标榜的标准三好学生，所以我也会晚睡迟起，生活没有规律甚至疯狂打游戏，但是越到最后你就越会空虚，你跳出来看就会心疼自己。而当初那些奋斗的时光在任何时候回忆起来，都会有一种甜甜的幸福感。所以我希望能够接纳不完美的自己，但绝不放纵自己。</p><p>四年前就在想四年后我毕业了会是啥样，四年后发现好像也没啥样，所以想的再多，不如多去做点什么。今天才刚刚到家，好久没有写Blog了，所以又是随意写了写，就当作和自己的对话。想想之前苦恼的一些问题，比如论文、驾照、实习等等都一一解决了，也就会发现一切都会过去，关键在于自己。那么接下来的日子，我也不再有什么牵挂，也来不及再伤感，必须全力投入到社会这个大熔炉中去锻炼一番，认真地找到自己的工作，认真地对待自己的人生。</p><p>四年韶华，光阴寸长，精神其长。<br>    &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 2016.07.05 凌晨</p>]]></content>
+      
+      
       <categories>
-        <category>个人感受</category>
+          
+          <category> 个人感受 </category>
+          
       </categories>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[幸福不一定如期而至，焦虑却终会过去]]></title>
-    <url>%2F2015%2F12%2F29%2F20151229%20%E5%B9%B8%E7%A6%8F%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%A6%82%E6%9C%9F%E8%80%8C%E8%87%B3%EF%BC%8C%E7%84%A6%E8%99%91%E5%8D%B4%E7%BB%88%E4%BC%9A%E8%BF%87%E5%8E%BB%2F</url>
-    <content type="text"><![CDATA[最近的状态真是有种久病缠身的感觉，各种琐事缠身无法清闲。话说回来，真清闲了我也不高兴了。目前所处大四学期尾声，罗列一下自己最近几想做的几件事情，也算顺便整理一下自己的思路。 1.科目二还在打卡2.毕设师还不知是谁，想更换无果中3.换领导了，实习日志和报告就要重写？4.兼职辞职日期也没定下来5.企业面试的结果还在等待6.想把证券从业资格证拿到手且继续学英语 如此种种要罗列的话可能要写一堆，人在越迷糊的时候越容易犯错，急躁和迷茫是很多学生这时候的心态，说完全置身事外的心态是假的。毕竟现状在这，工作没找好（之前58和卫岗offer都因为种种原因没去），兼职也还没辞掉，驾照、实习报告等等都需要协调安排。既然自己罗列个一二三出来就挑出最重要且紧急的三件事去处理，其它只要按部就班静心等待就好了。很多时候，事情一多我们就头脑发麻开始自乱阵脚了。尤其这时候身边也有很多同学都拿到了offer,内心不免着急。说实话，我内心也有一丝焦急的。但我明白，我还是必须要不断积累自己，同时也要学会主动出击不能坐以待毙，单词还需看着，书还是要看，该关注的领域继续关注，也许这时候就是生命对自己的小小考验。如果自己这点小磕绊都处理不好，那将来还能做什么事情呢。 这样给自己简单一分析得出结论：急躁无用，想清楚，持续努力，静候时光。 所谓天将降大任于斯人也，必先苦其心志，劳其筋骨，饿…….(貌似我没让自己饿着)。这样想来我倒开始享受起来这种多种事情穿插起来的感觉，就像打游戏一样你必须兼顾左右，纵观全局方可有更大胜算。我把很有名的互联网招聘网站拉勾网打开，按照目录大类写在一张A4纸上，思考后一一划去，留下自己感兴趣的行业，然后结合自身初步筛选出自己喜欢的职业。这样自己再找职业，就不会像无头苍蝇一样了。有喜欢的城市，有喜欢的职业，剩下的就是自己的努力了，学习学习再学习，不断往自己想要的方向上靠，往自己的理想而努力。 我写这篇文章一方面是为了理一理自己最近的思路，另一方面也是想鼓励自己，如果有幸给后来人些许启发就更好了。不管状况如何变化，自己一定要有清晰的目标和思路，如果没有就去寻找直至找到为止。也许过了很久以后再看当初，我们都会觉得当初自己竟然为这点小事烦恼真是有点可笑呢。不是也许，是一定。 有实力的时候，时光不会亏待你。 最后，我想引用最近看到的一段话结尾。 在这个池塘钓鱼，我是经过反复选择的，而你则是完全盲目的，尽管我们碰巧遇在一起了，但是我们却有区别。这种区别在于我知道自己的选择;而你是随机的，也许你能有好机会，但是机会不可能总是惠顾你。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阶段</title>
+      <link href="/2016/05/05/20160505%20%E9%98%B6%E6%AE%B5/"/>
+      <url>/2016/05/05/20160505%20%E9%98%B6%E6%AE%B5/</url>
+      
+        <content type="html"><![CDATA[<p>此刻我的内心是苦涩的。头脑也是有点愚钝的，生活更是亟需理清头绪。</p><p>我好像正处在一个尴尬的【阶段】，一切好像又回到了起点。虽然驾照科目三还没有考过，毕业论文也没有弄好，工作也仍要再找，但是自从上次上海实习回来后，我内心却不再像3个月前那样焦躁不安了。说一点不急也是骗人的，我在这段时间甚至很长一段时间都会跳出自身的范畴，以一个陌生的第三者视角来检视自己的所作所为。从上海实习回来后，我的生活是有点懒散的，回到宿舍晚睡迟起整天点外卖，除了吃睡就是打打手机游戏和看看视频综艺。<a id="more"></a>所以有时我也惊讶自己突然也会变成这样，我清楚地知道这不是我真正想要的。我以前上初中和高中的时候都是全校前几个起床的，上了大学后记得备考四六级的时候每天早早起床一个人去湖边背单词听英语，坚持了一个学期早起，晚上也会去跑步锻炼。</p><p>话说回来自己现在也不算变得如何不堪，我既不是为了炫耀过去也不是想麻痹现在，我所想做的是就是冷眼旁观自己，看看自己或者说一个人的变化以及当中是否发生了什么。这有点恶趣味也有点实验的味道，我想自己多去经历，更加了解自己。所以我记录下自己这些外在变化，也记录下自己的心路历程，或许能为以后带来些回忆和思考。</p><p>有点哭笑不得，接近四个月前，我在Blog里写那时最主要的几个目标，此刻看来好像依旧可以那么写。内心一点不着急肯定也是不可能的，只是经过这次实习我发现只有找到自己真正喜爱的东西才能投入全部的激情。所以我不愿意将就，随便找一家企业去上班就是为了所谓的【找到工作】。</p><p>我是有多久没有更新博客了呢?我自己知道有无数次都想更新下博客，刚到上海的时候，后来去西安出差的时候，从上海回到扬州的时候，但是我都因为各种理由推脱了，变成了一个拖延症患者。说到底并没有那么多理由，都是自己最近变得懒散了有点好逸恶劳。我以前是不玩游戏的，综艺也很少看，一般般看看美剧和电影。是出来混总要还的吗？我相信这只不过是一个给自己的借口。有些东西一旦你沉迷一时你也没办法很快全身而退，所以我写下这些做些反思，也告诫自己凡事要分轻重缓急，关键时刻要拎得清楚。</p><p>因为太久没有更新，所以刚开始几乎不会更新Hexo了，毕竟自己当时也是根据网上教程学习的，连Markdown也忘了好多，所以今天我几乎没用，就是直白地敲字。写了这么多，我发现自己还是很容易沉迷一件事情，学习新东西接触新事物、甚至玩游戏。我的想法是做什么都要往最好的方向去走，不愿输给别人。</p><p>最后总结下自己最近的状态，总体不是特别好，最紧迫的事情是毕业论文要尽快搞定，工作要找到适合自己的，而生活上自己一直不是特别擅长，但是要学会去改变。我真的感觉现在自己愚蠢了，因为好久没读书了，只看微信公众号里的短文章是不够的，所以我真的要好好【读书】、好好【学习】。</p><p>坦承自己，面对未来。</p>]]></content>
+      
+      
       <categories>
-        <category>个人感受</category>
+          
+          <category> 个人感受 </category>
+          
       </categories>
-      <tags>
-        <tag>思考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo博客搭建经历]]></title>
-    <url>%2F2015%2F12%2F18%2F20151218%20Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86%2F</url>
-    <content type="text"><![CDATA[&#160; &#160; &#160; &#160;这是真正意义上自己搭建博客上的第一篇文章，一直幻想有一个自己的网站，但是这对一个文科生来说真的不是件容易的事。机缘巧合，前段时间在支付宝的公众号里推了我一篇阿里云“云翼计划”广告，其实就是让大学生可以低价购买云服务器。还没搞懂怎么回事我一冲动就买了，然后就买域名，然后折腾就开始了。 &#160; &#160; &#160; &#160;我至今也没有完全搞懂搭建一个网站所有的事，后来想想毕竟要涉及网页开发太复杂，而这对于毫无技术基础的我来说无异于登天之难。我Google之后还是选择先搭建一个自己的博客，然后发现可以在Github上免费搭建，因为可以免费提供300M空间。于是我把阿里云服务器的订单退了，只保留了自己的域名。关于买域名本来想去Godaddy上买，但是发现万网收归阿里后，购买也蛮方便的而且很便宜！而且我只是简单地弄个人博客使用应该够了，只不过到目前域名好像还没有正常工作。。。我用DNSPod解析没成功后来换回万网DNS成功了，但是更新一篇文章后又不能解析了，然后又换回DNSPod至今，等过一段时间再看看。 &#160; &#160; &#160; &#160;我一开始看网上是Github+Jekyll搭建的，但是后来看到好像有更简单点的Hexo博客搭建方式。虽然我也想极客一点，但是没有代码基础的文科生还是选择先尝试后者。我也不知道能否成功，就像当年我第一次自己去尝试Goagent配置要出去看看一样。安装了各种环境，Gitbash客户端之后，我开始按照教程一步步搭建，我把看到的所有自己觉得有用的教程都存到Chrome的书签栏当中以备学习。果然不出所料，中途也的确出了很多问题，比如_config.yml文件里写入的数据冒号后都要空格（汗，我是不可能知道的），Hexo安装插件命令也不熟悉，出错了简直不知道怎么办。好在加了一个Hexo相关的QQ群，当我说是一名文科生时。群内网友也许是无意也许是惊讶:“文科生进这个群干嘛”。就这样我问了两位网友两个问题，也许在他们眼里问题很简单，但是对于我这个外行来说真是不知道怎么办。所以，当最后本地测试成功，且生存静态文件上传到Github上，我很高兴也真心感激热情网友的不厌其凡的帮助。但后来遇到很多问题我却大多是谷歌加百度寻找解决方法，后话不提。 &#160; &#160; &#160; &#160;中途我也顺便学习Markdown入门用法，之前在李笑来老师博客介绍善用Google搜索中提到，但由于没有接触简单搜索了下以为很难。没想到接触后发现并不是很难。我这篇就是用Markdown写的，当然只用了很简单的用法，我才开始接触。就在我写这篇博文的时候，我都不知此篇能不能成功上传，域名绑定也还不正常，但是我有信心把他们全部搞定！ &#160; &#160; &#160; &#160;是炫耀也好（没什么好炫耀的），是鸡汤也好。我希望大多数时候，我们自己也能给自己勉励，那样或许更有力量。很多人说听过了很多道理却依然过不好这一生。是因为道理都是听来的，或许你亲身的经历才会让你印象深刻。 &#160; &#160; &#160; &#160;每当做成一件小事，我总是去回顾自己以前的不断尝试给自己带来的信心。高三毕业暑假时几日几夜捣鼓开淘宝店，疯狂网上搜罗下象棋棋谱等等，买上网本系统崩了一步步网上自学重装系统。上大学后，帮助好几个女同学修过电脑，自此成为一个好人。高三有一段时间觉得魔方不错，去网吧照着魔方小站一夜学会了复原，后来教会了班级大多数人，而且在高中的班级带起了一阵魔方热。 &#160; &#160; &#160; &#160;上大学后用高三做家教的钱买了辆入门山地车，机缘巧合地认识了一帮好友，去镇江爬了一次南山。那次来回差不多50KM吧，经常在网上看到别人骑行回家什么的，于是心潮澎湃自己也想这么干，我可不会仅仅停留在想上面。于是买了备胎，平时在网上学习补胎换胎的基础知识。最后一人一天一车带足干粮和充满电的移动电源，还有备胎和手机就愣头愣脑地开始了150KM路途了。当然之前我谷歌地图做了详细规划，且打印出来了。但是最后忘带！出发就不能回头了，我还是出发了，中途也有不顺后话了，最终到家。最真实的感觉：也不过如此嘛。而之前唯一一次远行就是去镇江那次。后来从扬州骑去南京回来快到镇江时抬戳破了，自己不行硬上换上了新内胎安然回来。 &#160; &#160; &#160; &#160;网络接触多了，我看到Goagent搭建FQ网络，第一次自己按照教程配置也不知能不能成功，成功时我还是很兴奋的，后来成功教会了我一位没见过面的网友，看来也不是很难。不知不觉我在扇贝网站看单词已经1000多天了，就算是每天敷衍我也希望让自己记得，这样的好处是很多单词发音都熟悉了。再到如今，学习搭建Hexo博客，虽然在程序员眼里很简单的事，但是对于完全技术小白来说还是有点难度的。 &#160; &#160; &#160; &#160;各种学习各种尝试，谁也不知道能不能成功，但是努力去尝试，也许就会有不一样的结果。最后感谢下网上很多类似Zippera这样贡献的无私教程，互联网一定能让世界变得更好些，而分享会让这个世界充满善意。 &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 2015.12.18凌晨 &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 于学生宿舍]]></content>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>面试那些事儿</title>
+      <link href="/2016/01/21/20160121%20%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+      <url>/2016/01/21/20160121%20%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</url>
+      
+        <content type="html"><![CDATA[<p>   此时我正下班坐在实习的办公室里，想想从去年秋招开始的那些面试，弄这个标题貌似有很丰富的面试经验，其实并没有。<br>   我其实很早就关注这一块信息，但是那时候秋招最早的是类似BAT的巨头，根本没有我这样小学校的机会，于是日子就这样过着。忽然有一天，我也开始着急了，我突然发现周边的同学也在找或者准备考研，而此时秋招已经快临近尾声了。我不断修改简历，通过各种途径去投递，但是我基本只投了一个地方：上海   <a id="more"></a></p><p>   很多人会问什么，在此，我就不过多解释了，只说一句：大家都有自己的选择。断断续续很多石沉大海的，还有一些不知道有没有结果，我已经等不及了。所以当上海58邮件通知我可以参加面试的时候，我毫不犹豫的从扬州出发去上海参加面试。先是群面，无领导小组讨论，单面～最后我发现招的是一个销售岗位，而且可能要有一半是电销的那种。我当时就表示不太喜欢，所以后来没有下文了。又过了两天赶集（两家合并了，但是在上海有不同业务也有不同办公地点）又给我打电话说是营销管培生，结果我去了之后发现其实差不多，都是这种销售，无果。在上海同学那住了几日，中途还有学校校招的企业卫岗牛奶招管培生的面试，我就去了趟南京，他们说报销上海到南京单程路费。去面试时是一个叫赵总的，是上海这边的负责人还在南京办公多，大家谈了一会儿，我对薪资不是特别满意，最重要的是工作方向也不是特别感兴趣的。赵总说了很多比较诚恳，最后说让我回去自己想想五内答复。就这样，这次面试从扬州出发经镇江到上海转南京又回镇江到扬州（为什么不从南京直接回扬州？我也忘了）。大家愈发着急了，又有一家公司上海宝尊电商邮件我12月8日面试管培生岗位，我一看专业相关，刚上市公司，阿里是其最大股东。于是我又从扬州第二次出发来上海，这次我没好意思再找同学。我到的时候，首先发现签到表上把我电话留错了。然后就是坐在会议室等，等的时候一圈人，旁边一个小的会议室正在面试。等到我们准备的时候发现加我只有三个人，其余我们这组的都没来。除了我，另外两个是女生，一个是华东理工大学的研究生，一个是河海大学的本科生。华东理工的那位女生目前在通用电气做实习生，我心想估计悬，今天自己来参与了。后来大家一起被带去另一座楼去面试，一开始自我介绍，没什么大家介绍了。然后自己抽一个纸条，谈一段自己的见解。我抽的是&gt;欲速则不达，见小利则大事不成。我就说了一通。然后旁边华东理工的说了自我介绍之后都忘了自己抽题这回事，有点紧张。面试官坐对面一排六个，随后一个所谓无领导，我们因为就三人就直接谈自己解决方案了。命题大概是公司有20万的资金，如何资助学校使用获得最大效益。这里我犯了致命的错误，我先是自愿选择第一个作答，然后是在一二三四五六七方案里只挑了一个，这样20万只用了三分之一。。。然后第二位女生说的时候，我才发现想补充又不好说了。随后下一轮，那位河海的被用英语介绍她参观谷歌办公室的感受，她说了一会儿有点说不下去了。面试官就让她用中文说了。她蛮活泼的，估计蛮受喜爱的。最后面试官并没有问我太多问题，所以我也没办法展现自己，虽然自己觉得有些问题回答还不错，只是简洁了些。就这样就回去等通知了，说三到五天会有结果通知，过不过都有邮件，结果我等了快两星期也没有任何通知，我周六打过去说已经电话通知并发放了Offer，我……这次面试我从扬州赶来也没时间穿什么职业装，一比略逊一筹。<br>    直到前几天1月15日才有邮件通知被拒，而我早已在11日加入了一家新的公司，也就是我现在的公司。<br>这个面试我就不细谈了，只说了大概，我是直接在网上视频面试就通过的，杨哥体谅我不便来上海。而当时我还在帮以前我的店经理堃的店里去支援，时间很紧支援了三天第四天就被临时通知考驾照科目二（这又是一段故事），第四天凌晨1月8日就赶往上海了，这天我生日。<br>    现在我没有毕业，所以只能拿实习工资，希望能和公司一起发展吧。来上海之后的生活，有空再写。</p>]]></content>
+      
+      
       <categories>
-        <category>hexo</category>
+          
+          <category> 个人感受 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2015小结</title>
+      <link href="/2016/01/01/20160101%202015%E5%B0%8F%E7%BB%93/"/>
+      <url>/2016/01/01/20160101%202015%E5%B0%8F%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<p>此刻已经是新年凌晨一点，想想还是简单写下自己的年终小结。<br>　　既然没有提早准备，也就是想到哪里就写到哪里，也当是对自己的一次梳理和对话。每次新年到来的时候，大家都会感觉到时间过得是越来越快了。就像上大学一样，一开始的时候感觉漫漫大学生涯才开始，结果眨眼之间，却已是大四末了，时间真如白驹过隙。 <a id="more"></a><br>　　我尝试翻开自己最近做的求职简历，努力构建起一些“确定”的事情来夯实自己的2015，却发现有点力不从心。首先我这一年感觉最大的遗憾就是书读得不多，心中总觉得有点闭塞了。王小波的《黄金时代》才看了一半多，纪念Jobs买的美国原版《乔布斯传》也还没有看，图书馆借的大师著作，本杰明·格雷厄姆的《聪明的投资者》借了一学期也没看，心中罗列下来总觉得愧疚。这里就真的希望自己2016年一定要多读书，人丑就要多读书嘛。记忆都是碎片化的，但我也尽量真实，想起来某件事我会自己求证一下是不是2015年发生的事，否则文章就不切题了。一时没有明晰的思路，还是从学习生活工作等等几个方面随便说说。<br>　　<br>　　<strong>学习</strong><br>　　学校这一块学习的话，我只能保证感兴趣的学得还不错，偏理科的学习的不咋的，但大学四年也没有挂过科，奖学金也拿过，本来可以拿两次的，大一体育没达标（当时新生也不知道评奖什么标准）。不过自学了利用Hexo快速大件自己的Blog部署在Github上，顺道简单学习了Markdown的基本使用方法。英语单词还在扇贝上看着，很多人问我效果怎么样，我真的不好说，因为我好像已经把当卡尽量当成一种习惯了，并不是太在意结果。但是潜移默化地会有影响，比如我现在很多单词就是可以根据发音就可以拼写。驾校要求的学时我已经打指纹时长打够了，现在就在等教练通知自己什么时候考科目二。其实，想学习的东西很多，爱好也好，生存技能也罢，我都希望2016能多些尝试，不断突破自己，敢于走出自己的舒适空间。<br>　<br>　　<strong>工作</strong><br>　　虽然我还是学生，但是我觉得我这一块还是有很多可以讲的。因为早早就决定不考研，所以心思在工作上。我从2014.9.19入职上海统一星巴克咖啡有限公司，以门市兼职勤工俭学的方式入职，后来还换了一家店，一年多来我成长了很多。中途七八月份的时候还去宜信财富实习了一段时间。本来元旦上完就准备离职的，但是当时入职时的店经理请我帮忙去他现在店支援下，实在抽不出人手来。我也算是感谢当年他招我进店，一路走来大家相处得不错，所以愿意帮这个忙。只是这样，支援结束当天就要回到自己店里办离职，然后第二天可能就要去上海，两天之内完成找房子租和办理新的实习入职手续，是一家网络科技有限公司，应该是我喜欢的类型。一年多来我待过的企业，我都问心无愧，尽自己最大的努力为公司发展，都以正式员工要求自己，我觉得只有这样才能得到企业和同事的认同，才配得上自己的薪水和良知。2016马上要开始新的工作了，希望自己继续努力，快速学习和成长，当然，和公司一起奋斗。<br>　<br>　　<strong>生活</strong><br>　　本来还想再分类爱情什么的，想想也属于生活。而我在这一年里，这一块就不谈了，不说的话，可能有故事可能没有或者就不愿意多说。这种比较私人的话题还是留给自己去想好了。目前一切以自己的发展为重，能力所到之处，光芒和魅力又怎可被掩盖。讲讲我体重好像波动一样，想胖就胖想瘦吃点苦也可以瘦。目前还是微胖了点，下一阶段目标是使自己显得更加精神，目标不能是空话描述。所以我会有具体的实施计划和配套方案。其余的话，人际关系这一块，老师同学同事，还是门卫宿管路人我都能完美Ｈold住。这一年我真正学习并开始了海淘，在美国Amzon上买一些靠谱的东西让自己过得更舒心。<br>　　写到这，有点疲倦了，我也不想写这种有点模块化刻板文章。但是一时也想不到怎么写。每次写东西最后好像都在灌鸡汤自己，但是我现在至少不排斥自己这样。<br>　　<br>　　2016已然来临，新年伊始就有很多事等着去处理抉择。自己再也不是小孩子了，很多事就要自己去做决定，而一旦做了决定就要敢于承担后果。<br>　　最后再写两句总结下，2015总体上对自己还是可以打及格分以上的，但是真的只是开始，仍需继续努力。2016年对我来说，真的将是一次拼搏的一年，在新的世界里，又有多说未知在等待着我呢？<br>　　<br>　　<strong>无惧未知，一路不退。</strong>    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人感受 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>幸福不一定如期而至，焦虑却终会过去</title>
+      <link href="/2015/12/29/20151229%20%E5%B9%B8%E7%A6%8F%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%A6%82%E6%9C%9F%E8%80%8C%E8%87%B3%EF%BC%8C%E7%84%A6%E8%99%91%E5%8D%B4%E7%BB%88%E4%BC%9A%E8%BF%87%E5%8E%BB/"/>
+      <url>/2015/12/29/20151229%20%E5%B9%B8%E7%A6%8F%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%A6%82%E6%9C%9F%E8%80%8C%E8%87%B3%EF%BC%8C%E7%84%A6%E8%99%91%E5%8D%B4%E7%BB%88%E4%BC%9A%E8%BF%87%E5%8E%BB/</url>
+      
+        <content type="html"><![CDATA[<p>　　最近的状态真是有种久病缠身的感觉，各种琐事缠身无法清闲。话说回来，真清闲了我也不高兴了。目前所处大四学期尾声，罗列一下自己最近几想做的几件事情，也算顺便整理一下自己的思路。<a id="more"></a>  </p><blockquote><p>1.科目二还在打卡<br>2.毕设师还不知是谁，想更换无果中<br>3.换领导了，实习日志和报告就要重写？<br>4.兼职辞职日期也没定下来<br>5.企业面试的结果还在等待<br>6.想把证券从业资格证拿到手且继续学英语</p></blockquote><p>　　如此种种要罗列的话可能要写一堆，人在越迷糊的时候越容易犯错，急躁和迷茫是很多学生这时候的心态，说完全置身事外的心态是假的。毕竟现状在这，工作没找好（之前58和卫岗offer都因为种种原因没去），兼职也还没辞掉，驾照、实习报告等等都需要协调安排。既然自己罗列个一二三出来就挑出最重要且紧急的三件事去处理，其它只要按部就班静心等待就好了。很多时候，事情一多我们就头脑发麻开始自乱阵脚了。尤其这时候身边也有很多同学都拿到了offer,内心不免着急。说实话，我内心也有一丝焦急的。但我明白，我还是必须要不断积累自己，同时也要学会主动出击不能坐以待毙，单词还需看着，书还是要看，该关注的领域继续关注，也许这时候就是生命对自己的小小考验。如果自己这点小磕绊都处理不好，那将来还能做什么事情呢。<br>　　<br>　　这样给自己简单一分析得出结论：<strong>急躁无用，想清楚，持续努力，静候时光。</strong><br>　　所谓天将降大任于斯人也，必先苦其心志，劳其筋骨，饿…….(貌似我没让自己饿着)。这样想来我倒开始享受起来这种多种事情穿插起来的感觉，就像打游戏一样你必须兼顾左右，纵观全局方可有更大胜算。我把很有名的互联网招聘网站拉勾网打开，按照目录大类写在一张A4纸上，思考后一一划去，留下自己感兴趣的行业，然后结合自身初步筛选出自己喜欢的职业。这样自己再找职业，就不会像无头苍蝇一样了。有喜欢的城市，有喜欢的职业，剩下的就是自己的努力了，学习学习再学习，不断往自己想要的方向上靠，往自己的理想而努力。<br>　　我写这篇文章一方面是为了理一理自己最近的思路，另一方面也是想鼓励自己，如果有幸给后来人些许启发就更好了。不管状况如何变化，自己一定要有清晰的目标和思路，如果没有就去寻找直至找到为止。也许过了很久以后再看当初，我们都会觉得当初自己竟然为这点小事烦恼真是有点可笑呢。不是也许，是一定。<br>　　<br>　　<strong>有实力的时候，时光不会亏待你。</strong><br>　　最后，我想引用最近看到的一段话结尾。</p><blockquote><p>在这个池塘钓鱼，我是经过反复选择的，而你则是完全盲目的，尽管我们碰巧遇在一起了，但是我们却有区别。这种区别在于我知道自己的选择;而你是随机的，也许你能有好机会，但是机会不可能总是惠顾你。 　　</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人感受 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客搭建经历</title>
+      <link href="/2015/12/18/20151218%20Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86/"/>
+      <url>/2015/12/18/20151218%20Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86/</url>
+      
+        <content type="html"><![CDATA[<p>&#160; &#160; &#160; &#160;这是真正意义上自己搭建博客上的第一篇文章，一直幻想有一个自己的网站，但是这对一个文科生来说真的不是件容易的事。机缘巧合，前段时间在支付宝的公众号里推了我一篇阿里云“云翼计划”广告，其实就是让大学生可以低价购买云服务器。还没搞懂怎么回事我一冲动就买了，然后就买域名，然后折腾就开始了。  <a id="more"></a> </p><p>  &#160; &#160; &#160; &#160;我至今也没有完全搞懂搭建一个网站所有的事，后来想想毕竟要涉及网页开发太复杂，而这对于毫无技术基础的我来说无异于登天之难。我Google之后还是选择先搭建一个自己的博客，然后发现可以在Github上免费搭建，因为可以免费提供300M空间。于是我把阿里云服务器的订单退了，只保留了自己的域名。关于买域名本来想去Godaddy上买，但是发现万网收归阿里后，购买也蛮方便的而且很便宜！而且我只是简单地弄个人博客使用应该够了，只不过到目前域名好像还没有正常工作。。。我用DNSPod解析没成功后来换回万网DNS成功了，但是更新一篇文章后又不能解析了，然后又换回DNSPod至今，等过一段时间再看看。 </p><p>&#160; &#160; &#160; &#160;我一开始看网上是Github+Jekyll搭建的，但是后来看到好像有更简单点的Hexo博客搭建方式。虽然我也想极客一点，但是没有代码基础的文科生还是选择先尝试后者。我也不知道能否成功，就像当年我第一次自己去尝试Goagent配置要出去看看一样。安装了各种环境，Gitbash客户端之后，我开始按照教程一步步搭建，我把看到的所有自己觉得有用的教程都存到Chrome的书签栏当中以备学习。果然不出所料，中途也的确出了很多问题，比如_config.yml文件里写入的数据冒号后都要空格（汗，我是不可能知道的），Hexo安装插件命令也不熟悉，出错了简直不知道怎么办。好在加了一个Hexo相关的QQ群，当我说是一名文科生时。群内网友也许是无意也许是惊讶:“文科生进这个群干嘛”。就这样我问了两位网友两个问题，也许在他们眼里问题很简单，但是对于我这个外行来说真是不知道怎么办。所以，当最后本地测试成功，且生存静态文件上传到Github上，我很高兴也真心感激热情网友的不厌其凡的帮助。但后来遇到很多问题我却大多是谷歌加百度寻找解决方法，后话不提。  </p><p>&#160; &#160; &#160; &#160;中途我也顺便学习Markdown入门用法，之前在李笑来老师博客介绍善用Google搜索中提到，但由于没有接触简单搜索了下以为很难。没想到接触后发现并不是很难。我这篇就是用Markdown写的，当然只用了很简单的用法，我才开始接触。就在我写这篇博文的时候，我都不知此篇能不能成功上传，域名绑定也还不正常，但是我有信心把他们全部搞定！    </p><p>&#160; &#160; &#160; &#160;是炫耀也好（没什么好炫耀的），是鸡汤也好。我希望大多数时候，我们自己也能给自己勉励，那样或许更有力量。很多人说听过了很多道理却依然过不好这一生。是因为道理都是听来的，或许你亲身的经历才会让你印象深刻。  </p><p>&#160; &#160; &#160; &#160;每当做成一件小事，我总是去回顾自己以前的不断尝试给自己带来的信心。高三毕业暑假时几日几夜捣鼓开淘宝店，疯狂网上搜罗下象棋棋谱等等，买上网本系统崩了一步步网上自学重装系统。上大学后，帮助好几个女同学修过电脑，自此成为一个好人。高三有一段时间觉得魔方不错，去网吧照着魔方小站一夜学会了复原，后来教会了班级大多数人，而且在高中的班级带起了一阵魔方热。    </p><p>&#160; &#160; &#160; &#160;上大学后用高三做家教的钱买了辆入门山地车，机缘巧合地认识了一帮好友，去镇江爬了一次南山。那次来回差不多50KM吧，经常在网上看到别人骑行回家什么的，于是心潮澎湃自己也想这么干，我可不会仅仅停留在想上面。于是买了备胎，平时在网上学习补胎换胎的基础知识。最后一人一天一车带足干粮和充满电的移动电源，还有备胎和手机就愣头愣脑地开始了150KM路途了。当然之前我谷歌地图做了详细规划，且打印出来了。但是最后忘带！出发就不能回头了，我还是出发了，中途也有不顺后话了，最终到家。最真实的感觉：也不过如此嘛。而之前唯一一次远行就是去镇江那次。后来从扬州骑去南京回来快到镇江时抬戳破了，自己不行硬上换上了新内胎安然回来。   </p><p>&#160; &#160; &#160; &#160;网络接触多了，我看到Goagent搭建FQ网络，第一次自己按照教程配置也不知能不能成功，成功时我还是很兴奋的，后来成功教会了我一位没见过面的网友，看来也不是很难。不知不觉我在扇贝网站看单词已经1000多天了，就算是每天敷衍我也希望让自己记得，这样的好处是很多单词发音都熟悉了。再到如今，学习搭建Hexo博客，虽然在程序员眼里很简单的事，但是对于完全技术小白来说还是有点难度的。 </p><p>&#160; &#160; &#160; &#160;各种学习各种尝试，谁也不知道能不能成功，但是努力去尝试，也许就会有不一样的结果。最后感谢下网上很多类似Zippera这样贡献的无私教程，互联网一定能让世界变得更好些，而分享会让这个世界充满善意。  </p><p> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;  &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 2015.12.18凌晨<br> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 于学生宿舍</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
