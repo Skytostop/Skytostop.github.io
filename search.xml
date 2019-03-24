@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PC常用软件推荐]]></title>
+    <url>%2F2019%2F03%2F24%2F20190324%20%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E7%89%88%2F</url>
+    <content type="text"><![CDATA[推荐说明（不保证百分百准确） 无说明表示 表示只支持 WinWin/Mac 同时支持 Windows 和 Mac 系统Mac 只支持 Mac 系统 系统工具 Sumatra PDF一款PDF、MOBI等阅读器 QQ影音 Win/MacPotplayer Win/MacINA Mac视频播放器 解压缩软件 Bandizip看图软件 HoneyviewGIF制作 HoneyCam点我进入官方网站 Fliqlo Win/Mac/iOS网红屏保，Fliqlo 的设计灵感来自经典的德制翻页时钟。 Geekuninstaller，一款软件卸载工具。 Chrome扩展 Adblock PlusAdblock Plus 是拥有超过 5 亿次下载的全球最受欢迎的广告拦截软件之一。 Tampermonkey 一款免费的浏览器扩展和最为流行的用户脚本管理器。 Vanilla-Dashboard标签页壁纸，代替空白标签页和主页的新页面，自带壁纸、天气和新闻。 Momentum 代替标签页产生新的包含问候、天气、导航等页面。 Chrome 自带主题由Chrome 团队倾情推出，推荐尝试使用。 扩展管理器（Extension Manager）一键管理所有扩展，快速开启/禁用、批量闪电管理，更多功能请看官网介绍。 上网 书签管理在任何页面都可以通过书签关键字快速搜索打开书签,管理您的书签 Shadowsocks懂的自然懂，不多介绍了。 写作编程 Typora一款开源的Markdown写作软件，内测期间免费。Notepad++好用最强大的免费开源记事本软件。 暂时先写这么多，软件的推荐萝卜青菜，各有所爱，这里我只是推荐一些我平常喜欢用的一些软件。]]></content>
+      <categories>
+        <category>善用网络</category>
+      </categories>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[搬瓦工使用指南]]></title>
     <url>%2F2019%2F03%2F24%2F20190324%20%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。 搬瓦工官网一直在变化，因为一直会被封掉，目前是https://bwh88.net/，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。 安装使用 SS安装SS/SSR，在登陆之前要先用帐号登陆搬瓦工官网。当然，如果还需要使用 VPS 空间搭建网站之类的功能，可能需要使用 Xshell 或 Mac 终端来登陆使用，稍微复杂了一些，不过按照教程也不难。测试IP是否被锁，官方测试地址：点我 Ping IP 测试 测试地址 1测试地址 2测试地址 3 我之前用搬瓦工做主机，配合宝塔面板搭建了 WordPress 搭建了自己的个人博客，并且各种配置折腾了好久，后来时间觉得麻烦，而且主机不一定很稳定，就回归到 Hexo 博客了。 （未完待更）]]></content>
+    <content type="text"><![CDATA[每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。 搬瓦工官网一直在变化，因为一直会被封掉，目前是https://bwh88.net/，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。 安装使用 SS安装SS/SSR，在登陆之前要先用帐号登陆搬瓦工官网。当然，如果还需要使用 VPS 空间搭建网站之类的功能，可能需要使用 Xshell 或 Mac 终端来登陆使用，稍微复杂了一些，不过按照教程也不难。测试IP是否被锁，官方测试地址：点我 Ping IP 测试 测试地址 1测试地址 2测试地址 3 我之前用搬瓦工做主机，配合宝塔面板搭建了 WordPress 搭建了自己的个人博客，并且各种配置折腾了好久，后来觉得麻烦，而且主机不一定很稳定，加上 Godaddy 购买的域名没有备案，七牛云的一些功能无法正常使用，就回归到 Hexo 博客了。 （未完待更）]]></content>
       <categories>
         <category>善用网络</category>
       </categories>
