@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="一加2安装TWRP刷 LineageOS 15.1 安装谷歌框架并进行 Root 教程记录, qiubugu,秋布谷">
     <meta name="description" content="最近把自己的一加 2 又倒腾了下，虽然基本不用，但是还是想把它变成一个正常的手机，废话不多说，直接进正题。
-第1步安装 TWRP首先去下载官方 TWRP (\&amp;lt;https://twrp.me/app/)，也可以从酷安市场下载。安装完成">
+第1步安装 TWRP首先去下载官方 TWRP (&amp;lt;https://twrp.me/app/)，也可以从酷安市场下载。安装完成后">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -285,11 +285,14 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewbox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
         
@@ -466,8 +469,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>最近把自己的一加 2 又倒腾了下，虽然基本不用，但是还是想把它变成一个正常的手机，废话不多说，直接进正题。</p>
-<h3 id="第1步安装-TWRP"><a href="#第1步安装-TWRP" class="headerlink" title="第1步安装 TWRP"></a>第1步安装 TWRP</h3><p>首先去下载官方 TWRP (\&lt;<a href="https://twrp.me/app/)，也可以从酷安市场下载。" target="_blank" rel="noopener">https://twrp.me/app/)，也可以从酷安市场下载。</a><br>安装完成后，打开选择 TWRP FLASH 选择你的机型，选择最新的 img 下载安装，完成第一步 TWRP 最新版的安装工作。<a id="more"></a></p>
-<h3 id="第-2-步同时刷入-OS-和谷歌框架"><a href="#第-2-步同时刷入-OS-和谷歌框架" class="headerlink" title="第 2 步同时刷入 OS 和谷歌框架"></a>第 2 步同时刷入 OS 和谷歌框架</h3><p>去官网下载 OS \<a href="https://download.lineageos.org/\" target="_blank" rel="noopener">https://download.lineageos.org/\</a> 选择对应的机型进行下载，然后重启手机同时按住音量减和电源键，进入Recovery，选择安装，找到下载好的 OS 安装包 ZIP，安装之前可以选择双清（选择清除——恢复出厂设置）一下。可同时刷入 Opengapps 文件\<a href="https://opengapps.org/\" target="_blank" rel="noopener">https://opengapps.org/\</a>，找到对应机型平台的包，15.1 是 Android 8.1,一加 2 是骁龙 810 处理器属于 ARM64，我这里是用 nano 版本</p>
+<h3 id="第1步安装-TWRP"><a href="#第1步安装-TWRP" class="headerlink" title="第1步安装 TWRP"></a>第1步安装 TWRP</h3><p>首先去下载官方 TWRP (&lt;<a href="https://twrp.me/app/)，也可以从酷安市场下载。" target="_blank" rel="noopener">https://twrp.me/app/)，也可以从酷安市场下载。</a><br>安装完成后，打开选择 TWRP FLASH 选择你的机型，选择最新的 img 下载安装，完成第一步 TWRP 最新版的安装工作。<a id="more"></a></p>
+<h3 id="第-2-步同时刷入-OS-和谷歌框架"><a href="#第-2-步同时刷入-OS-和谷歌框架" class="headerlink" title="第 2 步同时刷入 OS 和谷歌框架"></a>第 2 步同时刷入 OS 和谷歌框架</h3><p>去官网下载 OS &lt;<a href="https://download.lineageos.org/\&gt;" target="_blank" rel="noopener">https://download.lineageos.org/\&gt;</a> 选择对应的机型进行下载，然后重启手机同时按住音量减和电源键，进入Recovery，选择安装，找到下载好的 OS 安装包 ZIP，安装之前可以选择双清（选择清除——恢复出厂设置）一下。可同时刷入 Opengapps 文件&lt;<a href="https://opengapps.org/\&gt;，找到对应机型平台的包，15.1" target="_blank" rel="noopener">https://opengapps.org/\&gt;，找到对应机型平台的包，15.1</a> 是 Android 8.1,一加 2 是骁龙 810 处理器属于 ARM64，我这里是用 nano 版本</p>
 <p>关于各种版本（此处摘自少数派 <a href>Clyde</a>(<a href="https://sspai.com/user/696946" target="_blank" rel="noopener">https://sspai.com/user/696946</a>) 写的文章）</p>
 <blockquote>
 <ul>
@@ -479,12 +482,12 @@
 <li>pico：包含了最基础的 Google 服务框架，体积最小，一些依赖完整 Google 框架的应用（如 Google Camera ）将无法运行。</li>
 </ul>
 </blockquote>
-<h3 id="第3步-Root"><a href="#第3步-Root" class="headerlink" title="第3步 Root"></a>第3步 Root</h3><p>先去下载 Root 包，选择自己机型对应的包即可，不知道的可以网上搜索一下。<br>下载地址：\<a href="https://download.lineageos.org/extras\" target="_blank" rel="noopener">https://download.lineageos.org/extras\</a><br>重启手机——按住音量减进入 TWRP——安装——选下载好的su包开刷，不需要执行清除操作。</p>
+<h3 id="第3步-Root"><a href="#第3步-Root" class="headerlink" title="第3步 Root"></a>第3步 Root</h3><p>先去下载 Root 包，选择自己机型对应的包即可，不知道的可以网上搜索一下。<br>下载地址：&lt;<a href="https://download.lineageos.org/extras\&gt;" target="_blank" rel="noopener">https://download.lineageos.org/extras\&gt;</a><br>重启手机——按住音量减进入 TWRP——安装——选下载好的su包开刷，不需要执行清除操作。</p>
 <h3 id="第4步开启-Root-权限"><a href="#第4步开启-Root-权限" class="headerlink" title="第4步开启 Root 权限"></a>第4步开启 Root 权限</h3><p>点击设置——系统——关于手机——版本号——多次点击版本号开启开发者选项<br>打开开发者选项—— Root 授权——应用与 ADB</p>
 <p>至此本教程记录结束。</p>
 
             </div>
-            <hr>
+            <hr/>
 
             
 
@@ -497,7 +500,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com" rel="external nofollow noreferrer">十丁</a>
+                    <a href="http://qiubugu.com" rel="external nofollow noreferrer">十丁</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -507,7 +510,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/year/01/19/20190119-一加2安装TWRP刷-LineageOS-15-1-安装谷歌框架并进行-Root-教程记录/">http://yoursite.com/year/01/19/20190119-一加2安装TWRP刷-LineageOS-15-1-安装谷歌框架并进行-Root-教程记录/</a>
+                    <a href="http://qiubugu.com/year/01/19/20190119-一加2安装TWRP刷-LineageOS-15-1-安装谷歌框架并进行-Root-教程记录/">http://qiubugu.com/year/01/19/20190119-一加2安装TWRP刷-LineageOS-15-1-安装谷歌框架并进行-Root-教程记录/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -520,7 +523,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="http://yoursite.com" target="_blank">十丁</a>
+                    <a href="http://qiubugu.com" target="_blank">十丁</a>
                     !
                 </span>
             </div>
@@ -934,7 +937,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="http://yoursite.com" target="_blank">十丁</a>
+            <a href="http://qiubugu.com" target="_blank">十丁</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -945,12 +948,14 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
             
             <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
             </span>
             
             
             <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
             </span>
             
             <br>
@@ -1001,7 +1006,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     <div class="modal-content">
         <div class="search-header">
             <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
         </div>
         <div id="searchResult"></div>
     </div>
