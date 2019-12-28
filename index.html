@@ -648,55 +648,6 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/year/03/24/20190324-搬瓦工使用指南/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="搬瓦工使用指南">
-                            
-                            <span class="card-title">搬瓦工使用指南</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。
-搬瓦工官网一直在变化，因为一直会被封掉，目前是https://bwh88.net/，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/善用网络/" class="post-category">
-                                    善用网络
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/搬瓦工/">
-                            <span class="chip bg-color">搬瓦工</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/year/03/24/20190324-常用软件更新版/">
                         <div class="card-image">
                             
@@ -739,6 +690,55 @@ QQ影音 Win/MacPotplayer Win/Ma
                         
                         <a href="/tags/software/">
                             <span class="chip bg-color">software</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/year/03/24/20190324-搬瓦工使用指南/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="搬瓦工使用指南">
+                            
+                            <span class="card-title">搬瓦工使用指南</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。
+搬瓦工官网一直在变化，因为一直会被封掉，目前是https://bwh88.net/，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/善用网络/" class="post-category">
+                                    善用网络
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/搬瓦工/">
+                            <span class="chip bg-color">搬瓦工</span>
                         </a>
                         
                     </div>
@@ -1123,6 +1123,7 @@ This is a prepared text of the Commencement address delivered by Steve Jobs, CEO
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
+            <span id="sitetime"></span>
             <span id="year">2019</span>
             <a href="http://qiubugu.com" target="_blank">十丁</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -1189,6 +1190,8 @@ This is a prepared text of the Commencement address delivered by Steve Jobs, CEO
 </footer>
 
 <div class="progress-bar"></div>
+
+<script language=javascript> function siteTime() { window.setTimeout("siteTime()", 1000); var seconds = 1000; var minutes = seconds * 60; var hours = minutes * 60; var days = hours * 24; var years = days * 365; var today = new Date(); var todayYear = today.getFullYear(); var todayMonth = today.getMonth() + 1; var todayDate = today.getDate(); var todayHour = today.getHours(); var todayMinute = today.getMinutes(); var todaySecond = today.getSeconds(); /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳) year - 作为date对象的年份，为4位年份值 month - 0-11之间的整数，做为date对象的月份 day - 1-31之间的整数，做为date对象的天数 hours - 0(午夜24点)-23之间的整数，做为date对象的小时数 minutes - 0-59之间的整数，做为date对象的分钟数 seconds - 0-59之间的整数，做为date对象的秒数 microseconds - 0-999之间的整数，做为date对象的毫秒数 */ var t1 = Date.UTC(2015, 12, 18, 00, 00, 00); //北京时间2018-12-18 00:00:00 var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond); var diff = t2 - t1; var diffYears = Math.floor(diff / years); var diffDays = Math.floor((diff / days) - diffYears * 365); var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours); var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes); var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds); document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/ siteTime(); </script>
 
 
     <!-- 搜索遮罩框 -->
