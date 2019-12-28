@@ -446,10 +446,25 @@ Welcome to Hexo! This is your very first post. Check documentation for more ">
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    900
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    3 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
 
         </div>
@@ -508,7 +523,29 @@ Welcome to Hexo! This is your very first post. Check documentation for more ">
 <p>fixed 165 of 165 vulnerabilities in 11237 scanned packages</p>
 <p>执行 hexo s 正常</p>
 <p>至此，问题解决，但是我不知道发生了什么，但是应该就是这个高亮插件引起了错误。</p>
+<hr>
+<h3 id="在博客中添加-Gitalk-评论"><a href="#在博客中添加-Gitalk-评论" class="headerlink" title="在博客中添加 Gitalk 评论"></a>在博客中添加 Gitalk 评论</h3><p>先申请一个 <a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">Github APP</a> 获取后面需要的 Client ID 和 Client Secret</p>
+<p>matery内置了许多评论模块，Gitalk、Gitment、Valine 和 Disqus 等。我选用了Gitalk, 在主题的配置模块中启用此功能即可。</p>
+<p>，启用后，修改里面的里面的的 Client ID 和 Client Secret 信息。</p>
+<hr>
+<h3 id="中文链接转拼音"><a href="#中文链接转拼音" class="headerlink" title="中文链接转拼音"></a>中文链接转拼音</h3><p>安装命令如下：</p>
+<p><code>npm i hexo-permalink-pinyin --save</code></p>
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">permalink_pinyin:</span><br><span class="line">  enable: true</span><br><span class="line">  separator: &apos;-&apos; # default: &apos;-&apos;</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p><strong>注</strong>：除了此插件外，<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p>
+</blockquote>
+<hr>
+<h3 id="文章字数统计插件（建议安装）"><a href="#文章字数统计插件（建议安装）" class="headerlink" title="文章字数统计插件（建议安装）"></a>文章字数统计插件（建议安装）</h3><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a href="https://github.com/willin/hexo-wordcount" target="_blank" rel="noopener">hexo-wordcount</a>插件。</p>
+<p>安装命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">postInfo:</span><br><span class="line">  date: true</span><br><span class="line">  update: false</span><br><span class="line">  wordCount: false # 设置文章字数统计为 true.</span><br><span class="line">  totalCount: false # 设置站点文章总字数统计为 true.</span><br><span class="line">  min2read: false # 阅读时长.</span><br><span class="line">  readCount: false # 阅读次数.</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="添加评论配置模块"><a href="#添加评论配置模块" class="headerlink" title="添加评论配置模块"></a>添加评论配置模块</h3>
             </div>
             <hr/>
 
@@ -719,6 +756,32 @@ Welcome to Hexo! This is your very first post. Check documentation for more ">
         </div>
     </div>
 
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: null,
+        id: '2019-12-25T22-20-03',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
     
 
     
@@ -954,6 +1017,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">23.9k</span>&nbsp;字
             
             
             
