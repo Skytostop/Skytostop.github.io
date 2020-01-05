@@ -4,9 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo 使用心得, qiubugu,秋布谷">
-    <meta name="description" content="2019年3月8日，第二次重新搭建Hexo博客！
-Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for more info. If ">
+    <meta name="keywords" content="2016 小结, qiubugu,秋布谷">
+    <meta name="description" content="看了自己2015年写的个人小结，同样2016年总结又从何写起呢？从大四毕业以来，我有点放纵和偷懒了，虽然用Hexo搭建了个写字的地方，也绑定了域名，但写的却很少，原本打算昨天写的总结也拖到了今天。
+2016年上半年初1月份我从小城扬州来上海">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@ Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hexo 使用心得 | 秋布谷</title>
+    <title>2016 小结 | 秋布谷</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@ Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo 使用心得</h1>
+                    <h1 class="description center-align post-title">2016 小结</h1>
                 </div>
             </div>
         </div>
@@ -424,9 +424,13 @@ Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/2016-总结-2017/">
+                                <span class="chip bg-color">2016 总结 2017</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -438,7 +442,7 @@ Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-25
+                    2017-01-02
                 </div>
                 
 
@@ -447,14 +451,14 @@ Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    864
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    7 分
                 </div>
                 
 
@@ -470,63 +474,27 @@ Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>2019年3月8日，第二次重新搭建Hexo博客！</p>
-<p>Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting][3] or you can ask me on [GitHub][4].</p>
-<hr>
-<h2 id="Next-主题"><a href="#Next-主题" class="headerlink" title="Next 主题"></a>Next 主题</h2><h3 id="更新Next主题"><a href="#更新Next主题" class="headerlink" title="更新Next主题"></a>更新Next主题</h3><p>可以采用如下命令：</p>
-<pre><code>git reset --hard
-git pull</code></pre><p>更新后，启动 hexo s 发现报错</p>
-<blockquote>
-<p>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 14, column 7:</p>
-</blockquote>
-<p>经过网上搜索发现还是配置文件：<code>_config.yml</code> 中 属性后面没有空格，不知道为啥更新后有的空格都没了，将其冒号后修改空一格即可。只是这样更新就会导致之前设置的一些主题设置全部失效。</p>
-<p>升级 Next  版本</p>
-<pre><code>cd themes/next
-git pull </code></pre><p> 其他主题思路类似，</p>
-<p>[克隆新的仓库][11]到任一异于 next 的目录（如 next-reloaded）：</p>
-<p>$ git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a> themes/next-reloaded<br>如此，你可以在不修改原有的 NexT v5.1.x 目录的同时使用 next-reloaded 目录中的新版本主题。</p>
-<p>在themes主题下新建 matery 文件夹</p>
-<pre><code>cd themes/matery
-git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去 Hexo 目录下「_config.yml」文件用Xcode打开，搜索「theme」我这个是在 82 行，把主题名字切换成 matery 即可更改主题。_<br>如果此时直接Hexo s 会出现WARN No layout: index.html<br>，此时页面都是白的。因为需要先进行 hexo g 然后再进行 hexo d</p>
-<hr>
-<p>今天因为误装matery主题下推荐的高亮插件不知道怎么就出错了，折腾了半天。</p>
-<p>执行 hexo s 一直提示</p>
-<p>ERROR Local hexo not found in ~/hexo</p>
-<p>ERROR Try running: ‘npm install hexo –save’</p>
-<p>继续执行 npm install hexo –save</p>
-<p>提示ERROR Plugin load failed: hexo-prism-plugin、</p>
-<p>结尾是</p>
-<p>Thank you for installing EJS: built with the Jake JavaScript build tool (<a href="https://jakejs.com/" target="_blank" rel="noopener">https://jakejs.com/</a>)</p>
-<p>added 127 packages from 107 contributors, removed 44 packages and audited 11237 packages in 9.099s</p>
-<p>found 165 high severity vulnerabilities</p>
-<p> run <code>npm audit fix</code> to fix them, or <code>npm audit</code> for details</p>
-<p>执行 npm audit fix</p>
-<p>removed 2 packages and updated 3 packages in 4.563s</p>
-<p>fixed 165 of 165 vulnerabilities in 11237 scanned packages</p>
-<p>执行 hexo s 正常</p>
-<p>至此，问题解决，但是我不知道发生了什么，但是应该就是这个高亮插件引起了错误。</p>
-<hr>
-<h3 id="在博客中添加-Gitalk-评论"><a href="#在博客中添加-Gitalk-评论" class="headerlink" title="在博客中添加 Gitalk 评论"></a>在博客中添加 Gitalk 评论</h3><p>先申请一个 <a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">Github APP</a> 获取后面需要的 Client ID 和 Client Secret</p>
-<p>matery内置了许多评论模块，Gitalk、Gitment、Valine 和 Disqus 等。我选用了Gitalk, 在主题的配置模块中启用此功能即可。</p>
-<p>，启用后，修改里面的里面的的 Client ID 和 Client Secret 信息。</p>
-<hr>
-<h3 id="中文链接转拼音"><a href="#中文链接转拼音" class="headerlink" title="中文链接转拼音"></a>中文链接转拼音</h3><p>安装命令如下：</p>
-<p><code>npm i hexo-permalink-pinyin --save</code></p>
-<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
-<pre><code>permalink_pinyin:
-  enable: true
-  separator: &#39;-&#39; # default: &#39;-&#39;</code></pre><blockquote>
-<p><strong>注</strong>：除了此插件外，<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p>
-</blockquote>
-<hr>
-<h3 id="文章字数统计插件（建议安装）"><a href="#文章字数统计插件（建议安装）" class="headerlink" title="文章字数统计插件（建议安装）"></a>文章字数统计插件（建议安装）</h3><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a href="https://github.com/willin/hexo-wordcount" target="_blank" rel="noopener">hexo-wordcount</a>插件。</p>
-<p>安装命令如下：</p>
-<pre><code>npm i --save hexo-wordcount</code></pre><p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p>
-<p>postInfo:<br>  date: true<br>  update: false<br>  wordCount: false # 设置文章字数统计为 true.<br>  totalCount: false # 设置站点文章总字数统计为 true.<br>  min2read: false # 阅读时长.<br>  readCount: false # 阅读次数.</p>
-<hr>
-<h3 id="代码块显示分成了2个"><a href="#代码块显示分成了2个" class="headerlink" title="代码块显示分成了2个"></a>代码块显示分成了2个</h3><p>在hexo根目录下的<code>_config.yml</code>关闭代码高亮</p>
-<pre><code>highlight:
-  enable: false</code></pre><hr>
+                <p>看了自己2015年写的个人小结，同样2016年总结又从何写起呢？从大四毕业以来，我有点放纵和偷懒了，虽然用Hexo搭建了个写字的地方，也绑定了域名，但写的却很少，原本打算昨天写的总结也拖到了今天。<a id="more"></a></p>
+<p>2016年上半年初1月份我从小城扬州来上海实习，因为怕拖行李麻烦加上省点路费，晚上坐统超物流刘叔的车来的，第二点上午10点的样子到松江统一星巴克企业门口下车。记得到上海那天是自己的生日，晚上用身份证去环球金融观光厅兑了生日票，从高处俯瞰了一下繁华的夜上海。然后进入实习公司，中途公司安排去了一趟西安出差，也算是增长了一点见闻。等到出差回来差不多到了学校毕业论文的最后时期，4月份中旬回到学校开始弄论文，当时一边要准备毕业论文，一边想把驾照考完，因此自己总是以要留扬州的借口没有再去找毕业工作的事情，因为我没打算留在扬州，所以总是去外地面试不太方便。<br>在来上海之前自己在扬州的一家外贸公司面试，我从老板的聊天中大概觉得我心不安稳不会留扬州，所以即使HR比较认可我还是没有要我，后来我陆陆续续来上海面试几次，往返扬州真是折腾，每次要去镇江坐火车或者高铁。继续从学校说起，就这样慢慢地完成了非常折腾的驾校考试，毕业证书也拿到了。当时天气非常炎热，其实在扬州当地图书馆已经有老师给我找了份工作，大概就是类似公众号运营之类的，薪资在扬州刚毕业的学生里也算可以了，但是我希望刚出来的时候还是去大城市去看看，所以我婉拒了，还是对老师说声谢谢。毕业前最后的一段时间出了一点小状况，在同学的帮助下，还好都解决了，回想大学四年，辅导员和关系好的几个同学也帮了我不少的忙，也一并感谢，同祝新年一切顺心。</p>
+<p>领完毕业证后，我把行李寄了部分回去，部分让老乡开车帮我顺带回去，自己一身轻松先回家了。上面说到，刚毕业的时候天气已经非常炎热了，而且那个时候工作其实不太好找，我就打算先在家休息几天，没想到一次骑车不小心摔了，膝盖和手掌伤得稍微重点，光吊瓶就打了两个星期，吃很苦的让人反胃的药，稍微一动膝盖伤口就撕裂，很久都没有愈合，至今膝盖的伤疤依然清晰可见。<br>等到恢复差不多的时候已经九月初了，我投了几家公司约我来上海面试，刚来上海住在如家，后来觉得有点贵换青年旅社，而且那几天一直下雨，一人拖着行李在等面试，后来成功面试进入公司，就先不详细介绍过程了。毕业这次来上海其实也就三个多月，一眨眼就年底了，工作后每天上下班，挤地铁都是常事，一开始甚至由于没有休息好加上没早饭，又急着赶地铁的缘故，一次眩晕赶紧出站透气，一次直接晕倒了，只是不算严重。后来我就尽量吃早饭，慢慢调整自己。我有时也会想，自己心心念念来上海是为了什么呢？下班很晚的时候一个人走在路上也会想很多东西，但是我总是鼓励自己，不管结果怎么样，这是我自己的选择，我不会后悔，更不会退缩。</p>
+<p>总的来说，2016年我对自己的感觉是不太满意的，各种外在的事情虽然发生无法控制，但是在我个人成长的空间有很大的提升空间。由于刚毕业没有了约束，一开始自己可能有点稍稍懒惰，也容易把一些外界的因素作借口来逃避，这也是我在新的一年要改变的地方，有一点让我欣慰的事情是，我在一些事情的看法上慢慢形成自己稳定的价值观，当然这也是一个不断修正的过程。对待事情会有自己的思考，而不是人云亦云。所以，在心理方面，我应该是更成熟了些。至于朋友方面，真诚些，随缘些，你也不会缺朋友。</p>
+<p>2017年，我的一些计划：</p>
+<p><strong>1.做好职业技能升级</strong></p>
+<p>我希望自己能够在工作技能上虚心学习更多东西，2016年我总体是不太满意的，所以新的一年更要努力，要更加拓宽自己的眼界，只有不断学习的人才不会被淘汰。刚毕业出来，不是享受的时候，所以要付出更多，才可能有收获。</p>
+<p><strong>2.注重健康，勤加锻炼</strong></p>
+<p>年轻人很容易忽视健康的重要性，生命有时真的很脆弱。这一年也发生了不少事，外公生病住院忍受病痛的折磨，父母身体也不太好，自己的高中同学回家意外出车祸不幸去世，最美好的年纪还没认真的看过这个社会。再到最近又有同学检查有肿瘤，希望她没有大碍。有时候真的会想生命很脆弱，但是生命也有其独特的韧性。<br>自己来上海后，也感觉身体素质在下降，主要和作息和自己没有锻炼有关，所以我在给自己买了份意外险之后，我自己也一定要多家锻炼，体重在年末已经快到了85了，当然当天也吃了好多。</p>
+<p><strong>3.阅读并在豆瓣作记录</strong></p>
+<p>写到这里真有点羞愧，2016年里平时空闲的时间花了不少在游戏上，Kindle都自动关机了，即使没有也没有花在阅读上，新的一年里我希望至少要读3本以上的英文原著，和10本其他书籍，我会把读的书放在豆瓣做记录，来年来检查下结果，让纷乱的生活平静一些，回归阅读，回归一份闲适。</p>
+<p><strong>4.学会付费，有条件地改善生活</strong></p>
+<p>我初步打算购买1Password软件继续使用，慢慢地我开始了学会为知识付费，去参加一场知乎Live，去参加一些笑来老师的一块听听课程，也给一直试用的扇贝付费买了点课程，从2015年也开始了海淘，我还给自己喜欢的公众号作者进行了打赏，虽然钱不多，但是我很高兴自己迈出了这一步，也感谢他们给我带来的无形的帮助与提升。好好努力，不去攀比，但一定让自己过得更好。</p>
+<p><strong>5.旅行还是见闻，参加一次演唱会</strong></p>
+<p>我希望新的一年能去一些自己想去的地方，有机会的话去参加一次演唱会，工作以后空闲的时间肯定很少，我希望自己能够保持一颗年轻的心，能去做自己想做的事情。</p>
+<p><strong>6.理财这件不大不小的事</strong></p>
+<p>这件事不会展开来多说，毕竟每个人观点不同，我想我会大致的记个账目，稍稍梳理一下自己的财务状况，也会多去了解相关的知识，虽然刚毕业没什么积蓄，但是一步一步来，不要太着急，想想自己当初纯体验美股亏了一千多（本金少亏不多哈哈），又有什么办法呢，不过谁又能说一定是坏事呢。</p>
+<p>说来说去也是说不完的，很多事单独拿出来说也可以扯出一片文章来。我只是想说，感谢永远在背后支持我的爸爸妈妈，还有许许多多的朋友及其他爱我的人的一路的帮助，感谢你们出现在我的生命里，2017，无论我们身处何地，再次出发！ </p>
+<p><strong>珍视当下，憧憬未来</strong></p>
+<p>2017.1.1 上海 </p>
+<p><img src="http://7xpdvk.com1.z0.glb.clouddn.com/2017%E6%96%87%E5%AD%97%E4%BA%91Word%20Cloud%201%20%281%29.png" alt="2017"></p>
 
             </div>
             <hr/>
@@ -552,7 +520,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://qiubugu.com/year/12/25/20191225-Hexo-使用心得/">http://qiubugu.com/year/12/25/20191225-Hexo-使用心得/</a>
+                    <a href="http://qiubugu.com/year/01/02/20170102-2016-summary/">http://qiubugu.com/year/01/02/20170102-2016-summary/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,7 +557,11 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/2016-总结-2017/">
+                                    <span class="chip bg-color">2016 总结 2017</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -758,7 +730,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
         repo: '',
         owner: '',
         admin: null,
-        id: '2019-12-25T22-20-03',
+        id: '2017-01-02T00-31-40',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -783,25 +755,25 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/year/01/05/20200105-2019-summary/">
+                <a href="/year/01/01/20180101-2017-summary/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="2019 小结">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="2017 小结">
                         
-                        <span class="card-title">2019 小结</span>
+                        <span class="card-title">2017 小结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2018 小结2017 小结2016 小结2015 小结
-
+                            看了下2016年的写的一些计划，有些做的不错，有些还是不够好比如阅读，这真的只是借口，虽然其实2017比之前好点，但是总体数量还是非常的低。
+想一下毕业一年多了，今年也是动荡的一年，从海淘公司出来又做了一段时间文案，最后酷暑月干脆就歇着了，
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2018-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -821,35 +793,44 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/year/06/26/20190625-90后还要攒钱吗，眼下钱放在哪里好呢？/">
+                <a href="/year/11/26/20161126-一加2手机救活记/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="90后还要攒钱吗，眼下钱放在哪里好呢？">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="一加2手机救活记">
                         
-                        <span class="card-title">90后还要攒钱吗，眼下钱放在哪里好呢？</span>
+                        <span class="card-title">一加2手机救活记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            90后还要攒钱吗，眼下钱放在哪里好呢？
-如果没钱，也没这个烦恼了，开个玩笑。
-知乎上有一个很火的问答，90 后的一代真的还能通过攒钱改变现状吗？我刚看了下有 673 个回答，看了排名靠前的答案还是持支持的态度，总算给了大家一点希望。
-80 
+                            一加3T国行版本月29号就发布了，有意向购买替换掉我现在的加2，因为玩游戏总觉觉得有点卡卡的，平时使用还算流畅吧。昨天晚上无意去论坛看到了加2的HOS2.5公测版更新了，想想还是打算去刷最新的，但是官方建议双清，我之前有Root加上装的太多
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2016-11-26
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            十丁
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/善用网络/" class="post-category">
+                                    善用网络
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/android/">
+                        <span class="chip bg-color">android</span>
+                    </a>
+                    
                 </div>
                 
             </div>
