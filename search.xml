@@ -127,6 +127,25 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
       </tags>
   </entry>
   <entry>
+    <title>搬瓦工使用指南</title>
+    <url>/year/03/24/20190324-%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。</p>
+<p>搬瓦工官网一直在变化，因为一直会被封掉，目前是<a href>https://bwh88.net/</a>，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。<a id="more"></a></p>
+<h2 id="安装使用-SS"><a href="#安装使用-SS" class="headerlink" title="安装使用 SS"></a>安装使用 SS</h2><p>安装<a href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocks" target="_blank" rel="noopener">SS</a>/<a href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocksr" target="_blank" rel="noopener">SSR</a>，在登陆之前要先用帐号登陆搬瓦工官网。当然，如果还需要使用 VPS 空间搭建网站之类的功能，可能需要使用 Xshell 或 Mac 终端来登陆使用，稍微复杂了一些，不过按照<a href="https://medium.com/@jackme256/%E6%90%AC%E7%93%A6%E5%B7%A5-vps-%E6%90%AD%E5%BB%BA-shadowsocks-ss-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B-ss%E5%A4%9A%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96-efc6dda704fe" target="_blank" rel="noopener">教程</a>也不难。<br>测试IP是否被锁，官方测试地址：<a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck" target="_blank" rel="noopener">点我</a></p>
+<h2 id="Ping-IP-测试"><a href="#Ping-IP-测试" class="headerlink" title="Ping IP 测试"></a>Ping IP 测试</h2><blockquote>
+<p><a href="http://ping.pe/" target="_blank" rel="noopener">测试地址 1</a><br><a href="http://ping.chinaz.com/" target="_blank" rel="noopener">测试地址 2</a><br><a href="http://ping.chinaz.com/" target="_blank" rel="noopener">测试地址 3</a></p>
+</blockquote>
+<p>我之前用搬瓦工做主机，配合宝塔面板搭建了 WordPress 搭建了自己的个人博客，并且各种配置折腾了好久，后来觉得麻烦，而且主机不一定很稳定，加上 Godaddy 购买的域名没有备案，七牛云的一些功能无法正常使用，就回归到 Hexo 博客了。</p>
+<p>（未完待更）</p>
+]]></content>
+      <categories>
+        <category>善用网络</category>
+      </categories>
+      <tags>
+        <tag>搬瓦工</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PC常用软件推荐</title>
     <url>/year/03/24/20190324-%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E7%89%88/</url>
     <content><![CDATA[<h2 id="系统工具"><a href="#系统工具" class="headerlink" title="系统工具"></a>系统工具</h2><blockquote>
@@ -181,25 +200,6 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
       </categories>
       <tags>
         <tag>software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搬瓦工使用指南</title>
-    <url>/year/03/24/20190324-%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。</p>
-<p>搬瓦工官网一直在变化，因为一直会被封掉，目前是<a href>https://bwh88.net/</a>，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。<a id="more"></a></p>
-<h2 id="安装使用-SS"><a href="#安装使用-SS" class="headerlink" title="安装使用 SS"></a>安装使用 SS</h2><p>安装<a href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocks" target="_blank" rel="noopener">SS</a>/<a href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocksr" target="_blank" rel="noopener">SSR</a>，在登陆之前要先用帐号登陆搬瓦工官网。当然，如果还需要使用 VPS 空间搭建网站之类的功能，可能需要使用 Xshell 或 Mac 终端来登陆使用，稍微复杂了一些，不过按照<a href="https://medium.com/@jackme256/%E6%90%AC%E7%93%A6%E5%B7%A5-vps-%E6%90%AD%E5%BB%BA-shadowsocks-ss-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B-ss%E5%A4%9A%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96-efc6dda704fe" target="_blank" rel="noopener">教程</a>也不难。<br>测试IP是否被锁，官方测试地址：<a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck" target="_blank" rel="noopener">点我</a></p>
-<h2 id="Ping-IP-测试"><a href="#Ping-IP-测试" class="headerlink" title="Ping IP 测试"></a>Ping IP 测试</h2><blockquote>
-<p><a href="http://ping.pe/" target="_blank" rel="noopener">测试地址 1</a><br><a href="http://ping.chinaz.com/" target="_blank" rel="noopener">测试地址 2</a><br><a href="http://ping.chinaz.com/" target="_blank" rel="noopener">测试地址 3</a></p>
-</blockquote>
-<p>我之前用搬瓦工做主机，配合宝塔面板搭建了 WordPress 搭建了自己的个人博客，并且各种配置折腾了好久，后来觉得麻烦，而且主机不一定很稳定，加上 Godaddy 购买的域名没有备案，七牛云的一些功能无法正常使用，就回归到 Hexo 博客了。</p>
-<p>（未完待更）</p>
-]]></content>
-      <categories>
-        <category>善用网络</category>
-      </categories>
-      <tags>
-        <tag>搬瓦工</tag>
       </tags>
   </entry>
   <entry>
@@ -493,6 +493,9 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
 <p>找准一个目标，去做到顶级，属于你的绽放也会到来。</p>
 <p>2018.12.31 上海星巴克滨江店<br>配图：拍摄于黄浦江滨江段</p>
 ]]></content>
+      <tags>
+        <tag>年度总结</tag>
+      </tags>
   </entry>
   <entry>
     <title>隐藏技能——小米手机自带迅雷BT下载</title>
@@ -535,6 +538,9 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
 <p>2018，我希望不辜负自己，也不辜负每一个爱我的人，我来了！</p>
 <p><img src="/images/wukang.png" alt><br>2018.1.1凌晨3点写在住所<br>尾图：2017.12.31拍摄于武康路</p>
 ]]></content>
+      <tags>
+        <tag>年度总结</tag>
+      </tags>
   </entry>
   <entry>
     <title>2016 小结</title>
@@ -562,7 +568,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
 <p><img src="http://7xpdvk.com1.z0.glb.clouddn.com/2017%E6%96%87%E5%AD%97%E4%BA%91Word%20Cloud%201%20%281%29.png" alt="2017"></p>
 ]]></content>
       <tags>
-        <tag>2016 总结 2017</tag>
+        <tag>年度总结</tag>
       </tags>
   </entry>
   <entry>
@@ -658,7 +664,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre><p>然后去
         <category>个人感受</category>
       </categories>
       <tags>
-        <tag>思考</tag>
+        <tag>年度总结</tag>
       </tags>
   </entry>
   <entry>
