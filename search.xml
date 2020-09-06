@@ -864,36 +864,4 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
         <tag>善用网络</tag>
       </tags>
   </entry>
-  <entry>
-    <title>good</title>
-    <url>/article/title-1.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>测试的</title>
-    <url>/article/title-3.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>测试</title>
-    <url>/article/title.html</url>
-    <content><![CDATA[<p>123<br>w 的<br>的d<br>的s<br>说得<br>说得</p>
-<p> 说得 </p>
-<p> 说得<br> 是d是</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>markdown</title>
-    <url>/article/title-2.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>一篇文字</title>
-    <url>/article/%E4%B8%80%E7%AF%87%E6%96%87%E5%AD%97.html</url>
-    <content><![CDATA[<p>这事一篇测试文字</p>
-<p>2e</p>
-<p>2饿</p>
-<p>2e2<br>2<br>额</p>
-]]></content>
-  </entry>
 </search>
