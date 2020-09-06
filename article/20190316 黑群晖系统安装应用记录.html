@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Mac/iOS下全局代理依然无法上Telegram？教你一招！, qiubugu,秋布谷">
+    <meta name="keywords" content="黑群晖系统安装应用记录, qiubugu,秋布谷">
     <meta name="description" content="秋布谷，有趣的灵魂在这里相遇！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Mac/iOS下全局代理依然无法上Telegram？教你一招！ | 秋布谷</title>
+    <title>黑群晖系统安装应用记录 | 秋布谷</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,12 +245,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Mac/iOS下全局代理依然无法上Telegram？教你一招！</h1>
+                    <h1 class="description center-align post-title">黑群晖系统安装应用记录</h1>
                 </div>
             </div>
         </div>
@@ -392,7 +392,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-12
+                    2019-03-16
                 </div>
                 
 
@@ -406,7 +406,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    241
+                    1.1k
                 </div>
                 
 
@@ -418,13 +418,23 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> Mac/iOS 下全局代理依然无法上 Telegram ？教你一招！</p>
-<p>有很多同学通过各种方法总算可以科学上网了，但是却发现依然无法登陆 Telegram 客户端，尝试解决方案如下：</p>
-<a id="more"></a>
-
-<h3 id="1-Mac下无法联网问题"><a href="#1-Mac下无法联网问题" class="headerlink" title="1.Mac下无法联网问题"></a>1.Mac下无法联网问题</h3><p>先用 ShadowsocksX-NG 查看 Socks5 端口号<br> <img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0zbr1hu7ij20dc0b8aay.jpg">然后登录客户端时会出现如下图错误提示<br> <img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0zbst3ujyj20i00godie.jpg">最后打开 Use Proxy，选择 Socks5 并设置如下图保存即可。<br><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0zbv83n34j20880aqweq.jpg"></p>
-<h3 id="2-iOS-下客户端无法联网的问题"><a href="#2-iOS-下客户端无法联网的问题" class="headerlink" title="2. iOS 下客户端无法联网的问题"></a>2. iOS 下客户端无法联网的问题</h3><p>经过测试 Wingy 即使在全局状态下也无法登陆，解决办法就是换小火箭 shadowrocket，目前正常使用，另外之前国内号码好像收不到验证码，但是最近我试了下国内也可以，不过我还是打算把淘宝买的 GV 号用来作为主账号登陆，就是不知道能用多久哈。</p>
-<p>好了，今天的分享就到这里，谢赏各位。</p>
+                <p>这两天折腾搞了个黑群晖，自己是小白，所以在这一块都是照着网上的教程一步一步操作的，所以有必要自己再记录下大致的思路过程，方便下次重新安装。拿之前第一次搭建 Hexo 博客来说，虽然最后成功了，但是如果让我再操作一遍，基本还是要一步步对照指南，因为我对那些基本的各种命令根本看不懂，只能一步一步模仿，这样只要教程稍微跳过了一些作者以为是很简单的步骤，但是对于小白可能就惨了，所以我选择记录下。<a id="more"></a></p>
+<p>因为生命不息，折腾不止呀！</p>
+<p>要说下的是，我这篇主要是思路记录，是给自己参考的，我这次系统安装也主要是参考网友的教程来搭建的。</p>
+<p>这次操作是在 Windows 环境下，需要下载的文件有</p>
+<blockquote>
+<p>1.<a target="_blank" rel="noopener" href="http://down.nas2x.com/synology/dsm/6.1/6.1.7/ds3617xs/">群晖系统</a>，推荐 DSM 6.1.7-15284 Update3 img 和 pat 结尾文件<br>2.<a target="_blank" rel="noopener" href="http://down.nas2x.com/tools/">ChipEasy 芯片无忧</a>，查找 U 盘的 VID 和 PID<br>3.<a target="_blank" rel="noopener" href="http://down.nas2x.com/tools/diskgenius/">DiskGenius</a>，复制 grub.cfg 到桌面<br>4.<a target="_blank" rel="noopener" href="https://notepad-plus-plus.org/">Notepad++</a>，打开编辑 grub.cfg<br>5.<a target="_blank" rel="noopener" href="https://www.nas2x.com/downloads/win32-disk-imager.2/">Win32 Disk Imager</a>，将系统写入U盘</p>
+</blockquote>
+<h2 id="第-1-步-修改引导配置文件"><a href="#第-1-步-修改引导配置文件" class="headerlink" title="第 1 步 修改引导配置文件"></a>第 1 步 修改引导配置文件</h2><p>1.1 用 ChipEasy 芯片无忧 查找U盘的 VID 和 PID，并做记录。<br>1.2 用 DiskGenius 编辑配置文件 grub.cfg，<br>菜单栏选择硬盘——打开虚拟硬盘文件——选择刚刚下载的img文件，在左侧已打开的 img 文件——找到 grub.cfg——右击选择复制到桌面，<br>1.3 修改 VID 和 PID<br>打开桌面的 grub.cfg 文件选择用 Notepad++ 打开，找到下面两行修改 0x 后面值为刚刚 ChipEasy 读取的值。</p>
+<blockquote>
+<p>set vid=0x058f U 盘的 VID 实体机必须修改，虚拟机无需修改<br>set pid=0x6387 U 盘的 PID 实体机必须修改，虚拟机无需修改</p>
+</blockquote>
+<p>1.4 替换 grub.cfg 原文件<br>把已经编辑好的 grub.cfg 文件拖动到 DiskGenius 刚刚的位置, 并且替换之前的文件。<br>Tips: <strong>以上步骤操作结束后，记得关闭 DiskGenius，否则 U 盘写入时会出错。</strong></p>
+<h2 id="第-2-步-制作引导盘"><a href="#第-2-步-制作引导盘" class="headerlink" title="第 2 步 制作引导盘"></a>第 2 步 制作引导盘</h2><p>运行 Win32 Disk Imager 磁盘映像工具，选择自己 U 盘符，选择之前下载的 <strong>synoboot.img</strong> 文件，再点击写入，直至写入成功大概1分钟不到。</p>
+<h2 id="第-3-步-U-盘安装群晖环境"><a href="#第-3-步-U-盘安装群晖环境" class="headerlink" title="第 3 步 U 盘安装群晖环境"></a>第 3 步 U 盘安装群晖环境</h2><p>插入U盘至旧主机或者自己搭的 NAS，进入 Bios 先选择 U 盘启动，不清楚的同学这一步可以谷歌一下，默认选择第1个 <strong>DS3617xs 6.1 Baremetal with Jun’s Mod v1.02-alpha</strong> 回车「其实这个选择的界面大概只出现 0.5 秒就跳过去了，默认就好」。<br>出现下图则表示安装成功，大概 1 分钟就可以。这里我说一下，其实只要出现红线框起来的部分也有可能是已经安装了，我却一直傻等，后来网上查才知道已经成功了。<br><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g152dff5lkj20jy0axaa9.jpg"></p>
+<h2 id="第-4-步-安装群晖系统"><a href="#第-4-步-安装群晖系统" class="headerlink" title="第 4 步 安装群晖系统"></a>第 4 步 安装群晖系统</h2><p>4.1 浏览器地址栏输入 find.synology.com 查找系统<br>4.2 安装 DSM——手动安装——选择 <strong>.pat</strong> 文件，安装会清空硬盘文件<br>4.3 设置服务器名称、用户名、密码<br>4.4 原装群晖用 QuickConnect 账户登陆，黑群晖选择跳过此步骤<br>至此，群晖系统已安装完成，需要提醒的是不要轻易升级，去控制面板里系统计划关闭 DSM 自动更新选项。</p>
+<h2 id="第-5-步-群晖-DSM-添加硬盘存储空间的办法"><a href="#第-5-步-群晖-DSM-添加硬盘存储空间的办法" class="headerlink" title="第 5 步 群晖 DSM 添加硬盘存储空间的办法"></a>第 5 步 群晖 DSM 添加硬盘存储空间的办法</h2><p>5.1 进入系统后，点击左上角方块菜单——选择存储空间管理员，按提示添加硬盘即可，这里同样会清空硬盘文件，因为群晖系统格式和电脑格式不一样，所以一定会清空一下，具体详细设置大家可以谷歌或参考下这篇文章——<a target="_blank" rel="noopener" href="https://www.nas2x.com/threads/synology-dsm-hdd.30/">群辉Synology DSM 添加 HDD 硬盘/存储空间的方法</a></p>
+<p>终于整理完啦，自己梳理一次感觉清晰多了，这样下次就可以按照整理的步骤快速进行了，当然如果不想折腾又有这方面需求的，建议直接去<a target="_blank" rel="noopener" href="https://www.synology.com/zh-cn">群晖官网</a>了解详情，可以去天猫货京东旗舰店购买。</p>
 
             </div>
             <hr/>
@@ -450,7 +460,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://qiubugu.com/article/20190311-Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81.html">http://qiubugu.com/article/20190311-Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81.html</a>
+                    <a href="http://qiubugu.com/article/20190316%20%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html">http://qiubugu.com/article/20190316%20%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -660,7 +670,7 @@
         repo: 'gitalks.github.io',
         owner: 'Skytostop',
         admin: "Skytostop",
-        id: '2019-03-12T00-42-04',
+        id: '2019-03-16T22-02-36',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -688,26 +698,80 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/article/20190314-You-ve-got-to-find-what-you-love-Jobs-says.html">
+                <a href="/article/20190324%20%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="「You&#39;ve got to find what you love」,Jobs says">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="搬瓦工使用指南">
                         
-                        <span class="card-title">「You&#39;ve got to find what you love」,Jobs says</span>
+                        <span class="card-title">搬瓦工使用指南</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-This is a prepared text of the Commencement address delivered by Steve Jobs, CEO of Apple Computer and of Pixar Animati
+                            每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。
+搬瓦工官网一直在变化，因为一直会被封掉，目前是https://bwh88.net/，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。
+
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-14
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-24
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    善用网络
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/">
+                        <span class="chip bg-color">搬瓦工</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/article/20190314%20Meg%20Jay-Why%2030%20is%20not%20the%20new%2020.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Meg Jay- Why 30 is not the new 20">
+                        
+                        <span class="card-title">Meg Jay- Why 30 is not the new 20</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            \
+
+The above video does not display properly because it requires scientific internet access.
+00:12
+When I was in my 20s,
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -723,59 +787,8 @@ This is a prepared text of the Commencement address delivered by Steve Jobs, CEO
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/life/">
-                        <span class="chip bg-color">life</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/article/20190310-Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hexo 博客如何绑定域名">
-                        
-                        <span class="card-title">Hexo 博客如何绑定域名</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            许多操作可能随着 Github 更新而略有变化，我自己是小白，所以只能照网上依葫芦画瓢，但是也遇到了很多坑。记录一下，备自己之后查看。
-我是在 Godaddy 上买的域名，但是在国内解析速度比较慢，且有时候会被屏蔽。
-第 1 步修改域名 D
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-10
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">学习</span>
                     </a>
                     
                 </div>

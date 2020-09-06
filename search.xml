@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo博客搭建经历</title>
-    <url>/article/20151218-Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86.html</url>
+    <url>/article/20151218%20Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%BB%8F%E5%8E%86.html</url>
     <content><![CDATA[<p>&#160; &#160; &#160; &#160;这是真正意义上自己搭建博客上的第一篇文章，一直幻想有一个自己的网站，但是这对一个文科生来说真的不是件容易的事。机缘巧合，前段时间在支付宝的公众号里推了我一篇阿里云“云翼计划”广告，其实就是让大学生可以低价购买云服务器。还没搞懂怎么回事我一冲动就买了，然后就买域名，然后折腾就开始了。  <a id="more"></a> </p>
 <p>  &#160; &#160; &#160; &#160;我至今也没有完全搞懂搭建一个网站所有的事，后来想想毕竟要涉及网页开发太复杂，而这对于毫无技术基础的我来说无异于登天之难。我Google之后还是选择先搭建一个自己的博客，然后发现可以在Github上免费搭建，因为可以免费提供300M空间。于是我把阿里云服务器的订单退了，只保留了自己的域名。关于买域名本来想去Godaddy上买，但是发现万网收归阿里后，购买也蛮方便的而且很便宜！而且我只是简单地弄个人博客使用应该够了，只不过到目前域名好像还没有正常工作。。。我用DNSPod解析没成功后来换回万网DNS成功了，但是更新一篇文章后又不能解析了，然后又换回DNSPod至今，等过一段时间再看看。 </p>
 <p>&#160; &#160; &#160; &#160;我一开始看网上是Github+Jekyll搭建的，但是后来看到好像有更简单点的Hexo博客搭建方式。虽然我也想极客一点，但是没有代码基础的文科生还是选择先尝试后者。我也不知道能否成功，就像当年我第一次自己去尝试Goagent配置要出去看看一样。安装了各种环境，Gitbash客户端之后，我开始按照教程一步步搭建，我把看到的所有自己觉得有用的教程都存到Chrome的书签栏当中以备学习。果然不出所料，中途也的确出了很多问题，比如_config.yml文件里写入的数据冒号后都要空格（汗，我是不可能知道的），Hexo安装插件命令也不熟悉，出错了简直不知道怎么办。好在加了一个Hexo相关的QQ群，当我说是一名文科生时。群内网友也许是无意也许是惊讶:“文科生进这个群干嘛”。就这样我问了两位网友两个问题，也许在他们眼里问题很简单，但是对于我这个外行来说真是不知道怎么办。所以，当最后本地测试成功，且生存静态文件上传到Github上，我很高兴也真心感激热情网友的不厌其凡的帮助。但后来遇到很多问题我却大多是谷歌加百度寻找解决方法，后话不提。  </p>
@@ -23,7 +23,7 @@
   </entry>
   <entry>
     <title>幸福不一定如期而至，焦虑却终会过去</title>
-    <url>/article/20151229-%E5%B9%B8%E7%A6%8F%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%A6%82%E6%9C%9F%E8%80%8C%E8%87%B3%EF%BC%8C%E7%84%A6%E8%99%91%E5%8D%B4%E7%BB%88%E4%BC%9A%E8%BF%87%E5%8E%BB.html</url>
+    <url>/article/20151229%20%E5%B9%B8%E7%A6%8F%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%A6%82%E6%9C%9F%E8%80%8C%E8%87%B3%EF%BC%8C%E7%84%A6%E8%99%91%E5%8D%B4%E7%BB%88%E4%BC%9A%E8%BF%87%E5%8E%BB.html</url>
     <content><![CDATA[<p>　　最近的状态真是有种久病缠身的感觉，各种琐事缠身无法清闲。话说回来，真清闲了我也不高兴了。目前所处大四学期尾声，罗列一下自己最近几想做的几件事情，也算顺便整理一下自己的思路。<a id="more"></a>  </p>
 <blockquote>
 <p>1.科目二还在打卡<br>2.毕设师还不知是谁，想更换无果中<br>3.换领导了，实习日志和报告就要重写？<br>4.兼职辞职日期也没定下来<br>5.企业面试的结果还在等待<br>6.想把证券从业资格证拿到手且继续学英语</p>
@@ -43,7 +43,7 @@
   </entry>
   <entry>
     <title>2015 小结</title>
-    <url>/article/20160101-2015-summary.html</url>
+    <url>/article/20160101%202015%20summary.html</url>
     <content><![CDATA[<p>此刻已经是新年凌晨一点，想想还是简单写下自己的年终小结。</p>
 <p>既然没有提早准备，也就是想到哪里就写到哪里，也当是对自己的一次梳理和对话。每次新年到来的时候，大家都会感觉到时间过得是越来越快了。就像上大学一样，一开始的时候感觉漫漫大学生涯才开始，结果眨眼之间，却已是大四末了，时间真如白驹过隙。 <a id="more"></a>  
 　　</p>
@@ -63,7 +63,7 @@
   </entry>
   <entry>
     <title>面试那些事儿</title>
-    <url>/article/20160121-%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.html</url>
+    <url>/article/20160121%20%E9%9D%A2%E8%AF%95%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.html</url>
     <content><![CDATA[<p>   此时我正下班坐在实习的办公室里，想想从去年秋招开始的那些面试，弄这个标题貌似有很丰富的面试经验，其实并没有。<br>   我其实很早就关注这一块信息，但是那时候秋招最早的是类似BAT的巨头，根本没有我这样小学校的机会，于是日子就这样过着。忽然有一天，我也开始着急了，我突然发现周边的同学也在找或者准备考研，而此时秋招已经快临近尾声了。我不断修改简历，通过各种途径去投递，但是我基本只投了一个地方：上海   <a id="more"></a></p>
 <p>   很多人会问什么，在此，我就不过多解释了，只说一句：大家都有自己的选择。断断续续很多石沉大海的，还有一些不知道有没有结果，我已经等不及了。所以当上海58邮件通知我可以参加面试的时候，我毫不犹豫的从扬州出发去上海参加面试。先是群面，无领导小组讨论，单面～最后我发现招的是一个销售岗位，而且可能要有一半是电销的那种。我当时就表示不太喜欢，所以后来没有下文了。又过了两天赶集（两家合并了，但是在上海有不同业务也有不同办公地点）又给我打电话说是营销管培生，结果我去了之后发现其实差不多，都是这种销售，无果。在上海同学那住了几日，中途还有学校校招的企业卫岗牛奶招管培生的面试，我就去了趟南京，他们说报销上海到南京单程路费。去面试时是一个叫赵总的，是上海这边的负责人还在南京办公多，大家谈了一会儿，我对薪资不是特别满意，最重要的是工作方向也不是特别感兴趣的。赵总说了很多比较诚恳，最后说让我回去自己想想五内答复。就这样，这次面试从扬州出发经镇江到上海转南京又回镇江到扬州（为什么不从南京直接回扬州？我也忘了）。大家愈发着急了，又有一家公司上海宝尊电商邮件我12月8日面试管培生岗位，我一看专业相关，刚上市公司，阿里是其最大股东。于是我又从扬州第二次出发来上海，这次我没好意思再找同学。我到的时候，首先发现签到表上把我电话留错了。然后就是坐在会议室等，等的时候一圈人，旁边一个小的会议室正在面试。等到我们准备的时候发现加我只有三个人，其余我们这组的都没来。除了我，另外两个是女生，一个是华东理工大学的研究生，一个是河海大学的本科生。华东理工的那位女生目前在通用电气做实习生，我心想估计悬，今天自己来参与了。后来大家一起被带去另一座楼去面试，一开始自我介绍，没什么大家介绍了。然后自己抽一个纸条，谈一段自己的见解。我抽的是&gt;欲速则不达，见小利则大事不成。我就说了一通。然后旁边华东理工的说了自我介绍之后都忘了自己抽题这回事，有点紧张。面试官坐对面一排六个，随后一个所谓无领导，我们因为就三人就直接谈自己解决方案了。命题大概是公司有20万的资金，如何资助学校使用获得最大效益。这里我犯了致命的错误，我先是自愿选择第一个作答，然后是在一二三四五六七方案里只挑了一个，这样20万只用了三分之一。。。然后第二位女生说的时候，我才发现想补充又不好说了。随后下一轮，那位河海的被用英语介绍她参观谷歌办公室的感受，她说了一会儿有点说不下去了。面试官就让她用中文说了。她蛮活泼的，估计蛮受喜爱的。最后面试官并没有问我太多问题，所以我也没办法展现自己，虽然自己觉得有些问题回答还不错，只是简洁了些。就这样就回去等通知了，说三到五天会有结果通知，过不过都有邮件，结果我等了快两星期也没有任何通知，我周六打过去说已经电话通知并发放了Offer，我……这次面试我从扬州赶来也没时间穿什么职业装，一比略逊一筹。<br>    直到前几天1月15日才有邮件通知被拒，而我早已在11日加入了一家新的公司，也就是我现在的公司。<br>这个面试我就不细谈了，只说了大概，我是直接在网上视频面试就通过的，杨哥体谅我不便来上海。而当时我还在帮以前我的店经理堃的店里去支援，时间很紧支援了三天第四天就被临时通知考驾照科目二（这又是一段故事），第四天凌晨1月8日就赶往上海了，这天我生日。<br>    现在我没有毕业，所以只能拿实习工资，希望能和公司一起发展吧。来上海之后的生活，有空再写。</p>
 ]]></content>
@@ -76,7 +76,7 @@
   </entry>
   <entry>
     <title>阶段</title>
-    <url>/article/20160505-%E9%98%B6%E6%AE%B5.html</url>
+    <url>/article/20160505%20%E9%98%B6%E6%AE%B5.html</url>
     <content><![CDATA[<p>此刻我的内心是苦涩的。头脑也是有点愚钝的，生活更是亟需理清头绪。</p>
 <p>我好像正处在一个尴尬的【阶段】，一切好像又回到了起点。虽然驾照科目三还没有考过，毕业论文也没有弄好，工作也仍要再找，但是自从上次上海实习回来后，我内心却不再像3个月前那样焦躁不安了。说一点不急也是骗人的，我在这段时间甚至很长一段时间都会跳出自身的范畴，以一个陌生的第三者视角来检视自己的所作所为。从上海实习回来后，我的生活是有点懒散的，回到宿舍晚睡迟起整天点外卖，除了吃睡就是打打手机游戏和看看视频综艺。<a id="more"></a>所以有时我也惊讶自己突然也会变成这样，我清楚地知道这不是我真正想要的。我以前上初中和高中的时候都是全校前几个起床的，上了大学后记得备考四六级的时候每天早早起床一个人去湖边背单词听英语，坚持了一个学期早起，晚上也会去跑步锻炼。</p>
 <p>话说回来自己现在也不算变得如何不堪，我既不是为了炫耀过去也不是想麻痹现在，我所想做的是就是冷眼旁观自己，看看自己或者说一个人的变化以及当中是否发生了什么。这有点恶趣味也有点实验的味道，我想自己多去经历，更加了解自己。所以我记录下自己这些外在变化，也记录下自己的心路历程，或许能为以后带来些回忆和思考。</p>
@@ -95,7 +95,7 @@
   </entry>
   <entry>
     <title>四年</title>
-    <url>/article/20160705-%E5%9B%9B%E5%B9%B4.html</url>
+    <url>/article/20160705%20%E5%9B%9B%E5%B9%B4.html</url>
     <content><![CDATA[<p>当你自己亲自感受到的时候，你才会发现时间真的过的好快。</p>
 <p>2012年10月初，我来扬州读大学，这也是我第一次来扬州。我们这一届是学校在扬州的第一届学生，所以因为种种原因没有军训。后来说补训，结果也不了了之了。四年后也就是现在，我手里已经攥着学校给我的两张证书了。<a id="more"></a></p>
 <p>四年间我不断地去尝试一些事物，不断地去找寻自己。除了完成在学校的学习任务外，我会去做些兼职，也真的去了几家公司实习。回过头来看，不得不说这些经历还是对我的成长有很大的帮助。让我提早见识了社会，也认识了一批朋友，真是一件值得高兴的事。至于其间发生过的一点曲折，再回首就都不值一提了。四年间努力找寻自我，四年后依旧没办法给自己一个准确的描述。但是这四年我成长了，我学会了去独立思考事物、去独立面对一些困难、妥善协调地解决问题。日新月异的社会让我感受到了这个时代的呼唤，它迫使我不断地去学习，而培养自己的学习力也成为了我的必修课。</p>
@@ -114,7 +114,7 @@
   </entry>
   <entry>
     <title>两个月的思忖</title>
-    <url>/article/20160916-%E4%B8%A4%E4%B8%AA%E6%9C%88%E7%9A%84%E6%80%9D%E5%BF%96.html</url>
+    <url>/article/20160916%20%E4%B8%A4%E4%B8%AA%E6%9C%88%E7%9A%84%E6%80%9D%E5%BF%96.html</url>
     <content><![CDATA[<p>深夜窗外灯火璀璨，刚刚算安定下来，我却怎么也睡不着了。</p>
 <p>从7月初毕业后回家一直到今天9月中旬了，期间发生了许多事，耽误了许久。当初4月份因为学校的毕业论文和驾照都没有搞定，加上自己可能对实习公司的工作不是特别喜欢就决定辞职回学校了。回到学校一直到7月初才解决所有杂事，然后眼看放假学校也不给住了就回家，时值酷暑，而且今年是特别的热，我人在江苏却又想到上海工作，就决定等天气稍微凉快点再找工作，结果天气持续高温，更加糟糕的事就在八月初我下定决心准备认真准备简历找工作的时候，一件意外的事情发生了。<a id="more"></a>我骑车路过一个雨后的路边超车时发生侧滑，两个膝盖加手掌和一些其它关节初都有不同程度的受伤，尤其右膝盖最严重，所以就像老天和我开玩笑一样了，我一下子成为了一个“废人”，去诊所连续打了两个星期的吊瓶，每天消毒换药吃药，一身的青霉素味道。天天卧床休息前前后后持续了一个月，中途还有一次小的二次受伤略过不提，直到9月初我来上海前一天才自己把结的痂去掉，于是我从零出发，以一个应届生的身份来找工作，约了几家面试，具体细节就先不讲了，可能是之前的一些实习或者兼职经历有加分，加上自己沟通的顺畅些，也还算顺利的找到了工作，HR通知我中秋节后第一个工作日去上班，所以目前我还没有去上班报到。来上海的时候就会有一些心理准备，房价物价都比较高，刚来的时候住了两天布丁酒店，后来觉得贵就去住青旅，这里有个小插曲，公司当时说最快当天发Offer，但是我等了几天眼看放假了邮箱也没收到，于是放假前一天晚上我加了人事问了说已经发了，我仔细一检查被Gmail归档到垃圾邮件了，有点好气又好笑。工作差不多找好的时候，就是要找房子，找房子一点也不比找工作轻松，一个刚毕业的大学生本来就经济上不会富裕，还想找到好点性价比高的房子真是难啊，我之前打工实习兼职的一点积蓄也都花了不少，查看知乎、微信群、58和赶集网、Zuber、豆瓣等等眼睛都快看花了，后来实在不想折腾还拖着一个行李箱背着笔记本，就找了一家离公司附件地铁站有八站路的一个小区，对房子基本还是满意的，就是试了下空调好像不太制冷，此刻正开着在测试。</p>
 <p>有些事绕不开也只能去面对，家里父母生病基本没有多少收入，在我来上海的前两天，弟弟被送到了城市去读书交了很多学费，外公不舒服去医院查却是确诊为肺癌晚期，我妈妈一下子就有点接受不了，我爸爸也不放心我妈一个人在家干脆辞了本来就杯水车薪的工作，说实话我替外公感到心痛，也看到妈妈有点心疼，因为我家和外婆家很近，所以除了本身的亲情血缘关系，日常相处的时间很多所以感情更深，外公辛苦了一辈子，晚年也没有清闲过，他就是劳累了一生。我来上海的前一天问候一个上海的朋友，她却因为父亲得了癌只能辞了上海的工作回老家，这让我感受到病魔的无情，感叹健康的重要性，也为我的朋友感到难过，她心中估计更有说不出的痛。</p>
@@ -129,7 +129,7 @@
   </entry>
   <entry>
     <title>一加2手机救活记</title>
-    <url>/article/20161126-%E4%B8%80%E5%8A%A02%E6%89%8B%E6%9C%BA%E6%95%91%E6%B4%BB%E8%AE%B0.html</url>
+    <url>/article/20161126%20%E4%B8%80%E5%8A%A02%E6%89%8B%E6%9C%BA%E6%95%91%E6%B4%BB%E8%AE%B0.html</url>
     <content><![CDATA[<p>一加3T国行版本月29号就发布了，有意向购买替换掉我现在的加2，因为玩游戏总觉觉得有点卡卡的，平时使用还算流畅吧。昨天晚上无意去论坛看到了加2的HOS2.5公测版更新了，想想还是打算去刷最新的，但是官方建议双清，我之前有Root加上装的太多了App，所以备份了照片视频和短信通讯录神马的，就打算彻底刷机了，结果噩梦开始了。<a id="more"></a></p>
 <p>我一开始使用自带的恢复出厂设置选择删除所有数据，结果发现没删掉，于是用之前刷入的Recovery来尝试操作，结果TWRP太强大，我把Wipe里所有选项都勾选了，然后我就看手机卡在开机那个界面，以为是正常界面，加上已经凌晨2点了就睡觉了，结果一觉醒来，纳尼？发现手机还在那个界面，此时才8点多，本来周末准备睡懒觉的，一下子没睡意了。仔细想了下，应该那个清除直接把系统都删除了，于是上线找客服，结果客服还没有上班，于是自己去论坛和百度找答案，一开始也没找到好的方法，然后客服上线了简单聊了几句，就说进入不了官方Recovery就送售后吧，但是坑爹的是一加只有武汉、深圳和北京三个售后点，而且过保刷机可能还要收50元，加上顺丰快递25元，于是我说我自己再看看，没想到看到一个帖子说有一种救砖的办法，就是手机连上电脑去设备管理里查看安装高通的下载驱动，我也照做了，然后真正的噩梦开始了，还有一个线刷的包和工具是放在百度云盘里的，我就下载发现1.5G的文件实在是龟速几十K，然后尝试用迅雷下载，又去百度在知乎看到一个知友提供Tempermonkey这个插件，的确可以解决用迅雷下载百度云大文件的方法，但是！但是！每次下到进度20左右就没速度了，于是我都想寄售后了，但一想太费事了，而且自己没有备用机。忽然，我又想到去淘宝去买迅雷会员，卖家一开始还发错账号了，后来又补发了白金会员，但是我发现还是我太年轻，一样没用，于是我换一种思路，看看有没有另外的人的分享，还好找到了另一个人的分享，还是百度云！这次我下载有速度了。稳定400+K已经满足了，就在我写这篇文字的时候已经快下完了，然后下到进度95.7%的时候说任务出错，尼玛这不是坑我吗！</p>
 <p>所以到现在，我还没解决这个问题，不知道怎么回事这个下载速度超级慢的，目前只能等百度云龟速看看了。</p>
@@ -145,8 +145,56 @@
       </tags>
   </entry>
   <entry>
+    <title>2017 小结</title>
+    <url>/article/20180101%202017%20summary.html</url>
+    <content><![CDATA[<p>看了下2016年的写的一些计划，有些做的不错，有些还是不够好比如阅读，这真的只是借口，虽然其实2017比之前好点，但是总体数量还是非常的低。</p>
+<p>想一下毕业一年多了，今年也是动荡的一年，从海淘公司出来又做了一段时间文案，最后酷暑月干脆就歇着了，那段时间挺衰的，空调基本24小时开着，有时候会发呆，晚上会去跑步，然后回来习惯性地买一瓶盐中盐汽水，偶尔还会去做做饭，每天不知不觉就过去了，人活得有些飘渺。一会去学HTML，一会又去看小程序，结果都是匆匆忙忙了解了下概念。后来继续找工作，刚开始也不太顺利，最终机缘巧合进入了现在的公司，整体还算挺满意的。</p>
+<p>入职快半年了，公司很有活力，也遇到了很多厉害的同学。自己身边的同事虽然聚聚散散，但是大家都很友好，工作氛围也算不错，而且我和大家相处的都非常好，大家也都非常喜欢我，哈哈自恋一下。虽然一直在变动，但是整体方向应该是往好的在走，所以，我其实特别感谢帮助过我的所有人，身边的同事、朋友，还有一直支持我的家里亲人。2017，因为遇到了一些非常优秀的小可爱，也让我想要变得更棒！</p>
+<p>有时候想想一年下来，如果没能说出个一二来，好想真的没过一样，不想写太多了心中有方向就好。</p>
+<p>2018照例还是想点计划，不写太多</p>
+<h3 id="1-阅读和英文"><a href="#1-阅读和英文" class="headerlink" title="1.阅读和英文"></a>1.阅读和英文</h3><p>还是希望把阅读放在第一位，真的是一定要多去阅读和思考，每次没有看书就会觉得心里特别空，感觉很无知一样，这样说可能要被一些人嘲笑，其实真的会有这种感受，所以我感觉现在自己就像个白痴一样。学习英文应该是一直的目标，希望能再上一个台阶！</p>
+<h3 id="2-旅行"><a href="#2-旅行" class="headerlink" title="2.旅行"></a>2.旅行</h3><p>这一年要真正多去一些地方，这次不是指去一些各种景点，而是一些有意思的地方，2017年末我去参观了巴金故居和宋庆龄故居，很多东西真多会让人启发很多，跳出自己的一亩三分地，多看看外面的世界。我无论到哪里，都会把身边所有的地方逛一遍，了解一些周边最真实的生活，看看这个城市的注脚。</p>
+<h3 id="3-健身和早睡"><a href="#3-健身和早睡" class="headerlink" title="3.健身和早睡"></a>3.健身和早睡</h3><p>虽然一年也没生过什么病，但是最近上班就很少锻炼了，而且天天熬夜，包括今天。我也得关注下自己起来，把自己收拾得精神一点，不能总是那么随意了。</p>
+<h3 id="4-赚钱"><a href="#4-赚钱" class="headerlink" title="4.赚钱"></a>4.赚钱</h3><p>赚钱和热爱生活并不矛盾，也不是什么庸俗的事情，人都希望越来越好。</p>
+<p>其实说得再多再好，计划也赶不上变化，只是希望自己心态一定要放平，要加油。</p>
+<p>2018，我希望不辜负自己，也不辜负每一个爱我的人，我来了！</p>
+<p><img src="/images/wukang.png"><br>2018.1.1凌晨3点写在住所<br>尾图：2017.12.31拍摄于武康路</p>
+]]></content>
+      <categories>
+        <category>年度小结</category>
+      </categories>
+      <tags>
+        <tag>年度小结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>隐藏技能——小米手机自带迅雷BT下载</title>
+    <url>/article/20181231%20%E9%9A%90%E8%97%8F%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E8%BF%85%E9%9B%B7BT%E4%B8%8B%E8%BD%BD.html</url>
+    <content><![CDATA[<p>这是我偶然发现的一个功能，发现下载速度极快，基本能够跑满带宽，甚至可以满速下载一些和谐的资源。不知道能够撑多久，目前整个大环境都非常严，单纯的下载软件从早期的网络蚂蚁、网际快车、到后来的电驴、QQ 旋风等都相继倒下，目前 PC 端也仅有迅雷在苦苦支撑，然而限速还有一些和谐资源下载的阉割都让下载变动越来越难，也因为现在下载的需求没有那么大了。</p>
+<a id="more"></a>
+<h2 id="手机型号：红米-Note-4X"><a href="#手机型号：红米-Note-4X" class="headerlink" title="手机型号：红米 Note 4X"></a>手机型号：红米 Note 4X</h2><blockquote>
+<p>MIUI版本：MIUI 10.1 | 稳定版<br>内存和存储：4G + 64G<br>处理器：HelioX20</p>
+</blockquote>
+<h2 id="测试下载链接"><a href="#测试下载链接" class="headerlink" title="测试下载链接"></a>测试下载链接</h2><blockquote>
+<p>笑傲江湖2.东方不败.双音轨<br>magnet:?xt=urn:btih:710EE5CA6DBA590CF418E5BB876EF48E453F919D</p>
+</blockquote>
+<p>上面选择的这部电影就是在 PC 端下载没有速度，下载到5%就不动了，于是换到手机下载竟然可以用。</p>
+<p><img src="https://i.loli.net/2018/12/31/5c29e875dd515.png" title="下载显示"></p>
+<p>  速度贼快</p>
+<p>不过经过实际测试，换同样MUUI版本且相同型号的手机，仅仅是处理器换成了高通骁龙 625 就打不开 BT 文件下载了，网上搜索也发现小米论坛等地也都说打不开 BT 文件了，不知道这篇文章出来（不知道有没有人分享过），这种下载方法还能支撑多久。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>从酷盘、快盘、微盘、360 、115 等等各大网盘也都相继倒下，再到百度网盘云8秒教育和各种限速封杀，下载之路注定艰难，不过如果服务商能早日形成和国外一样丰富的在线视频，同时能够提高大家的版权意识，倒也不是一件坏事。</p>
+<p>明天就是 2019 年啦，祝大家新年快乐噢！</p>
+]]></content>
+      <categories>
+        <category>善用网络</category>
+      </categories>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2016 小结</title>
-    <url>/article/20170102-2016-summary.html</url>
+    <url>/article/20170102%202016%20summary.html</url>
     <content><![CDATA[<p>看了自己2015年写的个人小结，同样2016年总结又从何写起呢？从大四毕业以来，我有点放纵和偷懒了，虽然用Hexo搭建了个写字的地方，也绑定了域名，但写的却很少，原本打算昨天写的总结也拖到了今天。<a id="more"></a></p>
 <p>2016年上半年初1月份我从小城扬州来上海实习，因为怕拖行李麻烦加上省点路费，晚上坐统超物流刘叔的车来的，第二点上午10点的样子到松江统一星巴克企业门口下车。记得到上海那天是自己的生日，晚上用身份证去环球金融观光厅兑了生日票，从高处俯瞰了一下繁华的夜上海。然后进入实习公司，中途公司安排去了一趟西安出差，也算是增长了一点见闻。等到出差回来差不多到了学校毕业论文的最后时期，4月份中旬回到学校开始弄论文，当时一边要准备毕业论文，一边想把驾照考完，因此自己总是以要留扬州的借口没有再去找毕业工作的事情，因为我没打算留在扬州，所以总是去外地面试不太方便。</p>
 <p>在来上海之前自己在扬州的一家外贸公司面试，我从老板的聊天中大概觉得我心不安稳不会留扬州，所以即使HR比较认可我还是没有要我，后来我陆陆续续来上海面试几次，往返扬州真是折腾，每次要去镇江坐火车或者高铁。继续从学校说起，就这样慢慢地完成了非常折腾的驾校考试，毕业证书也拿到了。当时天气非常炎热，其实在扬州当地图书馆已经有老师给我找了份工作，大概就是类似公众号运营之类的，薪资在扬州刚毕业的学生里也算可以了，但是我希望刚出来的时候还是去大城市去看看，所以我婉拒了，还是对老师说声谢谢。毕业前最后的一段时间出了一点小状况，在同学的帮助下，还好都解决了，回想大学四年，辅导员和关系好的几个同学也帮了我不少的忙，也一并感谢，同祝新年一切顺心。</p>
@@ -180,56 +228,8 @@
       </tags>
   </entry>
   <entry>
-    <title>隐藏技能——小米手机自带迅雷BT下载</title>
-    <url>/article/20181231-%E9%9A%90%E8%97%8F%E6%8A%80%E8%83%BD%E2%80%94%E2%80%94%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E8%BF%85%E9%9B%B7BT%E4%B8%8B%E8%BD%BD.html</url>
-    <content><![CDATA[<p>这是我偶然发现的一个功能，发现下载速度极快，基本能够跑满带宽，甚至可以满速下载一些和谐的资源。不知道能够撑多久，目前整个大环境都非常严，单纯的下载软件从早期的网络蚂蚁、网际快车、到后来的电驴、QQ 旋风等都相继倒下，目前 PC 端也仅有迅雷在苦苦支撑，然而限速还有一些和谐资源下载的阉割都让下载变动越来越难，也因为现在下载的需求没有那么大了。</p>
-<a id="more"></a>
-<h2 id="手机型号：红米-Note-4X"><a href="#手机型号：红米-Note-4X" class="headerlink" title="手机型号：红米 Note 4X"></a>手机型号：红米 Note 4X</h2><blockquote>
-<p>MIUI版本：MIUI 10.1 | 稳定版<br>内存和存储：4G + 64G<br>处理器：HelioX20</p>
-</blockquote>
-<h2 id="测试下载链接"><a href="#测试下载链接" class="headerlink" title="测试下载链接"></a>测试下载链接</h2><blockquote>
-<p>笑傲江湖2.东方不败.双音轨<br>magnet:?xt=urn:btih:710EE5CA6DBA590CF418E5BB876EF48E453F919D</p>
-</blockquote>
-<p>上面选择的这部电影就是在 PC 端下载没有速度，下载到5%就不动了，于是换到手机下载竟然可以用。</p>
-<p><img src="https://i.loli.net/2018/12/31/5c29e875dd515.png" title="下载显示"></p>
-<p>  速度贼快</p>
-<p>不过经过实际测试，换同样MUUI版本且相同型号的手机，仅仅是处理器换成了高通骁龙 625 就打不开 BT 文件下载了，网上搜索也发现小米论坛等地也都说打不开 BT 文件了，不知道这篇文章出来（不知道有没有人分享过），这种下载方法还能支撑多久。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>从酷盘、快盘、微盘、360 、115 等等各大网盘也都相继倒下，再到百度网盘云8秒教育和各种限速封杀，下载之路注定艰难，不过如果服务商能早日形成和国外一样丰富的在线视频，同时能够提高大家的版权意识，倒也不是一件坏事。</p>
-<p>明天就是 2019 年啦，祝大家新年快乐噢！</p>
-]]></content>
-      <categories>
-        <category>善用网络</category>
-      </categories>
-      <tags>
-        <tag>software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2017 小结</title>
-    <url>/article/20180101-2017-summary.html</url>
-    <content><![CDATA[<p>看了下2016年的写的一些计划，有些做的不错，有些还是不够好比如阅读，这真的只是借口，虽然其实2017比之前好点，但是总体数量还是非常的低。</p>
-<p>想一下毕业一年多了，今年也是动荡的一年，从海淘公司出来又做了一段时间文案，最后酷暑月干脆就歇着了，那段时间挺衰的，空调基本24小时开着，有时候会发呆，晚上会去跑步，然后回来习惯性地买一瓶盐中盐汽水，偶尔还会去做做饭，每天不知不觉就过去了，人活得有些飘渺。一会去学HTML，一会又去看小程序，结果都是匆匆忙忙了解了下概念。后来继续找工作，刚开始也不太顺利，最终机缘巧合进入了现在的公司，整体还算挺满意的。</p>
-<p>入职快半年了，公司很有活力，也遇到了很多厉害的同学。自己身边的同事虽然聚聚散散，但是大家都很友好，工作氛围也算不错，而且我和大家相处的都非常好，大家也都非常喜欢我，哈哈自恋一下。虽然一直在变动，但是整体方向应该是往好的在走，所以，我其实特别感谢帮助过我的所有人，身边的同事、朋友，还有一直支持我的家里亲人。2017，因为遇到了一些非常优秀的小可爱，也让我想要变得更棒！</p>
-<p>有时候想想一年下来，如果没能说出个一二来，好想真的没过一样，不想写太多了心中有方向就好。</p>
-<p>2018照例还是想点计划，不写太多</p>
-<h3 id="1-阅读和英文"><a href="#1-阅读和英文" class="headerlink" title="1.阅读和英文"></a>1.阅读和英文</h3><p>还是希望把阅读放在第一位，真的是一定要多去阅读和思考，每次没有看书就会觉得心里特别空，感觉很无知一样，这样说可能要被一些人嘲笑，其实真的会有这种感受，所以我感觉现在自己就像个白痴一样。学习英文应该是一直的目标，希望能再上一个台阶！</p>
-<h3 id="2-旅行"><a href="#2-旅行" class="headerlink" title="2.旅行"></a>2.旅行</h3><p>这一年要真正多去一些地方，这次不是指去一些各种景点，而是一些有意思的地方，2017年末我去参观了巴金故居和宋庆龄故居，很多东西真多会让人启发很多，跳出自己的一亩三分地，多看看外面的世界。我无论到哪里，都会把身边所有的地方逛一遍，了解一些周边最真实的生活，看看这个城市的注脚。</p>
-<h3 id="3-健身和早睡"><a href="#3-健身和早睡" class="headerlink" title="3.健身和早睡"></a>3.健身和早睡</h3><p>虽然一年也没生过什么病，但是最近上班就很少锻炼了，而且天天熬夜，包括今天。我也得关注下自己起来，把自己收拾得精神一点，不能总是那么随意了。</p>
-<h3 id="4-赚钱"><a href="#4-赚钱" class="headerlink" title="4.赚钱"></a>4.赚钱</h3><p>赚钱和热爱生活并不矛盾，也不是什么庸俗的事情，人都希望越来越好。</p>
-<p>其实说得再多再好，计划也赶不上变化，只是希望自己心态一定要放平，要加油。</p>
-<p>2018，我希望不辜负自己，也不辜负每一个爱我的人，我来了！</p>
-<p><img src="/images/wukang.png"><br>2018.1.1凌晨3点写在住所<br>尾图：2017.12.31拍摄于武康路</p>
-]]></content>
-      <categories>
-        <category>年度小结</category>
-      </categories>
-      <tags>
-        <tag>年度小结</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2018 小结</title>
-    <url>/article/20190101-2018-summary.html</url>
+    <url>/article/20190101%202018%20summary.html</url>
     <content><![CDATA[<p><img src="/images/shanghai.png"></p>
 <p>此刻我正坐在上海星巴克滨江店，耳机里放着Unit you，桌上太妃榛果拿铁已经喝完了，蛮好喝的。旁边就是东方明珠和上海中心大厦，窗外则是昼夜如斯的黄浦江。虽然已经接近晚上10点，但店里依旧人满为患，靠江的一排桌子坐满了人，即使是里面也座无虚席，不时有人进来寻找座位，看到满满的人头又无功而返。</p>
 <p>记不清从哪一年起，也开始学别人尝试给自己写一个年终总结。但是今天回想起来，觉得以前自己写总结的出发点，有点是为了总结而总结，更多是一些形式。我觉得两种人会去总结，一种是这一年里生活各方面很不错，且个人也获得很大成长的，相反一种是这一年非常不顺，但是想总结反思一下的，我大概属于后者。当然，很多人觉得都已经混得如此不堪了，哪有什么心思总结呢，想想好像也没错。</p>
@@ -276,7 +276,7 @@
   </entry>
   <entry>
     <title>一加2安装TWRP刷 LineageOS 15.1 安装谷歌框架并进行 Root 教程记录</title>
-    <url>/article/20190119-%E4%B8%80%E5%8A%A02%E5%AE%89%E8%A3%85TWRP%E5%88%B7-LineageOS-15-1-%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C-Root-%E6%95%99%E7%A8%8B%E8%AE%B0%E5%BD%95.html</url>
+    <url>/article/20190119%20%E4%B8%80%E5%8A%A02%E5%AE%89%E8%A3%85TWRP%E5%88%B7-LineageOS-15-1-%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C-Root-%E6%95%99%E7%A8%8B%E8%AE%B0%E5%BD%95.html</url>
     <content><![CDATA[<p>最近把自己的一加 2 又倒腾了下，虽然基本不用，但是还是想把它变成一个正常的手机，废话不多说，直接进正题。</p>
 <h3 id="第1步安装-TWRP"><a href="#第1步安装-TWRP" class="headerlink" title="第1步安装 TWRP"></a>第1步安装 TWRP</h3><p>首先去下载官方 TWRP (&lt;<a href="https://twrp.me/app/)%EF%BC%8C%E4%B9%9F%E5%8F%AF%E4%BB%A5%E4%BB%8E%E9%85%B7%E5%AE%89%E5%B8%82%E5%9C%BA%E4%B8%8B%E8%BD%BD%E3%80%82">https://twrp.me/app/)，也可以从酷安市场下载。</a><br>安装完成后，打开选择 TWRP FLASH 选择你的机型，选择最新的 img 下载安装，完成第一步 TWRP 最新版的安装工作。<a id="more"></a></p>
 <h3 id="第-2-步同时刷入-OS-和谷歌框架"><a href="#第-2-步同时刷入-OS-和谷歌框架" class="headerlink" title="第 2 步同时刷入 OS 和谷歌框架"></a>第 2 步同时刷入 OS 和谷歌框架</h3><p>去官网下载 OS &lt;<a href="https://download.lineageos.org//&gt;">https://download.lineageos.org/\&gt;</a> 选择对应的机型进行下载，然后重启手机同时按住音量减和电源键，进入Recovery，选择安装，找到下载好的 OS 安装包 ZIP，安装之前可以选择双清（选择清除——恢复出厂设置）一下。可同时刷入 Opengapps 文件&lt;<a href="https://opengapps.org//&gt;%EF%BC%8C%E6%89%BE%E5%88%B0%E5%AF%B9%E5%BA%94%E6%9C%BA%E5%9E%8B%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%85%EF%BC%8C15.1">https://opengapps.org/\&gt;，找到对应机型平台的包，15.1</a> 是 Android 8.1,一加 2 是骁龙 810 处理器属于 ARM64，我这里是用 nano 版本</p>
@@ -303,8 +303,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/article/20190308%20hello-world.html</url>
+    <content><![CDATA[<p>2019年3月8日，第二次重新搭建Hexo博客！</p>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post<a id="more"></a></h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
+<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hexo 博客如何绑定域名</title>
-    <url>/article/20190310-Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.html</url>
+    <url>/article/20190310%20Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.html</url>
     <content><![CDATA[<p>许多操作可能随着 Github 更新而略有变化，我自己是小白，所以只能照网上依葫芦画瓢，但是也遇到了很多坑。记录一下，备自己之后查看。</p>
 <p>我是在 Godaddy 上买的域名，但是在国内解析速度比较慢，且有时候会被屏蔽。</p>
 <h3 id="第-1-步修改域名-DNS-地址"><a href="#第-1-步修改域名-DNS-地址" class="headerlink" title="第 1 步修改域名 DNS 地址"></a>第 1 步修改域名 DNS 地址<a id="more"></a></h3><p>用国内的 DNSPod 代替 Godaddy 解析，登陆 DNSPOD 官网帮助中心，查看问题「 Godaddy 注册商域名修改 DNS 地址」，按照步骤先去登陆 Godaddy 官网点击右上角头像进入「我的产品」，选择 DNS 管理</p>
@@ -340,7 +355,7 @@
   </entry>
   <entry>
     <title>Mac/iOS下全局代理依然无法上Telegram？教你一招！</title>
-    <url>/article/20190311-Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81.html</url>
+    <url>/article/20190311%20Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81.html</url>
     <content><![CDATA[<p> Mac/iOS 下全局代理依然无法上 Telegram ？教你一招！</p>
 <p>有很多同学通过各种方法总算可以科学上网了，但是却发现依然无法登陆 Telegram 客户端，尝试解决方案如下：</p>
 <a id="more"></a>
@@ -358,7 +373,7 @@
   </entry>
   <entry>
     <title>Meg Jay- Why 30 is not the new 20</title>
-    <url>/article/20190314-Meg-Jay-Why-30-is-not-the-new-20.html</url>
+    <url>/article/20190314%20Meg%20Jay-Why%2030%20is%20not%20the%20new%2020.html</url>
     <content><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/vhhgI4tSMwc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen\>\</iframe\>
 
 <p>The above video does not display properly because it requires scientific internet access.</p>
@@ -410,7 +425,7 @@
   </entry>
   <entry>
     <title>「You&#39;ve got to find what you love」,Jobs says</title>
-    <url>/article/20190314-You-ve-got-to-find-what-you-love-Jobs-says.html</url>
+    <url>/article/20190314%20You&#39;ve%20got%20to%20find%20what%20you%20love,%20Jobs%20says.html</url>
     <content><![CDATA[<blockquote>
 <p>This is a prepared text of the Commencement address delivered by Steve Jobs, CEO of Apple Computer and of Pixar Animation Studios, on June 12, 2005. </p>
 </blockquote>
@@ -452,7 +467,7 @@
   </entry>
   <entry>
     <title>知乎上那些催人奋进的回答</title>
-    <url>/article/20190314-%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E5%82%AC%E4%BA%BA%E5%A5%8B%E8%BF%9B%E7%9A%84%E5%9B%9E%E7%AD%94.html</url>
+    <url>/article/20190314%20%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E5%82%AC%E4%BA%BA%E5%A5%8B%E8%BF%9B%E7%9A%84%E5%9B%9E%E7%AD%94.html</url>
     <content><![CDATA[<p>随手收集一些知乎上的提问，堕落的时候就来看看，给自己灌些鸡汤，很有必要。别人的意见只是参考，更重要的是你自己的思考。尽信书，则不如无书。</p>
 <blockquote>
 <p>1.<a href="https://www.zhihu.com/question/43377108/answer/574887910">只是每天坚持跑步真的可以改变一个人吗？</a><br>2.<a href="https://www.zhihu.com/question/279387872">30 岁左右的人，来谈谈你犯了哪些错误？</a><br>3.<a href="https://www.zhihu.com/question/265675232/answer/314959320">30 岁前实现财务自由的人，都做对了哪些事？</a><br>4.<a href="https://www.zhihu.com/question/304102027/answer/544432127">人生在世有哪些观念是越早建立越好的？</a></p>
@@ -465,26 +480,8 @@
       </categories>
   </entry>
   <entry>
-    <title>知乎上那些技能篇的回答</title>
-    <url>/article/20190314-%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E6%8A%80%E8%83%BD%E7%AF%87%E7%9A%84%E5%9B%9E%E7%AD%94.html</url>
-    <content><![CDATA[<blockquote>
-<p>1.<a href="https://www.zhihu.com/question/21696230">你是明白了哪几个基本原理之后而厨艺大增的？</a></p>
-</blockquote>
-<a id="more"></a>
-
-
-
-]]></content>
-      <categories>
-        <category>技能</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>黑群晖系统安装应用记录</title>
-    <url>/article/20190316-%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html</url>
+    <url>/article/20190316%20%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html</url>
     <content><![CDATA[<p>这两天折腾搞了个黑群晖，自己是小白，所以在这一块都是照着网上的教程一步一步操作的，所以有必要自己再记录下大致的思路过程，方便下次重新安装。拿之前第一次搭建 Hexo 博客来说，虽然最后成功了，但是如果让我再操作一遍，基本还是要一步步对照指南，因为我对那些基本的各种命令根本看不懂，只能一步一步模仿，这样只要教程稍微跳过了一些作者以为是很简单的步骤，但是对于小白可能就惨了，所以我选择记录下。<a id="more"></a></p>
 <p>因为生命不息，折腾不止呀！</p>
 <p>要说下的是，我这篇主要是思路记录，是给自己参考的，我这次系统安装也主要是参考网友的教程来搭建的。</p>
@@ -511,8 +508,26 @@
       </tags>
   </entry>
   <entry>
+    <title>知乎上那些技能篇的回答</title>
+    <url>/article/20190314%20%E7%9F%A5%E4%B9%8E%E4%B8%8A%E9%82%A3%E4%BA%9B%E6%8A%80%E8%83%BD%E7%AF%87%E7%9A%84%E5%9B%9E%E7%AD%94.html</url>
+    <content><![CDATA[<blockquote>
+<p>1.<a href="https://www.zhihu.com/question/21696230">你是明白了哪几个基本原理之后而厨艺大增的？</a></p>
+</blockquote>
+<a id="more"></a>
+
+
+
+]]></content>
+      <categories>
+        <category>技能</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PC常用软件推荐</title>
-    <url>/article/20190324-%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E7%89%88.html</url>
+    <url>/article/20190324%20%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E7%89%88.html</url>
     <content><![CDATA[<h2 id="系统工具"><a href="#系统工具" class="headerlink" title="系统工具"></a>系统工具</h2><blockquote>
 <p><a href="https://www.sumatrapdfreader.org/">Sumatra PDF</a>  Win<br>一款PDF、MOBI等阅读器<br> <a id="more"></a><br><a href="https://motrix.app/zh-CN">Motrix</a> Win/Mac<br>一款全能的下载工具，支持下载 HTTP、FTP、BT、磁力链、百度网盘等资源。</p>
 </blockquote>
@@ -569,7 +584,7 @@
   </entry>
   <entry>
     <title>搬瓦工使用指南</title>
-    <url>/article/20190324-%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</url>
+    <url>/article/20190324%20%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</url>
     <content><![CDATA[<p>每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。</p>
 <p>搬瓦工官网一直在变化，因为一直会被封掉，目前是<a href="">https://bwh88.net/</a>，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。<a id="more"></a></p>
 <h2 id="安装使用-SS"><a href="#安装使用-SS" class="headerlink" title="安装使用 SS"></a>安装使用 SS</h2><p>安装<a href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocks">SS</a>/<a href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocksr">SSR</a>，在登陆之前要先用帐号登陆搬瓦工官网。当然，如果还需要使用 VPS 空间搭建网站之类的功能，可能需要使用 Xshell 或 Mac 终端来登陆使用，稍微复杂了一些，不过按照<a href="https://medium.com/@jackme256/%E6%90%AC%E7%93%A6%E5%B7%A5-vps-%E6%90%AD%E5%BB%BA-shadowsocks-ss-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B-ss%E5%A4%9A%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96-efc6dda704fe">教程</a>也不难。<br>测试IP是否被锁，官方测试地址：<a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck">点我</a></p>
@@ -616,7 +631,7 @@
   </entry>
   <entry>
     <title>90后还要攒钱吗，眼下钱放在哪里好呢？</title>
-    <url>/article/20190625-90%E5%90%8E%E8%BF%98%E8%A6%81%E6%94%92%E9%92%B1%E5%90%97%EF%BC%8C%E7%9C%BC%E4%B8%8B%E9%92%B1%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%E5%A5%BD%E5%91%A2%EF%BC%9F.html</url>
+    <url>/article/20190625%2090%E5%90%8E%E8%BF%98%E8%A6%81%E6%94%92%E9%92%B1%E5%90%97%EF%BC%8C%E7%9C%BC%E4%B8%8B%E9%92%B1%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%E5%A5%BD%E5%91%A2%EF%BC%9F.html</url>
     <content><![CDATA[<p>90后还要攒钱吗，眼下钱放在哪里好呢？</p>
 <p>如果没钱，也没这个烦恼了，开个玩笑。</p>
 <p>知乎上有一个很火的问答，90 后的一代真的还能通过攒钱改变现状吗？我刚看了下有 673 个回答，看了排名靠前的答案还是持支持的态度，总算给了大家一点希望。</p>
@@ -642,7 +657,7 @@
   </entry>
   <entry>
     <title>Hexo 使用心得</title>
-    <url>/article/20191225-Hexo-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97.html</url>
+    <url>/article/20191225%20Hexo%20%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97.html</url>
     <content><![CDATA[<p>2019年3月8日，第二次重新搭建Hexo博客！</p>
 <p>Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting][3] or you can ask me on [GitHub][4].</p>
 <hr>
@@ -710,7 +725,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
   </entry>
   <entry>
     <title>2019 小结</title>
-    <url>/article/20200105-2019-summary.html</url>
+    <url>/article/20200105%202019%20summary.html</url>
     <content><![CDATA[<p>拖延了几天，想想不管写得怎么样，还是写一下所谓的个人总结吧，就当做是一个习惯了。</p>
 <p>我顺便翻看了以前的几篇总结，发现自己也是从校园到职场开始一路蜕变。一开始充满了豪情壮志，后来逐渐意识到大家都是凡人，也变得越来越务实，这没什么不好。但我内心还是会保留一份理想主义，只是不再发出那么多豪言壮语了，更多希望落实在行动上。</p>
 <p>2019 年对我来说可以算是艰难的一年，主要是在身体健康和个人财务方面。在武汉出差的时候，查出身体有结石，后来陆陆续续去武汉三院和武汉协和医院检查，三院有个医生本来都建议手术的，吃了一些药好像也没什么用，回到上海后又去长海医院复查，但是没看到明显的大的结石，也无明显疼痛症状，于是我也没管了，暂时也没什么影响。结石的疼是很难受的，我有位同事也是结石疼，因为比较大就只能去手术了，感谢老天像是给我一次警醒，希望我们今后都能更加爱惜我们的身体。趁着这次生病，我也用公司的体检去检查了下身体，发现了其他一些大大小小的数据异常，虽然有的看不懂，但总体不是好事，所以2020年健康要放在第一位，其实每一年健康都应该放在第一位，这和拼搏本身也不矛盾，因为大多数人根本不是工作导致的，而是自己不正确的作息和饮食习惯。另外说下，如果有条件的大家可以给自己配下保险，支付宝的百万医疗、互相宝都可以搞起，重疾险和意外险也可以根据需要配置。</p>
@@ -804,7 +819,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
   </entry>
   <entry>
     <title>只需 3 步免费用上 Google 搜索</title>
-    <url>/article/20200903-3%E6%AD%A5%E6%95%99%E4%BD%A0%E7%94%A8%E4%B8%8A%E8%B0%B7%E6%AD%8C.html</url>
+    <url>/article/20200903%203%E6%AD%A5%E6%95%99%E4%BD%A0%E7%94%A8%E4%B8%8A%E8%B0%B7%E6%AD%8C.html</url>
     <content><![CDATA[<p>我们默认大家是在不能 FQ 的情况下，想要利用谷歌搜索的，至于谷歌搜索的优势，这里不再赘述。（文中链接请长按复制到浏览器打开）</p>
 <blockquote>
 <p>第 1 步下载安装 Chrome 浏览器。</p>
@@ -850,18 +865,35 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/article/20190308-hello-world.html</url>
-    <content><![CDATA[<p>2019年3月8日，第二次重新搭建Hexo博客！</p>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post<a id="more"></a></h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+    <title>good</title>
+    <url>/article/title-1.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>测试的</title>
+    <url>/article/title-3.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/article/title.html</url>
+    <content><![CDATA[<p>123<br>w 的<br>的d<br>的s<br>说得<br>说得</p>
+<p> 说得 </p>
+<p> 说得<br> 是d是</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>markdown</title>
+    <url>/article/title-2.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>一篇文字</title>
+    <url>/article/%E4%B8%80%E7%AF%87%E6%96%87%E5%AD%97.html</url>
+    <content><![CDATA[<p>这事一篇测试文字</p>
+<p>2e</p>
+<p>2饿</p>
+<p>2e2<br>2<br>额</p>
 ]]></content>
   </entry>
 </search>

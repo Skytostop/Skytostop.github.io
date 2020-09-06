@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="黑群晖系统安装应用记录, qiubugu,秋布谷">
+    <meta name="keywords" content="90后还要攒钱吗，眼下钱放在哪里好呢？, qiubugu,秋布谷">
     <meta name="description" content="秋布谷，有趣的灵魂在这里相遇！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>黑群晖系统安装应用记录 | 秋布谷</title>
+    <title>90后还要攒钱吗，眼下钱放在哪里好呢？ | 秋布谷</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,12 +245,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">黑群晖系统安装应用记录</h1>
+                    <h1 class="description center-align post-title">90后还要攒钱吗，眼下钱放在哪里好呢？</h1>
                 </div>
             </div>
         </div>
@@ -365,25 +365,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/software/">
-                                <span class="chip bg-color">software</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/" class="post-category">
-                                善用网络
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -392,21 +379,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-16
+                    2019-06-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-06-16
+                    2019-12-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.5k
                 </div>
                 
 
@@ -418,23 +405,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这两天折腾搞了个黑群晖，自己是小白，所以在这一块都是照着网上的教程一步一步操作的，所以有必要自己再记录下大致的思路过程，方便下次重新安装。拿之前第一次搭建 Hexo 博客来说，虽然最后成功了，但是如果让我再操作一遍，基本还是要一步步对照指南，因为我对那些基本的各种命令根本看不懂，只能一步一步模仿，这样只要教程稍微跳过了一些作者以为是很简单的步骤，但是对于小白可能就惨了，所以我选择记录下。<a id="more"></a></p>
-<p>因为生命不息，折腾不止呀！</p>
-<p>要说下的是，我这篇主要是思路记录，是给自己参考的，我这次系统安装也主要是参考网友的教程来搭建的。</p>
-<p>这次操作是在 Windows 环境下，需要下载的文件有</p>
-<blockquote>
-<p>1.<a target="_blank" rel="noopener" href="http://down.nas2x.com/synology/dsm/6.1/6.1.7/ds3617xs/">群晖系统</a>，推荐 DSM 6.1.7-15284 Update3 img 和 pat 结尾文件<br>2.<a target="_blank" rel="noopener" href="http://down.nas2x.com/tools/">ChipEasy 芯片无忧</a>，查找 U 盘的 VID 和 PID<br>3.<a target="_blank" rel="noopener" href="http://down.nas2x.com/tools/diskgenius/">DiskGenius</a>，复制 grub.cfg 到桌面<br>4.<a target="_blank" rel="noopener" href="https://notepad-plus-plus.org/">Notepad++</a>，打开编辑 grub.cfg<br>5.<a target="_blank" rel="noopener" href="https://www.nas2x.com/downloads/win32-disk-imager.2/">Win32 Disk Imager</a>，将系统写入U盘</p>
-</blockquote>
-<h2 id="第-1-步-修改引导配置文件"><a href="#第-1-步-修改引导配置文件" class="headerlink" title="第 1 步 修改引导配置文件"></a>第 1 步 修改引导配置文件</h2><p>1.1 用 ChipEasy 芯片无忧 查找U盘的 VID 和 PID，并做记录。<br>1.2 用 DiskGenius 编辑配置文件 grub.cfg，<br>菜单栏选择硬盘——打开虚拟硬盘文件——选择刚刚下载的img文件，在左侧已打开的 img 文件——找到 grub.cfg——右击选择复制到桌面，<br>1.3 修改 VID 和 PID<br>打开桌面的 grub.cfg 文件选择用 Notepad++ 打开，找到下面两行修改 0x 后面值为刚刚 ChipEasy 读取的值。</p>
-<blockquote>
-<p>set vid=0x058f U 盘的 VID 实体机必须修改，虚拟机无需修改<br>set pid=0x6387 U 盘的 PID 实体机必须修改，虚拟机无需修改</p>
-</blockquote>
-<p>1.4 替换 grub.cfg 原文件<br>把已经编辑好的 grub.cfg 文件拖动到 DiskGenius 刚刚的位置, 并且替换之前的文件。<br>Tips: <strong>以上步骤操作结束后，记得关闭 DiskGenius，否则 U 盘写入时会出错。</strong></p>
-<h2 id="第-2-步-制作引导盘"><a href="#第-2-步-制作引导盘" class="headerlink" title="第 2 步 制作引导盘"></a>第 2 步 制作引导盘</h2><p>运行 Win32 Disk Imager 磁盘映像工具，选择自己 U 盘符，选择之前下载的 <strong>synoboot.img</strong> 文件，再点击写入，直至写入成功大概1分钟不到。</p>
-<h2 id="第-3-步-U-盘安装群晖环境"><a href="#第-3-步-U-盘安装群晖环境" class="headerlink" title="第 3 步 U 盘安装群晖环境"></a>第 3 步 U 盘安装群晖环境</h2><p>插入U盘至旧主机或者自己搭的 NAS，进入 Bios 先选择 U 盘启动，不清楚的同学这一步可以谷歌一下，默认选择第1个 <strong>DS3617xs 6.1 Baremetal with Jun’s Mod v1.02-alpha</strong> 回车「其实这个选择的界面大概只出现 0.5 秒就跳过去了，默认就好」。<br>出现下图则表示安装成功，大概 1 分钟就可以。这里我说一下，其实只要出现红线框起来的部分也有可能是已经安装了，我却一直傻等，后来网上查才知道已经成功了。<br><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g152dff5lkj20jy0axaa9.jpg"></p>
-<h2 id="第-4-步-安装群晖系统"><a href="#第-4-步-安装群晖系统" class="headerlink" title="第 4 步 安装群晖系统"></a>第 4 步 安装群晖系统</h2><p>4.1 浏览器地址栏输入 find.synology.com 查找系统<br>4.2 安装 DSM——手动安装——选择 <strong>.pat</strong> 文件，安装会清空硬盘文件<br>4.3 设置服务器名称、用户名、密码<br>4.4 原装群晖用 QuickConnect 账户登陆，黑群晖选择跳过此步骤<br>至此，群晖系统已安装完成，需要提醒的是不要轻易升级，去控制面板里系统计划关闭 DSM 自动更新选项。</p>
-<h2 id="第-5-步-群晖-DSM-添加硬盘存储空间的办法"><a href="#第-5-步-群晖-DSM-添加硬盘存储空间的办法" class="headerlink" title="第 5 步 群晖 DSM 添加硬盘存储空间的办法"></a>第 5 步 群晖 DSM 添加硬盘存储空间的办法</h2><p>5.1 进入系统后，点击左上角方块菜单——选择存储空间管理员，按提示添加硬盘即可，这里同样会清空硬盘文件，因为群晖系统格式和电脑格式不一样，所以一定会清空一下，具体详细设置大家可以谷歌或参考下这篇文章——<a target="_blank" rel="noopener" href="https://www.nas2x.com/threads/synology-dsm-hdd.30/">群辉Synology DSM 添加 HDD 硬盘/存储空间的方法</a></p>
-<p>终于整理完啦，自己梳理一次感觉清晰多了，这样下次就可以按照整理的步骤快速进行了，当然如果不想折腾又有这方面需求的，建议直接去<a target="_blank" rel="noopener" href="https://www.synology.com/zh-cn">群晖官网</a>了解详情，可以去天猫货京东旗舰店购买。</p>
+                <p>90后还要攒钱吗，眼下钱放在哪里好呢？</p>
+<p>如果没钱，也没这个烦恼了，开个玩笑。</p>
+<p>知乎上有一个很火的问答，90 后的一代真的还能通过攒钱改变现状吗？我刚看了下有 673 个回答，看了排名靠前的答案还是持支持的态度，总算给了大家一点希望。</p>
+<p>80 后房贷背着负重前行，90 后消费主义盛行，钱财不够，花呗来凑，很多都是月光族，发工资转手就要还花呗。</p>
+<p>之前有一则报道，说是汇丰银行发布报告 90 后人均负债 12 万，虽然消息未经实证，但还是让大家为之震惊。</p>
+<p>以上算是引子，一些研究报告也不一定代表了真实情况，但是大家能感受到的一点就是：借贷消费的确很普遍了。<a id="more"></a></p>
+<p>对于绝大多数普通人来说，攒钱还是必须的，这是你之后做一些决定的资本。无论是跳槽、创业、还是旅行之类。今天我们不讨论如何消费，也不抨击什么现象，就单纯实际谈谈，如果我是一个刚毕业工作不久的新人，眼下有哪些可以攒钱的方式呢？</p>
+<h2 id="支付宝里的那些钱儿"><a href="#支付宝里的那些钱儿" class="headerlink" title="支付宝里的那些钱儿"></a>支付宝里的那些钱儿</h2><p>国民理财意识的觉醒，可以说很大一波原因是余额宝带起来的，很多人可能都不知道是啥，只是觉得支付宝可靠还有利息就用了， 2014 年 1 月 2 日余额宝利率达到最高，7 日年化达到 6.7630%，可以说非常高了。虽然眼下余额宝利率一降再降，但是架不住存取方便且有利息，还是有很多人用的，我刚看了下 7 日年化 2.4170%，的确有点低，胜在灵活安全，毕竟背后是一只货币基金。</p>
+<p>打开支付宝——财富——余额宝——百宝箱，还会看到几个余额宝的小工具，分别是以下几个：</p>
+<h3 id="工资理财"><a href="#工资理财" class="headerlink" title="工资理财"></a>工资理财</h3><p>顾名思义就是可以设置每月发工资的时候自动转入一笔钱进余额宝</p>
+<h3 id="还贷管家"><a href="#还贷管家" class="headerlink" title="还贷管家"></a>还贷管家</h3><p>可以还车贷、房贷。穷人，目前还没用过。</p>
+<h3 id="蚂蚁星愿"><a href="#蚂蚁星愿" class="headerlink" title="蚂蚁星愿"></a>蚂蚁星愿</h3><p>给自己设立一个愿望储蓄池，然后可以不断往里存钱，类似咱们以前的存钱罐，我用过一阵，放弃了。</p>
+<h3 id="笔笔攒"><a href="#笔笔攒" class="headerlink" title="笔笔攒"></a>笔笔攒</h3><p>就是你支付宝每消费一笔，自动攒入一笔设定的金额（1.88/2.88/3.88/4.88/5.88）进余额宝且将其冻结，随时可转出活用，这个挺有意思，我默认开通了 2.88 元那一档。</p>
+<p>余额宝自动转入  这个肯定开通了，毕竟现在支付宝账户本身也不需要存钱，其实也可以转入网商银行的余利宝也有利息，商户可以用网商银行，个人就余额宝吧。</p>
+<h3 id="小钱袋"><a href="#小钱袋" class="headerlink" title="小钱袋"></a>小钱袋</h3><p>支付宝里除了上面由余额宝提供的一些攒钱功能，还有一个程序——小钱袋，支付宝首页搜索「小钱袋」就可以进入，点击右下角管理看到，最下面显示支付宝官方出品，所以不用担心安全问题，这个也是有利息的。这个产品的设计初衷是给孩子设立的储蓄金，但是单身狗其实也可以用啊，而且你可以随意起名字，你可以给你未来孩子起一个名字，或者单纯为存一笔钱取一个名字，我想取「fuck you money」,奈何不让啊，因为人家是让你给孩子起的中文名，手动滑稽。这个小钱袋可以设置成每周定存的形式，钱好像不体现在支付宝总资产里面，希望大家有一天发现：咦，我还有这一笔钱，不过可千万别忘记了啊。</p>
+<p>另外提一句，支付宝里面财富界面，可以去定投基金，也是一种不错的投资，今年以来收益率是很高的，最高时达到 30%。具体投资什么基金，何时买卖，不展开，大家可以网上先简单了解一下。</p>
+<h2 id="朝朝盈"><a href="#朝朝盈" class="headerlink" title="朝朝盈"></a>朝朝盈</h2><p>如果你工资卡是招商银行的话，可以看一下招商银行 App 里面的朝朝盈，刚看下近7 日年化 2.3990%，每日最高即时转出 1 万元，上限存 5 万元，次日转出无此限制。2018 年以来，各种 P2P 平台爆雷跑路，整个 2018 年各种投资基本也都是负的，这时候不亏损就是赚了，所以也不要小瞧这些年化低的理财产品。</p>
+<h2 id="京东金融"><a href="#京东金融" class="headerlink" title="京东金融"></a>京东金融</h2><p>京东金融作为大强子家的后起之秀，近些年在金融领域也是频频发力，目前比较靠谱一点的是大家可以去里面的银行精选，找富民银行的富多利存款，初代产品富民宝已经下架，不过这货需要抢，本质上是一个5年定期的存款，存超过90天就有4.5% 年化利率，还有一家三湘银行的随湘存也可以试一下，利率也尚可。需要说明一下的是，以上都是适用于存款保险制度，也就是说低于50万金额即使最后银行倒了，也有国家给你兜底。</p>
+<p>今天聊的攒钱，其实是聊把钱放在那些稳健的地方增值，没有讨论大的投资，毕竟风险与收益成正比，如果你期待更高的收益，就必须要承担更高的风险，目前 P2P不建议投资大额资金，等到一切陆续备案完成，行业完成洗牌后，再放一部分资金比较靠谱。</p>
+<p>你的钱放在哪里呢？欢迎留言一起交流。</p>
+<p>注：本文不构成任何投资建议，仅供参考，投资有风险，请对自己行为负责。</p>
 
             </div>
             <hr/>
@@ -460,7 +451,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://qiubugu.com/article/20190316-%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html">http://qiubugu.com/article/20190316-%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html</a>
+                    <a href="http://qiubugu.com/article/20190625%2090%E5%90%8E%E8%BF%98%E8%A6%81%E6%94%92%E9%92%B1%E5%90%97%EF%BC%8C%E7%9C%BC%E4%B8%8B%E9%92%B1%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%E5%A5%BD%E5%91%A2%EF%BC%9F.html">http://qiubugu.com/article/20190625%2090%E5%90%8E%E8%BF%98%E8%A6%81%E6%94%92%E9%92%B1%E5%90%97%EF%BC%8C%E7%9C%BC%E4%B8%8B%E9%92%B1%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%E5%A5%BD%E5%91%A2%EF%BC%9F.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -497,11 +488,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/software/">
-                                    <span class="chip bg-color">software</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -670,7 +657,7 @@
         repo: 'gitalks.github.io',
         owner: 'Skytostop',
         admin: "Skytostop",
-        id: '2019-03-16T22-02-36',
+        id: '2019-06-26T21-22-50',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -698,27 +685,63 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/article/20190324-%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">
+                <a href="/article/20191225%20Hexo%20%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="搬瓦工使用指南">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Hexo 使用心得">
                         
-                        <span class="card-title">搬瓦工使用指南</span>
+                        <span class="card-title">Hexo 使用心得</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。
-搬瓦工官网一直在变化，因为一直会被封掉，目前是https://bwh88.net/，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。
-
+                            2019年3月8日，第二次重新搭建Hexo博客！
+Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for more info. If 
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-25
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            秋布谷
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/article/20190528%E4%BB%8E%E4%BB%98%E8%B4%B9%E8%B4%AD%E4%B9%B0-iCloud-%E8%AF%B4%E8%B5%B7%EF%BC%8C%E8%B0%88%E8%B0%88%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E3%80%82.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="从付费购买 iCloud 说起，谈谈我的软件使用心得。">
+                        
+                        <span class="card-title">从付费购买 iCloud 说起，谈谈我的软件使用心得。</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            事情起因并不是我在纠结要不要购买 iCloud，而是这两天我折腾 iTunes 软件引发的困扰，包括突然发现手机的连续互通中的通用剪贴板失效了，我是一个比较轴的人，当我发现某一问题，我会想尽各种办法去解决，如果不行，我就感觉整个人都不太好了
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-05-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -734,61 +757,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/">
-                        <span class="chip bg-color">搬瓦工</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/article/20190314-Meg-Jay-Why-30-is-not-the-new-20.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Meg Jay- Why 30 is not the new 20">
-                        
-                        <span class="card-title">Meg Jay- Why 30 is not the new 20</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            \
-
-The above video does not display properly because it requires scientific internet access.
-00:12
-When I was in my 20s,
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-15
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/unique-psyche/" class="post-category">
-                                    unique psyche
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">学习</span>
+                    <a href="/tags/software/">
+                        <span class="chip bg-color">software</span>
                     </a>
                     
                 </div>

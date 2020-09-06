@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo 博客如何绑定域名, qiubugu,秋布谷">
+    <meta name="keywords" content="测试, qiubugu,秋布谷">
     <meta name="description" content="秋布谷，有趣的灵魂在这里相遇！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo 博客如何绑定域名 | 秋布谷</title>
+    <title>测试 | 秋布谷</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,12 +245,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo 博客如何绑定域名</h1>
+                    <h1 class="description center-align post-title">测试</h1>
                 </div>
             </div>
         </div>
@@ -365,25 +365,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/hexo/" class="post-category">
-                                hexo
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -392,21 +379,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-10
+                    2020-09-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-04-03
+                    2020-09-06
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    729
+                    16
                 </div>
                 
 
@@ -418,31 +405,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>许多操作可能随着 Github 更新而略有变化，我自己是小白，所以只能照网上依葫芦画瓢，但是也遇到了很多坑。记录一下，备自己之后查看。</p>
-<p>我是在 Godaddy 上买的域名，但是在国内解析速度比较慢，且有时候会被屏蔽。</p>
-<h3 id="第-1-步修改域名-DNS-地址"><a href="#第-1-步修改域名-DNS-地址" class="headerlink" title="第 1 步修改域名 DNS 地址"></a>第 1 步修改域名 DNS 地址<a id="more"></a></h3><p>用国内的 DNSPod 代替 Godaddy 解析，登陆 DNSPOD 官网帮助中心，查看问题「 Godaddy 注册商域名修改 DNS 地址」，按照步骤先去登陆 Godaddy 官网点击右上角头像进入「我的产品」，选择 DNS 管理</p>
-<p><img src="https://ws1.sinaimg.cn/large/67b44d33gy1g0xo4hw3bdj211706wq3f.jpg"> 点击更改默认的域名服务器，输入 DNSPod 的 2 个 DNS 短地址（对应 6 台服务器），然后点击保存即可，这样解析服务就转给了 DNSPOD。</p>
-<blockquote>
-<p> f1g1ns1.dnspod.net<br> f1g1ns2.dnspod.net</p>
-</blockquote>
-<h3 id="第-2-步添加-DNSPod-的解析"><a href="#第-2-步添加-DNSPod-的解析" class="headerlink" title="第 2 步添加 DNSPod 的解析"></a>第 2 步添加 DNSPod 的解析</h3><p>这一步真的比较坑，原因是我按照网上一些「ping username.github.io」获得的 IP 地址，或者添加的是 Github 官方的主机 IP 设置都会遇到问题。</p>
-<p>失败案例一：向你的 DNS 配置中添加 3 条记录,用你自己的 Github 用户名替换 username</p>
-<blockquote>
-<p>@             A                     192.30.252.153<br>@             A                     192.30.252.154<br>www      CNAME          username.github.io.</p>
-</blockquote>
-<p>这个设置后，尤其是强制走 https 的时候，Chrome 会提示不是安全的隐私链接，打开也很卡。还有网上各种 ping 自己博客 IP 的，但是我自己测试这个IP是变化的，官方文档显示大概有4个，直接说说我是怎么弄的，其实也不复杂。</p>
-<blockquote>
-<p>· 185.199.108.153<br>· 185.199.109.153<br>· 185.199.110.153<br>· 185.199.111.153</p>
-</blockquote>
-<p>自己成功方法：同样添加3条记录</p>
-<blockquote>
-<p>@             A                    185.199.108.153<br>@             A                    185.199.109.153<br>www       CNAME        Skytostop.github.io</p>
-</blockquote>
-<p>再添加 A 记录就要收费了，所以有条件把上面4个 IP 都加进去是不是会更好，可以添加上面 2 个或者下面 2 个都可以，这个方法我是在 Youtube 上看来的，这样整个域名解析就设置好了。</p>
-<h3 id="第3步设定-CNAME-文件"><a href="#第3步设定-CNAME-文件" class="headerlink" title="第3步设定 CNAME 文件"></a>第3步设定 CNAME 文件</h3><p>接下来还需在 Github 创建 CNAME 文件绑定自己的域名，同时在 Settings 里面找到 Custom domain 勾选 Enforce HTTPS 即可，这样全网会走 https 路线，博客地址栏左边会有一把小锁，安心又很酷。</p>
-<p>由于执行「  hexo g -d  」命令后，本地文件会覆盖仓库里的 CNAME 文件，所以要复制一份刚刚创建的 CNAME 文件放置在站点配置目录下的 source 文件夹。</p>
-<p>重新上传，大功告成，去浏览器地址栏输入你的域名访问吧！</p>
-<p>后记：完成这些折腾，对于一个完全不懂代码的文科生小白其实也不容易，域名这一块还好，整个 Hexo 的搭建还是遇到了许多问题，还好有 Google 都有解答，基本解决。</p>
+                <p>123<br>w 的<br>的d<br>的s<br>说得<br>说得</p>
+<p> 说得 </p>
+<p> 说得<br> 是d是</p>
 
             </div>
             <hr/>
@@ -468,7 +433,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://qiubugu.com/article/20190310-Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.html">http://qiubugu.com/article/20190310-Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.html</a>
+                    <a href="http://qiubugu.com/article/title.html">http://qiubugu.com/article/title.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -505,11 +470,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -678,7 +639,7 @@
         repo: 'gitalks.github.io',
         owner: 'Skytostop',
         admin: "Skytostop",
-        id: '2019-03-10T14-42-22',
+        id: '2020-09-06T18-52-04',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -706,48 +667,32 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/article/20190311-Mac-iOS%E4%B8%8B%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E4%BE%9D%E7%84%B6%E6%97%A0%E6%B3%95%E4%B8%8ATelegram%EF%BC%9F%E6%95%99%E4%BD%A0%E4%B8%80%E6%8B%9B%EF%BC%81.html">
+                <a href="/article/title-1.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Mac/iOS下全局代理依然无法上Telegram？教你一招！">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="good">
                         
-                        <span class="card-title">Mac/iOS下全局代理依然无法上Telegram？教你一招！</span>
+                        <span class="card-title">good</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             Mac/iOS 下全局代理依然无法上 Telegram ？教你一招！
-有很多同学通过各种方法总算可以科学上网了，但是却发现依然无法登陆 Telegram 客户端，尝试解决方案如下：
-
-
-1.Mac下无法联网问题先用 Shadowsocks
+                            
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-12
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-06
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/" class="post-category">
-                                    善用网络
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            秋布谷
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/software/">
-                        <span class="chip bg-color">software</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -759,25 +704,29 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/article/20190308-hello-world.html">
+                <a href="/article/20200903%203%E6%AD%A5%E6%95%99%E4%BD%A0%E7%94%A8%E4%B8%8A%E8%B0%B7%E6%AD%8C.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="只需 3 步免费用上 Google 搜索">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">只需 3 步免费用上 Google 搜索</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2019年3月8日，第二次重新搭建Hexo博客！
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get an
+                            我们默认大家是在不能 FQ 的情况下，想要利用谷歌搜索的，至于谷歌搜索的优势，这里不再赘述。（文中链接请长按复制到浏览器打开）
+
+第 1 步下载安装 Chrome 浏览器。
+
+https://www.google.cn/chrome/
+安装
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
                             </span>
                         <span class="publish-author">
                             
@@ -786,6 +735,14 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">善用网络</span>
+                    </a>
+                    
                 </div>
                 
             </div>

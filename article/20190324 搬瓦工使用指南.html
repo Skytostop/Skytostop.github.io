@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo 使用心得, qiubugu,秋布谷">
+    <meta name="keywords" content="搬瓦工使用指南, qiubugu,秋布谷">
     <meta name="description" content="秋布谷，有趣的灵魂在这里相遇！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo 使用心得 | 秋布谷</title>
+    <title>搬瓦工使用指南 | 秋布谷</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,12 +245,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo 使用心得</h1>
+                    <h1 class="description center-align post-title">搬瓦工使用指南</h1>
                 </div>
             </div>
         </div>
@@ -365,12 +365,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/">
+                                <span class="chip bg-color">搬瓦工</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/" class="post-category">
+                                善用网络
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -379,21 +392,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-25
+                    2019-03-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-28
+                    2019-03-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    864
+                    302
                 </div>
                 
 
@@ -405,69 +418,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>2019年3月8日，第二次重新搭建Hexo博客！</p>
-<p>Welcome to [Hexo][1]! This is your very first post. Check [documentation][2] for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting][3] or you can ask me on [GitHub][4].</p>
-<hr>
-<h2 id="Next-主题"><a href="#Next-主题" class="headerlink" title="Next 主题"></a>Next 主题</h2><h3 id="更新Next主题"><a href="#更新Next主题" class="headerlink" title="更新Next主题"></a>更新Next主题</h3><p>可以采用如下命令：</p>
-<pre><code>git reset --hard
-git pull</code></pre>
-<p>更新后，启动 hexo s 发现报错</p>
-<blockquote>
-<p>YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 14, column 7:</p>
+                <p>每次使用搬瓦工出了问题，总是东翻西翻搜索解决问题，索性干脆写一篇文章做一个自用的指南记录。</p>
+<p>搬瓦工官网一直在变化，因为一直会被封掉，目前是<a href="">https://bwh88.net/</a>，注册购买就不在这里详细说了，稍微有点购物基础的同学都可以解决。<a id="more"></a></p>
+<h2 id="安装使用-SS"><a href="#安装使用-SS" class="headerlink" title="安装使用 SS"></a>安装使用 SS</h2><p>安装<a target="_blank" rel="noopener" href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocks">SS</a>/<a target="_blank" rel="noopener" href="https://kiwivm.64clouds.com/main-exec.php?mode=extras_shadowsocksr">SSR</a>，在登陆之前要先用帐号登陆搬瓦工官网。当然，如果还需要使用 VPS 空间搭建网站之类的功能，可能需要使用 Xshell 或 Mac 终端来登陆使用，稍微复杂了一些，不过按照<a target="_blank" rel="noopener" href="https://medium.com/@jackme256/%E6%90%AC%E7%93%A6%E5%B7%A5-vps-%E6%90%AD%E5%BB%BA-shadowsocks-ss-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B-ss%E5%A4%9A%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96-efc6dda704fe">教程</a>也不难。<br>测试IP是否被锁，官方测试地址：<a target="_blank" rel="noopener" href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck">点我</a></p>
+<h2 id="Ping-IP-测试"><a href="#Ping-IP-测试" class="headerlink" title="Ping IP 测试"></a>Ping IP 测试</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="http://ping.pe/">测试地址 1</a><br><a target="_blank" rel="noopener" href="http://ping.chinaz.com/">测试地址 2</a><br><a target="_blank" rel="noopener" href="http://ping.chinaz.com/">测试地址 3</a></p>
 </blockquote>
-<p>经过网上搜索发现还是配置文件：<code>_config.yml</code> 中 属性后面没有空格，不知道为啥更新后有的空格都没了，将其冒号后修改空一格即可。只是这样更新就会导致之前设置的一些主题设置全部失效。</p>
-<p>升级 Next  版本</p>
-<pre><code>cd themes/next
-git pull </code></pre>
-<p> 其他主题思路类似，</p>
-<p>[克隆新的仓库][11]到任一异于 next 的目录（如 next-reloaded）：</p>
-<p>$ git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next-reloaded<br>如此，你可以在不修改原有的 NexT v5.1.x 目录的同时使用 next-reloaded 目录中的新版本主题。</p>
-<p>在themes主题下新建 matery 文件夹</p>
-<pre><code>cd themes/matery
-git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
-<p>然后去 Hexo 目录下「_config.yml」文件用Xcode打开，搜索「theme」我这个是在 82 行，把主题名字切换成 matery 即可更改主题。_<br>如果此时直接Hexo s 会出现WARN No layout: index.html<br>，此时页面都是白的。因为需要先进行 hexo g 然后再进行 hexo d</p>
-<hr>
-<p>今天因为误装matery主题下推荐的高亮插件不知道怎么就出错了，折腾了半天。</p>
-<p>执行 hexo s 一直提示</p>
-<p>ERROR Local hexo not found in ~/hexo</p>
-<p>ERROR Try running: ‘npm install hexo –save’</p>
-<p>继续执行 npm install hexo –save</p>
-<p>提示ERROR Plugin load failed: hexo-prism-plugin、</p>
-<p>结尾是</p>
-<p>Thank you for installing EJS: built with the Jake JavaScript build tool (<a target="_blank" rel="noopener" href="https://jakejs.com/">https://jakejs.com/</a>)</p>
-<p>added 127 packages from 107 contributors, removed 44 packages and audited 11237 packages in 9.099s</p>
-<p>found 165 high severity vulnerabilities</p>
-<p> run <code>npm audit fix</code> to fix them, or <code>npm audit</code> for details</p>
-<p>执行 npm audit fix</p>
-<p>removed 2 packages and updated 3 packages in 4.563s</p>
-<p>fixed 165 of 165 vulnerabilities in 11237 scanned packages</p>
-<p>执行 hexo s 正常</p>
-<p>至此，问题解决，但是我不知道发生了什么，但是应该就是这个高亮插件引起了错误。</p>
-<hr>
-<h3 id="在博客中添加-Gitalk-评论"><a href="#在博客中添加-Gitalk-评论" class="headerlink" title="在博客中添加 Gitalk 评论"></a>在博客中添加 Gitalk 评论</h3><p>先申请一个 <a target="_blank" rel="noopener" href="https://github.com/settings/applications/new">Github APP</a> 获取后面需要的 Client ID 和 Client Secret</p>
-<p>matery内置了许多评论模块，Gitalk、Gitment、Valine 和 Disqus 等。我选用了Gitalk, 在主题的配置模块中启用此功能即可。</p>
-<p>，启用后，修改里面的里面的的 Client ID 和 Client Secret 信息。</p>
-<hr>
-<h3 id="中文链接转拼音"><a href="#中文链接转拼音" class="headerlink" title="中文链接转拼音"></a>中文链接转拼音</h3><p>安装命令如下：</p>
-<p><code>npm i hexo-permalink-pinyin --save</code></p>
-<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
-<pre><code>permalink_pinyin:
-  enable: true
-  separator: &#39;-&#39; # default: &#39;-&#39;</code></pre>
-<blockquote>
-<p><strong>注</strong>：除了此插件外，<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p>
-</blockquote>
-<hr>
-<h3 id="文章字数统计插件（建议安装）"><a href="#文章字数统计插件（建议安装）" class="headerlink" title="文章字数统计插件（建议安装）"></a>文章字数统计插件（建议安装）</h3><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a>插件。</p>
-<p>安装命令如下：</p>
-<pre><code>npm i --save hexo-wordcount</code></pre>
-<p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p>
-<p>postInfo:<br>  date: true<br>  update: false<br>  wordCount: false # 设置文章字数统计为 true.<br>  totalCount: false # 设置站点文章总字数统计为 true.<br>  min2read: false # 阅读时长.<br>  readCount: false # 阅读次数.</p>
-<hr>
-<h3 id="代码块显示分成了2个"><a href="#代码块显示分成了2个" class="headerlink" title="代码块显示分成了2个"></a>代码块显示分成了2个</h3><p>在hexo根目录下的<code>_config.yml</code>关闭代码高亮</p>
-<pre><code>highlight:
-  enable: false</code></pre>
-<hr>
+<p>我之前用搬瓦工做主机，配合宝塔面板搭建了 WordPress 搭建了自己的个人博客，并且各种配置折腾了好久，后来觉得麻烦，而且主机不一定很稳定，加上 Godaddy 购买的域名没有备案，七牛云的一些功能无法正常使用，就回归到 Hexo 博客了。</p>
+<p>（未完待更）</p>
 
             </div>
             <hr/>
@@ -493,7 +451,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://qiubugu.com/article/20191225-Hexo-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97.html">http://qiubugu.com/article/20191225-Hexo-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97.html</a>
+                    <a href="http://qiubugu.com/article/20190324%20%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">http://qiubugu.com/article/20190324%20%E6%90%AC%E7%93%A6%E5%B7%A5%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -530,7 +488,11 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/">
+                                    <span class="chip bg-color">搬瓦工</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -699,7 +661,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
         repo: 'gitalks.github.io',
         owner: 'Skytostop',
         admin: "Skytostop",
-        id: '2019-12-25T22-20-03',
+        id: '2019-03-24T20-12-26',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -727,32 +689,35 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/article/20200105-2019-summary.html">
+                <a href="/article/20190324%20%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E7%89%88.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="2019 小结">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="PC常用软件推荐">
                         
-                        <span class="card-title">2019 小结</span>
+                        <span class="card-title">PC常用软件推荐</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            拖延了几天，想想不管写得怎么样，还是写一下所谓的个人总结吧，就当做是一个习惯了。
-我顺便翻看了以前的几篇总结，发现自己也是从校园到职场开始一路蜕变。一开始充满了豪情壮志，后来逐渐意识到大家都是凡人，也变得越来越务实，这没什么不好。但我内心还
+                            系统工具
+Sumatra PDF  Win一款PDF、MOBI等阅读器 Motrix Win/Mac一款全能的下载工具，支持下载 HTTP、FTP、BT、磁力链、百度网盘等资源。
+
+
+QQ影音 Win/MacPotplayer Win/Ma
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-03-24
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B9%B4%E5%BA%A6%E5%B0%8F%E7%BB%93/" class="post-category">
-                                    年度小结
+                            <a href="/categories/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    善用网络
                                 </a>
                             
                             
@@ -762,8 +727,8 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B9%B4%E5%BA%A6%E5%B0%8F%E7%BB%93/">
-                        <span class="chip bg-color">年度小结</span>
+                    <a href="/tags/software/">
+                        <span class="chip bg-color">software</span>
                     </a>
                     
                 </div>
@@ -777,35 +742,44 @@ git clone https://github.com/blinkfox/hexo-theme-matery</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/article/20190625-90%E5%90%8E%E8%BF%98%E8%A6%81%E6%94%92%E9%92%B1%E5%90%97%EF%BC%8C%E7%9C%BC%E4%B8%8B%E9%92%B1%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%E5%A5%BD%E5%91%A2%EF%BC%9F.html">
+                <a href="/article/20190316%20%E9%BB%91%E7%BE%A4%E6%99%96%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E8%AE%B0%E5%BD%95.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="90后还要攒钱吗，眼下钱放在哪里好呢？">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="黑群晖系统安装应用记录">
                         
-                        <span class="card-title">90后还要攒钱吗，眼下钱放在哪里好呢？</span>
+                        <span class="card-title">黑群晖系统安装应用记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            90后还要攒钱吗，眼下钱放在哪里好呢？
-如果没钱，也没这个烦恼了，开个玩笑。
-知乎上有一个很火的问答，90 后的一代真的还能通过攒钱改变现状吗？我刚看了下有 673 个回答，看了排名靠前的答案还是持支持的态度，总算给了大家一点希望。
-80 
+                            这两天折腾搞了个黑群晖，自己是小白，所以在这一块都是照着网上的教程一步一步操作的，所以有必要自己再记录下大致的思路过程，方便下次重新安装。拿之前第一次搭建 Hexo 博客来说，虽然最后成功了，但是如果让我再操作一遍，基本还是要一步步对照指南
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            秋布谷
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%96%84%E7%94%A8%E7%BD%91%E7%BB%9C/" class="post-category">
+                                    善用网络
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/software/">
+                        <span class="chip bg-color">software</span>
+                    </a>
+                    
                 </div>
                 
             </div>
